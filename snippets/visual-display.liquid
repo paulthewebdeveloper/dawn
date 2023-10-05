@@ -11,25 +11,27 @@
   Usage:
   {% render 'visual-display', type: value.display.type, value: value.display.value, style: filter.display_style %}
 {% endcomment %}
-<div class="visual-display visual-display--style-{{ style }}{% if type != "color" and type != "colors" and type != "image"%} empty{% endif %}">
+<div class="visual-display visual-display--style-{{ style }}{% if type != "color" and type != "colors" and type != "image" %} empty{% endif %}">
 	{%- case type -%}
 		{%- when "color" -%}
 			<div style="background-color: rgba({{ value.rgba }})"></div>
 		{%- when "colors" -%}
-			{%- if value.size > 4 %}
-				{%- assign size_limit = 4 %}
-			{%- else -%}
-				{%- assign size_limit = value.size %}
-			{%- endif -%}
+			{% liquid
+				if value.size > 4
+					assign size_limit = 4
+				else
+					assign size_limit = value.size
+				endif
 
-			{%- if value.size == 2 %}
-				{%- assign rotation = "45deg" %}
-			{%- else -%}
-				{%- assign rotation = "0deg" %}
-			{%- endif -%}
+				if value.size == 2
+					assign rotation = "45deg"
+				else
+					assign rotation = "0deg"
+				endif
 
-			{%- assign angle_increment = 360 | divided_by: size_limit -%}
-			{%- assign angle = 0 -%}
+				assign angle_increment = 360 | divided_by: size_limit
+				assign angle = 0
+			%}
 			{%- capture conic_gradient -%}
 				{%- for color in value limit: size_limit -%}
 					{{ color }} {{ angle }}deg{%- assign angle = angle | plus: angle_increment %} {{ angle }}deg{%- unless forloop.last %}, {%- endunless -%}
@@ -37,7 +39,7 @@
 			{%- endcapture -%}
 			<div style="background: conic-gradient({{ conic_gradient }}); transform: rotateZ({{ rotation }});"></div>
 		{%- when "image" -%}
-			{{ value | image_url: width:100 | image_tag: class: "visual-display__image" }}
+			{{ value | image_url: width: 100 | image_tag: class: "visual-display__image" }}
 		{%- else -%}
 			<div></div>
 	{%- endcase -%}

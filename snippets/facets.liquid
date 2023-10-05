@@ -112,15 +112,17 @@
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
-              {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
-              {% case filter.display_style %}
-                {% when 'swatch', 'thumbnail' %}
-                  {%- assign has_visual_representation = true -%}
-                  {%- assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style -%}
-                {% else %}
-                  {%- assign has_visual_representation = false -%}
-                  {%- assign visual_layout_class = "facets-layout-list" -%}
-              {% endcase %}
+              {% liquid
+                assign total_active_values = total_active_values | plus: filter.active_values.size
+                case filter.display_style
+                  when 'swatch', 'thumbnail'
+                    assign has_visual_representation = true
+                    assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style
+                  else
+                    assign has_visual_representation = false
+                    assign visual_layout_class = "facets-layout-list"
+                endcase
+              %}
 
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
@@ -167,7 +169,7 @@
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         <ul
-                          class="{{visual_layout_class}}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled no-js-hidden"
                           role="list"
                         >
                           {%- for value in filter.values -%}
@@ -180,7 +182,7 @@
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{filter.display_style}}{% endif %}{% if value.active %} active{% endif %}"
+                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
                               >
                                 <input
                                   type="checkbox"
@@ -668,14 +670,16 @@
             <div class="mobile-facets__main has-submenu gradient">
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
-                  {% case filter.display_style %}
-                    {% when 'swatch', 'thumbnail' %}
-                      {%- assign has_visual_representation = true -%}
-                      {%- assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style -%}
-                    {% else %}
-                      {%- assign has_visual_representation = false -%}
-                      {%- assign visual_layout_class = "facets-layout-list" -%}
-                  {% endcase %}
+                  {% liquid
+                    case filter.display_style
+                      when 'swatch', 'thumbnail'
+                        assign has_visual_representation = true
+                        assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style
+                      else
+                        assign has_visual_representation = false
+                        assign visual_layout_class = "facets-layout-list"
+                    endcase
+                  %}
 
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
@@ -703,7 +707,7 @@
                             {% render 'icon-arrow' %}
                             {{ filter.label | escape }}
                           </button>
-                          <ul class="{{visual_layout_class}} mobile-facets__list list-unstyled" role="list">
+                          <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
                             {%- for value in filter.values -%}
                               {% if value.count == 0 and value.active == false %}
                                 {%- assign is_disabled = true -%}
@@ -714,7 +718,7 @@
                               <li class="mobile-facets__item list-menu__item">
                                 <label
                                   for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{filter.display_style}}{% endif %}{% if value.active %} active{% endif %}"
+                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
                                 >
                                   <input
                                     class="mobile-facets__checkbox {% if has_visual_representation %}visually-hidden{% endif %}"
