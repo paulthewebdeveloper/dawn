@@ -39,7 +39,7 @@
 			{%- endcapture -%}
 			<div style="background: conic-gradient({{ conic_gradient }}); transform: rotateZ({{ rotation }});"></div>
 		{%- when "image" -%}
-			{{ value | image_url: width: 100 | image_tag: class: "visual-display__image" }}
+			{{ value | image_url: width: 100 | image_tag: class: "visual-display__image", alt: value.alt }}
 		{%- else -%}
 			<div></div>
 	{%- endcase -%}
