@@ -117,10 +117,10 @@
                 case filter.display_style
                   when 'swatch', 'thumbnail'
                     assign has_visual_representation = true
-                    assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style
+                    assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.display_style
                   else
                     assign has_visual_representation = false
-                    assign visual_layout_class = "facets-layout-list"
+                    assign visual_layout_class = 'facets-layout-list'
                 endcase
               %}
 
@@ -234,7 +234,9 @@
                                   </svg>
                                 {% endif %}
 
-                                <span class="facet-checkbox__text" aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                <span class="facet-checkbox__text" aria-hidden="true">
+                                  {{- value.label | escape }} ({{ value.count }})</span
+                                >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -674,10 +676,10 @@
                     case filter.display_style
                       when 'swatch', 'thumbnail'
                         assign has_visual_representation = true
-                        assign visual_layout_class = "facets-layout-grid facets-layout-grid--" | append: filter.display_style
+                        assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.display_style
                       else
                         assign has_visual_representation = false
-                        assign visual_layout_class = "facets-layout-list"
+                        assign visual_layout_class = 'facets-layout-list'
                     endcase
                   %}
 
@@ -768,7 +770,9 @@
                                     </svg>
                                   {% endif %}
 
-                                  <span class="facet-checkbox__text" aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                  <span class="facet-checkbox__text" aria-hidden="true">
+                                    {{- value.label | escape }} ({{ value.count }})</span
+                                  >
                                   <span class="visually-hidden">
                                     {{- value.label | escape }} (
                                     {%- if value.count == '1' -%}
