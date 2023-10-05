@@ -1,0 +1,44 @@
+{% comment %}
+  Renders a visual display element, either a swatch or a thumbnail. If wrapped in "visual-display-parent" and "visual-display-parent--swatch"/"visual-display-parent--thumbnail" classes, this will receive hover and focus states.
+
+  Add a class of "active" or "disabled" to the parent element to change the state of the visual display.
+
+  Accepts:
+  - type: {String} Can be "color", "colors", "image", or nothing to represent an empty state.
+  - value: {Object} Will be a color drop, array of color drops, or image drop, depending on the "type"
+  - style: {String} Can be "swatch" or "thumbnail"
+
+  Usage:
+  {% render 'visual-display', type: value.display.type, value: value.display.value, style: filter.display_style %}
+{% endcomment %}
+<div class="visual-display visual-display--style-{{ style }}{% if type != "color" and type != "colors" and type != "image"%} empty{% endif %}">
+	{%- case type -%}
+		{%- when "color" -%}
+			<div style="background-color: rgba({{ value.rgba }})"></div>
+		{%- when "colors" -%}
+			{%- if value.size > 4 %}
+				{%- assign size_limit = 4 %}
+			{%- else -%}
+				{%- assign size_limit = value.size %}
+			{%- endif -%}
+
+			{%- if value.size == 2 %}
+				{%- assign rotation = "45deg" %}
+			{%- else -%}
+				{%- assign rotation = "0deg" %}
+			{%- endif -%}
+
+			{%- assign angle_increment = 360 | divided_by: size_limit -%}
+			{%- assign angle = 0 -%}
+			{%- capture conic_gradient -%}
+				{%- for color in value limit: size_limit -%}
+					{{ color }} {{ angle }}deg{%- assign angle = angle | plus: angle_increment %} {{ angle }}deg{%- unless forloop.last %}, {%- endunless -%}
+				{%- endfor -%}
+			{%- endcapture -%}
+			<div style="background: conic-gradient({{ conic_gradient }}); transform: rotateZ({{ rotation }});"></div>
+		{%- when "image" -%}
+			{{ value | image_url: width:100 | image_tag: class: "visual-display__image" }}
+		{%- else -%}
+			<div></div>
+	{%- endcase -%}
+</div>

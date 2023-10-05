@@ -1,0 +1,100 @@
+.visual-display {
+  --visual-display__size: min(2.4rem, 100%);
+  position: relative;
+  width: var(--visual-display__size);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  aspect-ratio: 1/1;
+}
+
+.visual-display.empty {
+  border-style: dashed;
+}
+
+.visual-display--style-swatch {
+  --visual-display__size: min(2.4rem, 100%);
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.visual-display--style-thumbnail {
+  --visual-display__size: min(9rem, 100%);
+
+  border-radius: var(--buttons-radius);
+  overflow: hidden;
+}
+
+.visual-display-parent--thumbnail {
+  outline: 0.05rem solid rgba(var(--color-foreground), 0.75);
+}
+
+/* Hover, active, and focus states */
+:where(
+    .visual-display-parent:hover .visual-display--style-swatch,
+    .visual-display-parent.active .visual-display--style-swatch,
+    .visual-display-parent:has(:focus-visible) .visual-display--style-swatch,
+    .visual-display-parent--thumbnail:hover,
+    .visual-display-parent--thumbnail.active,
+    .visual-display-parent--thumbnail:has(:focus-visible)
+  ) {
+  outline: 0 solid rgb(var(--color-foreground));
+  outline-offset: 0.2rem;
+}
+
+/* Active state */
+.visual-display-parent.active .visual-display--style-swatch,
+.visual-display-parent--thumbnail.active {
+  outline-width: 0.1rem;
+}
+
+/* Hover state */
+.visual-display-parent:hover .visual-display--style-swatch,
+.visual-display-parent--thumbnail:hover {
+  outline-width: 0.15rem;
+}
+
+/* Focus state */
+.visual-display-parent:has(:focus-visible) .visual-display--style-swatch,
+.visual-display-parent--thumbnail:has(:focus-visible) {
+  outline-width: 0.15rem;
+  box-shadow: 0 0 0 0.55rem rgb(var(--color-background)), 0 0 0 0.85rem rgba(var(--color-foreground), 0.5),
+    0 0 1.15rem 0.1rem rgba(var(--color-foreground));
+}
+
+/* Focus state for older browsers */
+@supports not selector(:has(a, b)) {
+  .visual-display-parent:focus-within .visual-display--style-swatch,
+  .visual-display-parent--thumbnail:focus-within {
+    outline-offset: 0.2rem;
+    outline: 0.15rem solid rgb(var(--color-foreground));
+    box-shadow: 0 0 0 0.55rem rgb(var(--color-background)), 0 0 0 0.85rem rgba(var(--color-foreground), 0.5),
+      0 0 1.15rem 0.1rem rgba(var(--color-foreground));
+  }
+}
+
+.visual-display-parent.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Used to display the disabled dash */
+.visual-display-parent.disabled .visual-display::after {
+  display: block;
+  content: '';
+
+  /* 1.414 is not a magic number, it's the square root of 2, or the length of the diagonal */
+  width: calc(var(--visual-display__size) * 1.414);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.4);
+  transform: rotate(-45deg);
+  transform-origin: left;
+}
+
+.visual-display > * {
+  display: block !important;
+  height: 100%;
+  width: 100%;
+}
+
+.visual-display__image {
+  object-fit: cover;
+}
