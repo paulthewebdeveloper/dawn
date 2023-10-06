@@ -17,16 +17,14 @@
       <div style="background-color: rgba({{ value.rgba }})"></div>
     {%- when 'colors' -%}
       {% liquid
+        assign size_limit = value.size
         if value.size > 4
           assign size_limit = 4
-        else
-          assign size_limit = value.size
         endif
 
+        assign rotation = '0deg'
         if value.size == 2
           assign rotation = '45deg'
-        else
-          assign rotation = '0deg'
         endif
 
         assign angle_increment = 360 | divided_by: size_limit

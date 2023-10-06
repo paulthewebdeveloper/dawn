@@ -173,11 +173,12 @@
                           role="list"
                         >
                           {%- for value in filter.values -%}
-                            {% if value.count == 0 and value.active == false %}
-                              {%- assign is_disabled = true -%}
-                            {% else %}
-                              {%- assign is_disabled = false -%}
-                            {% endif %}
+                            {% liquid
+                              assign is_disabled = false
+                              if value.count == 0 and value.active == false
+                                assign is_disabled = true
+                              endif
+                            %}
 
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
@@ -186,7 +187,6 @@
                               >
                                 <input
                                   type="checkbox"
-                                  class="{% if has_visual_representation %}visually-hidden{% endif %}"
                                   name="{{ value.param_name }}"
                                   value="{{ value.value }}"
                                   id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
@@ -711,11 +711,12 @@
                           </button>
                           <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
                             {%- for value in filter.values -%}
-                              {% if value.count == 0 and value.active == false %}
-                                {%- assign is_disabled = true -%}
-                              {% else %}
-                                {%- assign is_disabled = false -%}
-                              {% endif %}
+                              {% liquid
+                                assign is_disabled = false
+                                if value.count == 0 and value.active == false
+                                  assign is_disabled = true
+                                endif
+                              %}
 
                               <li class="mobile-facets__item list-menu__item">
                                 <label
@@ -723,7 +724,7 @@
                                   class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
                                 >
                                   <input
-                                    class="mobile-facets__checkbox {% if has_visual_representation %}visually-hidden{% endif %}"
+                                    class="mobile-facets__checkbox"
                                     type="checkbox"
                                     name="{{ value.param_name }}"
                                     value="{{ value.value }}"
