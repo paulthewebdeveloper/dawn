@@ -11,7 +11,7 @@
   Usage:
   {% render 'visual-display', type: value.display.type, value: value.display.value, style: filter.display_style %}
 {% endcomment %}
-<div class="visual-display visual-display--style-{{ style }}{% if type != "color" and type != "colors" and type != "image" %} empty{% endif %}">
+<div class="visual-display visual-display--style-{{ style }}{% unless type == "color" or type == "colors" or type == "image" %} empty{% endunless %}">
   {%- case type -%}
     {%- when 'color' -%}
       <div style="background-color: rgba({{ value.rgba }})"></div>
