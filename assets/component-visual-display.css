@@ -95,6 +95,10 @@
   width: 100%;
 }
 
-.visual-display__image {
+.visual-display--style-swatch .visual-display__image {
   object-fit: cover;
+}
+
+.visual-display--style-thumbnail .visual-display__image {
+  object-fit: contain;
 }

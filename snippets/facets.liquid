@@ -116,10 +116,10 @@
                 assign total_active_values = total_active_values | plus: filter.active_values.size
                 case filter.display_style
                   when 'swatch', 'thumbnail'
-                    assign has_visual_representation = true
+                    assign has_visual_display = true
                     assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.display_style
                   else
-                    assign has_visual_representation = false
+                    assign has_visual_display = false
                     assign visual_layout_class = 'facets-layout-list'
                 endcase
               %}
@@ -183,7 +183,7 @@
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
+                                class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
                               >
                                 <input
                                   type="checkbox"
@@ -198,7 +198,7 @@
                                   {% endif %}
                                 >
 
-                                {% if has_visual_representation %}
+                                {% if has_visual_display %}
                                   <div class="facets__visual-display-wrapper">
                                     {% render 'visual-display',
                                       type: value.display.type,
@@ -675,10 +675,10 @@
                   {% liquid
                     case filter.display_style
                       when 'swatch', 'thumbnail'
-                        assign has_visual_representation = true
+                        assign has_visual_display = true
                         assign visual_layout_class = 'facets-layout-grid facets-layout-grid--' | append: filter.display_style
                       else
-                        assign has_visual_representation = false
+                        assign has_visual_display = false
                         assign visual_layout_class = 'facets-layout-list'
                     endcase
                   %}
@@ -721,7 +721,7 @@
                               <li class="mobile-facets__item list-menu__item">
                                 <label
                                   for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_representation %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
+                                  class="facets__label mobile-facets__label{% if is_disabled %} mobile-facets__label--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.display_style }}{% endif %}{% if value.active %} active{% endif %}"
                                 >
                                   <input
                                     class="mobile-facets__checkbox"
@@ -737,7 +737,7 @@
                                     {% endif %}
                                   >
 
-                                  {% if has_visual_representation %}
+                                  {% if has_visual_display %}
                                     <div class="facets__visual-display-wrapper">
                                       {% render 'visual-display',
                                         type: value.display.type,
