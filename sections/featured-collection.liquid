@@ -50,9 +50,9 @@
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+    <div class="collection__title collection__flex-box title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} {{ section.settings.heading_font_style }}  scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -60,7 +60,7 @@
         or section.settings.show_description
         and section.settings.collection.description != empty
       -%}
-        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="collection__description {{ section.settings.description_style }} collection__description_flex-end {{ section.settings.body_font_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {%- if section.settings.show_description -%}
             {{ section.settings.collection.description }}
           {%- else -%}
@@ -69,6 +69,17 @@
         </div>
       {%- endif -%}
     </div>
+    {%- if section.settings.show_view_all and more_in_collection -%}
+      <div class="right collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <a
+          href="{{ section.settings.collection.url }}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
+        >
+          {{ 'sections.featured_collection.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
 
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
@@ -145,17 +156,7 @@
       {%- endif -%}
     </slider-component>
 
-    {%- if section.settings.show_view_all and more_in_collection -%}
-      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a
-          href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-        >
-          {{ 'sections.featured_collection.view_all' | t }}
-        </a>
-      </div>
-    {%- endif -%}
+    
     {% if section.settings.image_shape == 'arch' %}
       {% render 'mask-arch' %}
     {%- endif -%}
@@ -177,6 +178,182 @@
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
     },
+    {
+      "type": "select",
+      "id": "heading_font_style",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "body_font_style",
+      "label": "Body Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },    
     {
       "type": "select",
       "id": "heading_size",
@@ -420,21 +597,21 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 124,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 124
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 124,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 0
     }
   ],
   "presets": [

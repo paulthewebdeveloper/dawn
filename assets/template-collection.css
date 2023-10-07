@@ -46,6 +46,19 @@
 
 .collection__description > * {
   margin: 0;
+  max-width: 624px;
+}
+
+.collection__description_flex-end {
+  display: flex;
+  align-items: center;
+}
+
+.collection__flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
 
 .collection__title.title-wrapper {
@@ -73,6 +86,10 @@
     padding: 0 1.5rem;
     max-width: none;
   }
+}
+
+.collection__view-all {
+  padding: 0 1.5rem;
 }
 
 .collection__view-all a:not(.link) {

@@ -1,3 +1,281 @@
+/* Regular */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-Regular' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-Regular' | asset_url }}") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-Bold' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-Bold' | asset_url }}") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-BoldItalic' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-BoldItalic' | asset_url }}") format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-Italic' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-Italic' | asset_url }}") format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-Light' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-Light' | asset_url }}") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-LightItalic' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-LightItalic' | asset_url }}") format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-Medium' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-Medium' | asset_url }}") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: 'GrifinitoL';
+  src: url("{{ 'GrifinitoL-MediumItalic' | asset_url }}") format('woff'),
+    url("{{ 'GrifinitoL-MediumItalic' | asset_url }}") format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+.font-grifinito-regular {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.font-grifinito-bold {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+.font-grifinito-bold-italic {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+
+.font-grifinito-italic {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+}
+
+.font-grifinito-light {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.font-grifinito-light-italic {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+}
+
+.font-grifinito-medium {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+.font-grifinito-medium-italic {
+  font-family: 'GrifinitoL' !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+}
+
+/* @font-face rules */
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-Regular' | asset_url }}") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-RegIta' | asset_url }}") format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-Medium' | asset_url }}") format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-MedIta' | asset_url }}") format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-Light' | asset_url }}") format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-LightItalic' | asset_url }}") format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-ExtraLight' | asset_url }}") format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-ExtraBold' | asset_url }}") format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-ExtLtIta' | asset_url }}") format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-ExtBdIta' | asset_url }}") format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-BoldItalic' | asset_url }}") format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HelveticaNowMicro';
+  src: url("{{ 'HelveticaNowMicro-Bold' | asset_url }}") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* CSS classes */
+.font-helvetica-now-micro-regular {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.font-helvetica-now-micro-reg-ita {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-medium {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+.font-helvetica-now-micro-med-ita {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-light {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+}
+
+.font-helvetica-now-micro-light-italic {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-extra-light {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+}
+
+.font-helvetica-now-micro-extra-bold {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.font-helvetica-now-micro-ext-lt-ita {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 200 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-ext-bd-ita {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 800 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-bold-italic {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+
+.font-helvetica-now-micro-bold {
+  font-family: 'HelveticaNowMicro', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -281,6 +559,7 @@ h5,
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  vertical-align: middle;
   word-break: break-word;
 }
 
@@ -295,36 +574,36 @@ h5,
 }
 
 .h0 {
-  font-size: calc(var(--font-heading-scale) * 4rem);
+  font-size: calc(var(--font-heading-scale) * 5rem);
 }
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: calc(var(--font-heading-scale) * 5.2rem);
+    font-size: calc(var(--font-heading-scale) * 6.2rem);
   }
 }
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: calc(var(--font-heading-scale) * 4rem);
 }
 
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 5rem);
   }
 }
 
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 3rem);
 }
 
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: calc(var(--font-heading-scale) * 3.4rem);
   }
 }
 
@@ -2315,13 +2594,25 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 @keyframes translateAnnouncementSlideIn {
-  0% {opacity: 0; transform: translateX(var(--announcement-translate-from))}
-  100% {opacity: 1; transform: translateX(0)}
+  0% {
+    opacity: 0;
+    transform: translateX(var(--announcement-translate-from));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes translateAnnouncementSlideOut {
-  0% {opacity: 1; transform: translateX(0)}
-  100% {opacity: 0; transform: translateX(var(--announcement-translate-to))}
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(var(--announcement-translate-to));
+  }
 }
 
 /* section-header */
