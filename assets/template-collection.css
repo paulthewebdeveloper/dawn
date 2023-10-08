@@ -95,3 +95,10 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+.collection__view-all__link {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 12px;
+}

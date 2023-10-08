@@ -33,6 +33,7 @@
         "title": "Our Favourites",
         "heading_font_style": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
         "show_description": false,

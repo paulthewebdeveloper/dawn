@@ -3790,3 +3790,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+/* PWD Custom Classes */
+
+.special {
+  color: #A60632;
+  font-style: italic;
+}
