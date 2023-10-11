@@ -1,0 +1,464 @@
+<section
+  class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}"
+  style="padding: 0  1.5rem"
+>
+  <div style="margin-bottom:24px;">
+    <h2
+      class="{{ section.settings.heading_font_style_one }} m-0 lh title inline-richtext h0 scroll-trigger animate--slide-in"
+      style="color: #A60632;"
+    >
+      Le Cercle
+    </h2>
+    <h2 class="{{ section.settings.heading_font_style_two }} m-0 lh title inline-richtext h0 scroll-trigger animate--slide-in">
+      Jewellery Collection
+    </h2>
+  </div>
+  <div style="display:flex;gap:24px;">
+    <div style="width:100%" class="scroll-trigger animate--slide-in">
+      {{ section.settings.image | image_url: width: 1024 | image_tag }}
+    </div>
+    <div style="width:100%">
+      <p {{ section.settings.body_font_style }} class="m-0 scroll-trigger animate--slide-in">
+        Consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at
+        erat erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In
+        hac habitasse platea dictumst.
+      </p>
+      <div
+        class="scroll-trigger animate--slide-in"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        "
+      >
+        <a class="{{ section.settings.link_font_style }}" style="font-size:3rem;">EXPLORE MORE</a>
+        <svg
+          width="24"
+          height="12"
+          viewBox="0 0 24 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M18.5179 0.517578L17.4274 1.59337L21.0674 5.23337H0V6.766H21.0674L17.4274 10.406L18.5179 11.4818L24 5.99968L18.5179 0.517578Z" fill="#636363" />
+        </svg>
+      </div>
+    </div>
+    <div style="width:70%">
+      <div class="scroll-trigger animate--slide-in">
+        {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
+        {% render 'card-product',
+          card_product: section.settings.product,
+          media_aspect_ratio: 'adapt',
+          show_secondary_image: section.settings.second_image,
+          extend_height: true,
+          placeholder_image: placeholder_image
+        %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .m-0 {
+    margin: 0 !important;
+  }
+
+  .lh {
+    line-height: 0.8;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product Collection",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Main Product"
+    },
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Featured Collection"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_style_one",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "heading_font_style_two",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "body_font_style",
+      "label": "Body Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "link_font_style",
+      "label": "Link Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Collection",
+      "settings": {
+        "title": "Product Collection"
+      }
+    }
+  ]
+}
+{% endschema %}

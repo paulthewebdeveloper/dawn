@@ -31,7 +31,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Our Favourites",
-        "heading_font_style": "font-grifinito-light-italic",
+        "heading_font_style": "font-grifinito-italic",
         "body_font_style": "font-helvetica-now-micro-light",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
@@ -57,10 +57,99 @@
         "padding_top": 124,
         "padding_bottom": 124
       }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
+        "cover_image": "shopify:\/\/shop_images\/pink-tennis-necklace.jpg",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "24446479-442f-4e70-817a-f6ee5a0e705f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"hero__special__wrapper\">\n<h2 class=\"hero__special\">Welcome to the extraordinary world of <span class=\"special__text\">Nadine Aysoy,<\/span> where unique jewellery designs emanate <span class=\"special__text\">luxury<\/span class=\"special__text\"> and <span class=\"special__text\">elegance.<\/span> Explore masterpieces that marry tradition with innovation within the <span class=\"special__text\">Catena Jewellery Collection,<\/span> crafting a legacy of beauty and refinement.<\/h2>\n<\/div>\n\n<style>\n  .hero__special__wrapper {\n    display:flex;\n    justify-content:center;\n  }\n\n  .hero__special {\n    font-family:\"GrifinitoL\";\n    text-align:center;\n    font-weight:300;\n    padding:0 1.5rem;\n    font-size: 8.5rem;\n    line-height: 0.95;\n   }\n\n  .special__text {\n    color: #A60632;\n    font-style:italic;\n  }\n<\/style>",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bracelets",
+        "heading_font_style": "font-grifinito-italic",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light-italic",
+        "heading_size": "h0",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bracelets",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 124
+      }
+    },
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cercle_main.jpg",
+        "product": "catena-autum-eternity-ring",
+        "title": "",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/catena_illusion_ring.jpg",
+        "center_image": "shopify:\/\/shop_images\/main_catena_collection.jpg",
+        "right_image": "shopify:\/\/shop_images\/catena_ring.jpg",
+        "first_product": "catena-autum-eternity-ring",
+        "second_product": "catena-autumn-hoop-earrings",
+        "third_product": "catena-blue-topaz",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
+      }
     }
   },
   "order": [
     "image_banner",
-    "62c41903-11d6-4eaf-84c3-77a5cd7db131"
+    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "24446479-442f-4e70-817a-f6ee5a0e705f",
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
+    "97d0e5da-5103-4271-b43d-5de8167552d0"
   ]
 }

@@ -1,0 +1,232 @@
+<section
+  style="display:flex;gap:24px;padding-left:1.5rem;padding-right:1.5rem"
+  class="section-{{ section.id }}-padding"
+>
+  <div style="width:80%;margin-top:5%;position:relative;display:flex;align-items:center;justify-content:center;">
+    {{ section.settings.left_image | image_url: height: 1024 | image_tag }}
+    <div
+      class="{{section.settings.link_font_style}}"
+      style="
+        background: rgba(0, 0, 0, 0.7);
+        border-radius:9999px;
+        width:94px;
+        height:94px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:3rem;
+        position: absolute;
+      "
+    >
+      VIEW
+    </div>
+  </div>
+
+  <div style="width:160%">
+    {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
+  </div>
+
+  <div style="width:60%;margin-top:auto;margin-bottom:5%;position:relative;display:flex;align-items:center;justify-content:center;">
+    {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
+    <div
+      style="
+        background: rgba(0, 0, 0, 0.7);
+        border-radius:9999px;
+        width:94px;
+        height:94px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:3rem;
+        position: absolute;
+      "
+      class="{{section.settings.link_font_style}}"
+    >
+      VIEW
+    </div>
+  </div>
+</section>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Multi Column Product",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
+    },
+    {
+      "type": "product",
+      "id": "first_product",
+      "label": "First Product"
+    },
+    {
+      "type": "product",
+      "id": "second_product",
+      "label": "Second Product"
+    },
+    {
+      "type": "product",
+      "id": "third_product",
+      "label": "Third Product"
+    },
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Featured Collection"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 124,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 124
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 124,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "link_font_style",
+      "label": "Link Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi Column Product",
+      "settings": {
+        "title": "Multi Column Product"
+      }
+    }
+  ]
+}
+{% endschema %}
