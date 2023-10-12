@@ -73,6 +73,60 @@
         "padding_bottom": 0
       }
     },
+    "42d9445b-f805-4cb0-9514-c39973ea424c": {
+      "type": "featured-categories",
+      "blocks": {
+        "92864d79-097d-4a2c-a590-7414de8972fc": {
+          "type": "category",
+          "settings": {
+          }
+        },
+        "b160d25d-85fa-435b-9707-c4fe8a4c984e": {
+          "type": "category",
+          "settings": {
+          }
+        },
+        "3dfce533-7f27-44f9-a482-93c1330b00e3": {
+          "type": "category",
+          "settings": {
+          }
+        },
+        "a56449f3-82c4-4e8b-afee-c34d23ffd650": {
+          "type": "category",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "92864d79-097d-4a2c-a590-7414de8972fc",
+        "b160d25d-85fa-435b-9707-c4fe8a4c984e",
+        "3dfce533-7f27-44f9-a482-93c1330b00e3",
+        "a56449f3-82c4-4e8b-afee-c34d23ffd650"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/atum_bangle.png",
+        "product": "catena-autumn-bangle",
+        "title": "Featured Categories",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cercle_main.jpg",
+        "product": "catena-autum-eternity-ring",
+        "title": "",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-italic",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
     "24446479-442f-4e70-817a-f6ee5a0e705f": {
       "type": "custom-liquid",
       "settings": {
@@ -80,6 +134,22 @@
         "color_scheme": "background-2",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/catena_illusion_ring.jpg",
+        "center_image": "shopify:\/\/shop_images\/main_catena_collection.jpg",
+        "right_image": "shopify:\/\/shop_images\/catena_ring.jpg",
+        "first_product": "catena-autum-eternity-ring",
+        "second_product": "catena-autumn-hoop-earrings",
+        "third_product": "catena-blue-topaz",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
       }
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
@@ -112,44 +182,16 @@
         "padding_top": 124,
         "padding_bottom": 124
       }
-    },
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
-      "type": "featured-product-collection",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/cercle_main.jpg",
-        "product": "catena-autum-eternity-ring",
-        "title": "",
-        "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-regular"
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify:\/\/shop_images\/catena_illusion_ring.jpg",
-        "center_image": "shopify:\/\/shop_images\/main_catena_collection.jpg",
-        "right_image": "shopify:\/\/shop_images\/catena_ring.jpg",
-        "first_product": "catena-autum-eternity-ring",
-        "second_product": "catena-autumn-hoop-earrings",
-        "third_product": "catena-blue-topaz",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
-      }
     }
   },
   "order": [
     "image_banner",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "24446479-442f-4e70-817a-f6ee5a0e705f",
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "97d0e5da-5103-4271-b43d-5de8167552d0"
+    "24446479-442f-4e70-817a-f6ee5a0e705f",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77"
   ]
 }
