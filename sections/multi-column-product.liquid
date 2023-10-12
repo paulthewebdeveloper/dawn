@@ -2,23 +2,27 @@
   style="display:flex;gap:24px;padding-left:1.5rem;padding-right:1.5rem"
   class="section-{{ section.id }}-padding"
 >
-  <div style="width:80%;margin-top:5%;position:relative;display:flex;align-items:center;justify-content:center;">
-    {{ section.settings.left_image | image_url: height: 1024 | image_tag }}
-    <div
-      class="{{section.settings.link_font_style}}"
-      style="
-        background: rgba(0, 0, 0, 0.7);
-        border-radius:9999px;
-        width:94px;
-        height:94px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size:3rem;
-        position: absolute;
-      "
-    >
-      VIEW
+  <div
+    style="width:80%;margin-top:5%;margin-botom:auto;position:relative;"
+  >
+    <div class="wrapper" style="display:flex;align-items:center;justify-content:center;">
+      {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
+      <div
+        style="
+          background: rgba(0, 0, 0, 0.7);
+          border-radius:9999px;
+          width:94px;
+          height:94px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:3rem;
+          position: absolute;
+        "
+        class="follower {{section.settings.link_font_style}}"
+      >
+        <span>VIEW</span>
+      </div>
     </div>
   </div>
 
@@ -26,26 +30,81 @@
     {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
   </div>
 
-  <div style="width:60%;margin-top:auto;margin-bottom:5%;position:relative;display:flex;align-items:center;justify-content:center;">
-    {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
-    <div
-      style="
-        background: rgba(0, 0, 0, 0.7);
-        border-radius:9999px;
-        width:94px;
-        height:94px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size:3rem;
-        position: absolute;
-      "
-      class="{{section.settings.link_font_style}}"
-    >
-      VIEW
+  <div
+    style="width:60%;margin-top:auto;margin-bottom:5%;"
+  >
+    <div class="wrapper" style="position:relative;display:flex;align-items:center;justify-content:center;">
+      {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
+      <div
+        style="
+          background: rgba(0, 0, 0, 0.7);
+          border-radius:9999px;
+          width:94px;
+          height:94px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:3rem;
+          position: absolute;
+        "
+        class="follower {{section.settings.link_font_style}}"
+      >
+        <span>VIEW</span>
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+  }
+
+  let wrappers = document.querySelectorAll('.wrapper');
+
+  wrappers.forEach((wrapper) => {
+    let follower = wrapper.querySelector('.follower');
+
+    function setFollowerToCenter() {
+      let rect = wrapper.getBoundingClientRect();
+      let centerX = rect.width / 2 - 47;
+      let centerY = rect.height / 2 - 47;
+
+      follower.style.left = `${centerX}px`;
+      follower.style.top = `${centerY}px`;
+    }
+
+    setFollowerToCenter();
+
+    wrapper.addEventListener('mousemove', (e) => {
+      let rect = wrapper.getBoundingClientRect();
+      let x = e.clientX - rect.left - 47;
+      let y = e.clientY - rect.top - 47;
+      x = clamp(x, 0, rect.width - 94);
+      y = clamp(y, 0, rect.height - 94);
+
+      gsap.to(follower, {
+        duration: 0.3,
+        left: `${x}px`,
+        top: `${y}px`,
+        ease: 'power1.out',
+      });
+    });
+
+    wrapper.addEventListener('mouseleave', () => {
+      let rect = wrapper.getBoundingClientRect();
+      let centerX = rect.width / 2 - 47;
+      let centerY = rect.height / 2 - 47;
+
+      gsap.to(follower, {
+        duration: 0.3,
+        left: `${centerX}px`,
+        top: `${centerY}px`,
+        ease: 'power1.out',
+      });
+    });
+  });
+</script>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
