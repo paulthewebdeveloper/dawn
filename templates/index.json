@@ -44,7 +44,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "link",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "background-2",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -53,9 +53,9 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 124,
-        "padding_bottom": 124
+        "padding_bottom": 0
       }
     },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
@@ -68,9 +68,7 @@
         "cover_image": "shopify:\/\/shop_images\/pink-tennis-necklace.jpg",
         "description": "",
         "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "color_scheme": ""
       }
     },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
@@ -79,34 +77,81 @@
         "92864d79-097d-4a2c-a590-7414de8972fc": {
           "type": "category",
           "settings": {
+            "top_bottom": "top",
+            "category_name": "Catena",
+            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
+            "link": "shopify:\/\/collections\/catena-collection"
           }
         },
         "b160d25d-85fa-435b-9707-c4fe8a4c984e": {
           "type": "category",
           "settings": {
+            "top_bottom": "top",
+            "category_name": "Le Cercle",
+            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-multicoloured-gemstone-catena-rainbow-earrings_20848617_45959186_1000_1.png",
+            "link": "shopify:\/\/collections\/le-cercle"
           }
         },
-        "3dfce533-7f27-44f9-a482-93c1330b00e3": {
+        "772f448d-4dbc-40c3-a06b-840ccf71dc61": {
           "type": "category",
           "settings": {
+            "top_bottom": "top",
+            "category_name": "Petit Tsarina",
+            "category_image": "shopify:\/\/shop_images\/petit_tsarina.png",
+            "link": ""
           }
         },
-        "a56449f3-82c4-4e8b-afee-c34d23ffd650": {
+        "3c2fb2b7-ad83-42bb-a2ec-832411458379": {
           "type": "category",
           "settings": {
+            "top_bottom": "top",
+            "category_name": "Earrings",
+            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-emerald-and-sapphire-catena-earrings_19369482_42560459_1000_1.png",
+            "link": ""
+          }
+        },
+        "853f1f42-fb70-4eb1-b312-ea356136b9fd": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Rings",
+            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
+            "link": ""
+          }
+        },
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Bracelets",
+            "category_image": "shopify:\/\/shop_images\/atum_bangle.png",
+            "link": ""
+          }
+        },
+        "f931a47d-bcae-43e2-8357-a77b7059b49d": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Pendants",
+            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-diamond-catena-illusion-necklace_20848618_46040133_600.png",
+            "link": ""
           }
         }
       },
       "block_order": [
         "92864d79-097d-4a2c-a590-7414de8972fc",
         "b160d25d-85fa-435b-9707-c4fe8a4c984e",
-        "3dfce533-7f27-44f9-a482-93c1330b00e3",
-        "a56449f3-82c4-4e8b-afee-c34d23ffd650"
+        "772f448d-4dbc-40c3-a06b-840ccf71dc61",
+        "3c2fb2b7-ad83-42bb-a2ec-832411458379",
+        "853f1f42-fb70-4eb1-b312-ea356136b9fd",
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93",
+        "f931a47d-bcae-43e2-8357-a77b7059b49d"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/atum_bangle.png",
         "product": "catena-autumn-bangle",
-        "title": "Featured Categories",
+        "title_normal": "Explore Our",
+        "title_red": "Categories",
         "color_scheme": "background-2",
         "heading_font_style_one": "font-grifinito-regular",
         "heading_font_style_two": "font-grifinito-regular",
@@ -130,7 +175,7 @@
     "24446479-442f-4e70-817a-f6ee5a0e705f": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"hero__special__wrapper\">\n<h2 class=\"hero__special\">Welcome to the extraordinary world of <span class=\"special__text\">Nadine Aysoy,<\/span> where unique jewellery designs emanate <span class=\"special__text\">luxury<\/span class=\"special__text\"> and <span class=\"special__text\">elegance.<\/span> Explore masterpieces that marry tradition with innovation within the <span class=\"special__text\">Catena Jewellery Collection,<\/span> crafting a legacy of beauty and refinement.<\/h2>\n<\/div>\n\n<style>\n  .hero__special__wrapper {\n    display:flex;\n    justify-content:center;\n  }\n\n  .hero__special {\n    font-family:\"GrifinitoL\";\n    text-align:center;\n    font-weight:300;\n    padding:0 1.5rem;\n    font-size: 8.5rem;\n    line-height: 0.95;\n   }\n\n  .special__text {\n    color: #A60632;\n    font-style:italic;\n  }\n<\/style>",
+        "custom_liquid": "<div class=\"hero__special__wrapper\">\n<h2 class=\"hero__special m-0\">Welcome to the extraordinary world of <span class=\"special__text\">Nadine Aysoy,<\/span> where unique jewellery designs emanate <span class=\"special__text\">luxury<\/span class=\"special__text\"> and <span class=\"special__text\">elegance.<\/span> Explore masterpieces that marry tradition with innovation within the <span class=\"special__text\">Catena Jewellery Collection,<\/span> crafting a legacy of beauty and refinement.<\/h2>\n<\/div>\n\n<style>\n  .hero__special__wrapper {\n    display:flex;\n    justify-content:center;\n  }\n\n  .m-0 {\n    margin:0;\n  }\n\n  .hero__special {\n    font-family:\"GrifinitoL\";\n    text-align:center;\n    font-weight:300;\n    font-size: 8.5rem;\n    line-height: 0.95;\n   }\n\n  .special__text {\n    color: #A60632;\n    font-style:italic;\n  }\n<\/style>",
         "color_scheme": "background-2",
         "padding_top": 0,
         "padding_bottom": 0
@@ -169,7 +214,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "link",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "background-2",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -178,7 +223,7 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 124,
         "padding_bottom": 124
       }

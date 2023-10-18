@@ -165,11 +165,20 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
+  padding-left: var(--spacing-sections-horizontal-mobile);
+  padding-right: var(--spacing-sections-horizontal-mobile);
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 @media screen and (min-width: 750px) {
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
+    padding-left: var(--spacing-sections-horizontal-desktop);
+    padding-right: var(--spacing-sections-horizontal-desktop);
   }
 }
 
@@ -350,13 +359,13 @@ h4,
 
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.2rem);
+  font-size: calc(var(--font-heading-scale) * 0.75rem);
 }
 
 @media only screen and (min-width: 750px) {
   h5,
   .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.3rem);
+    font-size: calc(var(--font-heading-scale) * 1rem);
   }
 }
 
@@ -365,6 +374,10 @@ h6,
   color: rgba(var(--color-foreground), 0.75);
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
+}
+
+.heading-special {
+  color: #a60632;
 }
 
 blockquote {
@@ -3516,6 +3529,6 @@ details-disclosure > details {
 /* PWD Custom Classes */
 
 .special {
-  color: #A60632;
+  color: #a60632;
   font-style: italic;
 }

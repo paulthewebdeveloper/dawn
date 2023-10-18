@@ -1,81 +1,97 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-  <div class="outer-container" style="padding:5rem 0;background-color:#E3C6B1">
-    <h2
-      class="{{section.settings.heading_font_style_one}}"
-      style="text-align:center;margin:-8.5rem 0 0 0;font-size:7rem;"
-    >
-      Explore Our Categories
+  <div class="outer-container custom-bg-color">
+    <h2 class="section-heading {{section.settings.heading_font_style_one}}">
+      {{ section.settings.title_normal }}
+      <span class="heading-special">{{ section.settings.title_red }}</span>
     </h2>
-    <div class="flex-container">
-      <div class="catena catena-container">
-        <h3 class="catena-heading {{ section.settings.link_font_style }}">Catena</h3>
-        <div class="categories-image-wrapper wrapper">
-          {{ section.settings.image | image_url: width: 1024 | image_tag }}
-        </div>
+    <div class="content-wrapper">
+      <div class="flex-container hide-on-mobile">
+        {%- for block in section.blocks -%}
+          {% assign next_index = forloop.index0 | plus: 1 %}
+
+          {% if section.blocks[next_index].settings.top_bottom != null %}
+            {% if section.blocks[next_index].settings.top_bottom != 'top' %}
+              {% assign is_next_bottom = true %}
+            {% endif %}
+          {% endif %}
+
+          {% if block.settings.top_bottom == 'top' %}
+            <div class="category-card category-container" data-url="{{ block.settings.link }}">
+              <h3 class="category-title {{ section.settings.link_font_style }}">
+                {{- block.settings.category_name -}}
+              </h3>
+              <div class="primary-image-wrapper">
+                {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+              </div>
+            </div>
+            {% unless is_next_bottom %}
+              <svg
+                class="decorative-svg"
+                width="8"
+                height="80"
+                viewBox="0 0 8 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0.5L2.21023 79.5H0.5L5.78977 0.5H7.5Z" fill="#636363"/>
+              </svg>
+            {% endunless %}
+          {% endif %}
+        {%- endfor -%}
       </div>
-      <svg
-        style="position:relative;z-index:10"
-        width="8"
-        height="80"
-        viewBox="0 0 8 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M7.5 0.5L2.21023 79.5H0.5L5.78977 0.5H7.5Z" fill="#636363"/>
-      </svg>
-      <div class="catena catena-container">
-        <h3 class="catena-heading {{ section.settings.link_font_style }}">Catena</h3>
-        <div class="categories-image-wrapper wrapper">
-          {{ section.settings.image | image_url: width: 1024 | image_tag }}
-        </div>
+      <div class="flex-container hide-on-mobile">
+        {%- for block in section.blocks -%}
+          {% if block.settings.top_bottom == 'bottom' %}
+            <div class="category-card category-container" style="cursor:pointer" {{ block.settings.link }}>
+              <h3 class="category-title {{ section.settings.link_font_style }}">{{ block.settings.category_name }}</h3>
+              <div class="secondary-image-wrapper">
+                {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+              </div>
+            </div>
+            {% unless forloop.last %}
+              <svg
+                class="decorative-svg"
+                width="8"
+                height="80"
+                viewBox="0 0 8 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 0.5L2.21023 79.5H0.5L5.78977 0.5H7.5Z" fill="#636363"/>
+              </svg>
+            {% endunless %}
+          {% endif %}
+        {%- endfor -%}
       </div>
-      <svg
-        style="position:relative;z-index:10"
-        width="8"
-        height="80"
-        viewBox="0 0 8 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M7.5 0.5L2.21023 79.5H0.5L5.78977 0.5H7.5Z" fill="#636363"/>
-      </svg>
-      <div class="catena catena-container">
-        <h3 class="catena-heading {{ section.settings.link_font_style }}">Catena</h3>
-        <div class="categories-image-wrapper wrapper">
-          {{ section.settings.image | image_url: width: 1024 | image_tag }}
-        </div>
-      </div>
-    </div>
-    <div class="flex-container">
-      {%- for block in section.blocks -%}
-        <div class="catena catena-container">
-          <h3 class="catena-heading {{ section.settings.link_font_style }}">Catena</h3>
-          <div class="categories-image-wrapper wrapper">
-            {{ section.settings.image | image_url: width: 1024 | image_tag }}
+      <div class="mobile-flex-container hide-on-desktop">
+        {%- for block in section.blocks -%}
+          <div style="cursor:pointer;" class="mobile-category" data-url="{{ block.settings.link }}">
+            <h3 class="category-title {{ section.settings.link_font_style }}">{{ block.settings.category_name }}</h3>
           </div>
-        </div>
-        <svg
-          style="position:relative;z-index:10"
-          width="8"
-          height="80"
-          viewBox="0 0 8 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M7.5 0.5L2.21023 79.5H0.5L5.78977 0.5H7.5Z" fill="#636363"/>
-        </svg>
-      {%- endfor -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .custom-section-padding {
-    padding: 0 1.5rem;
-  }
-
   .outer-container {
     position: relative;
+  }
+
+  .outer-container.custom-bg-color {
+    background-color: #e3c6b1;
+    padding: 5rem 0;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin: -9.5rem 0 0 0;
+    font-size: 7.5rem;
+  }
+
+  .content-wrapper {
+    margin: 12.5rem 0;
   }
 
   .flex-container {
@@ -85,73 +101,149 @@
     align-items: center;
   }
 
-  .catena-container {
+  .category-container {
     position: relative;
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
 
-  .catena-heading {
+  .category-title {
     pointer-events: none;
     position: relative;
     z-index: 10;
     width: 100%;
-    font-size: 5rem;
+    font-size: 6.5rem;
     margin: 0;
   }
 
-  .categories-image-wrapper {
+  .primary-image-wrapper,
+  .secondary-image-wrapper {
     position: absolute;
     background-color: #e7e7e7;
-    height: 250px;
-    width: 200px;
-    transform-origin: top;
+    height: 195px;
+    width: 145px;
     display: flex;
-    align-items: flex-end;
-    rotate: -5deg;
     pointer-events: none;
+    justify-content: center;
   }
 
-  .categories-image-wrapper > img {
-    margin-bottom: 20%;
+  .primary-image-wrapper {
+    align-items: flex-start;
+    transform: rotate(-5deg) scaleY(1);
+    transform-origin: bottom;
+    bottom: 0;
+  }
+
+  .primary-image-wrapper > img {
+    rotate: -30deg;
+    padding: 5rem 2.5rem 0 2.5rem;
+  }
+
+  .secondary-image-wrapper {
+    align-items: flex-end;
+    transform-origin: top;
+    rotate: -5deg;
+  }
+
+  .secondary-image-wrapper > img {
     rotate: 30deg;
-    padding: 2.5rem;
+    padding: 0 2.5 rem 5rem 2.5rem;
+  }
+
+  .decorative-svg {
+    position: relative;
+    z-index: 10;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  @media screen and (max-width: 990px) {
+    .hide-on-mobile {
+      display: none;
+    }
+
+    .hide-on-desktop {
+      display: block;
+    }
+
+    .mobile-flex-container {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mobile-category:hover > h3 {
+      color: #a60632;
+    }
   }
 </style>
 
 <script>
-  // Select all the elements with the class "catena"
-  const catenas = document.querySelectorAll('.catena');
+  const categoryCards = document.querySelectorAll('.category-card');
 
-  catenas.forEach((catena) => {
-    // For each "catena", get its associated "wrapper"
-    const wrapper = catena.querySelector('.wrapper');
+  categoryCards.forEach((card) => {
+    const primaryWrapper = card.querySelector('.primary-image-wrapper');
+    const secondaryWrapper = card.querySelector('.secondary-image-wrapper');
+    const categoryTitle = card.querySelector('.category-title');
+    const targetWrapper = primaryWrapper || secondaryWrapper;
 
-    gsap.set(wrapper, { scaleY: 0 });
-    gsap.set(wrapper.querySelector('img'), { opacity: 0 });
+    gsap.set(targetWrapper, { scaleY: 0 });
+    gsap.set(targetWrapper.querySelector('img'), { opacity: 0 });
 
-    catena.addEventListener('mouseover', () => {
-      gsap.killTweensOf(wrapper);
-      gsap.killTweensOf(wrapper.querySelector('img'));
+    card.addEventListener('mouseover', () => {
+      gsap.killTweensOf(targetWrapper);
+      gsap.killTweensOf(targetWrapper.querySelector('img'));
 
       const tl = gsap.timeline();
-      tl.to(wrapper, { scaleY: 1, duration: 0.25, ease: 'Power2.easeInOut' }).to(wrapper.querySelector('img'), {
-        opacity: 1,
-        duration: 0.25,
-        ease: 'Power2.easeInOut',
-      });
+      tl.to(categoryTitle, { color: '#A60632', duration: 0.1 })
+        .to(targetWrapper, { scaleY: 1, duration: 0.25, ease: 'Power2.easeInOut' })
+        .to(targetWrapper.querySelector('img'), {
+          opacity: 1,
+          duration: 0.1,
+          ease: 'Power2.easeInOut',
+        });
     });
 
-    catena.addEventListener('mouseleave', () => {
-      gsap.killTweensOf(wrapper);
-      gsap.killTweensOf(wrapper.querySelector('img'));
+    card.addEventListener('mouseleave', () => {
+      gsap.killTweensOf(targetWrapper);
+      gsap.killTweensOf(targetWrapper.querySelector('img'));
 
       const tl = gsap.timeline();
-      tl.to(wrapper.querySelector('img'), { opacity: 0, duration: 0.25, ease: 'Power2.easeInOut' }).to(wrapper, {
-        scaleY: 0,
-        duration: 0.25,
-        ease: 'Power2.easeInOut',
-      });
+      tl.to(categoryTitle, { color: '#636363', duration: 0.1 })
+        .to(targetWrapper.querySelector('img'), { opacity: 0, duration: 0.1, ease: 'Power2.easeInOut' })
+        .to(targetWrapper, {
+          scaleY: 0,
+          duration: 0.25,
+          ease: 'Power2.easeInOut',
+        });
+    });
+  });
+
+  const cards = document.querySelectorAll('.category-card');
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const cardUrl = card.getAttribute('data-url');
+
+      // Redirect to the URL
+      if (cardUrl) {
+        window.location.href = cardUrl;
+      }
+    });
+  });
+
+  document.querySelectorAll('.mobile-category').forEach((category) => {
+    category.addEventListener('click', () => {
+      const cardUrl = category.getAttribute('data-url');
+
+      // Redirect to the URL
+      if (cardUrl) {
+        window.location.href = cardUrl;
+      }
     });
   });
 </script>
@@ -159,6 +251,8 @@
 {% schema %}
 {
   "name": "Featured Categories",
+  "tag": "section",
+  "class": "section no-padding",
   "settings": [
     {
       "type": "image_picker",
@@ -173,8 +267,14 @@
     {
       "type": "text",
       "label": "Section Title",
-      "id": "title",
-      "default": "Featured Categories"
+      "id": "title_normal",
+      "default": "Explore Our"
+    },
+    {
+      "type": "text",
+      "label": "Red Section Title",
+      "id": "title_red",
+      "default": "Categories"
     },
     {
       "type": "color_scheme",
@@ -539,15 +639,45 @@
     {
       "type": "category",
       "name": "Category",
-      "settings": []
+      "settings": [
+        {
+          "type": "select",
+          "id": "top_bottom",
+          "label": "Top Or Bottom",
+          "default": "top",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "label": "Category Name",
+          "id": "category_name",
+          "default": "Category Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "category_image",
+          "label": "Category Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Featured Categoreis",
-      "settings": {
-        "title": "Featured Categories"
-      },
+      "name": "Featured Categories",
       "blocks": [
         {
           "type": "category"

@@ -165,10 +165,20 @@
         "type": "range",
         "id": "spacing_sections",
         "min": 0,
-        "max": 100,
-        "step": 4,
+        "max": 124,
+        "step": 2,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_sections.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "spacing_sections_horizontal",
+        "min": 0,
+        "max": 124,
+        "step": 2,
+        "unit": "px",
+        "label": "Horizontal spacing",
         "default": 0
       },
       {

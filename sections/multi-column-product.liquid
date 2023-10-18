@@ -1,59 +1,94 @@
-<section
-  style="display:flex;gap:24px;padding-left:1.5rem;padding-right:1.5rem"
-  class="section-{{ section.id }}-padding"
->
-  <div
-    style="width:80%;margin-top:5%;margin-botom:auto;position:relative;"
-  >
-    <div class="wrapper" style="display:flex;align-items:center;justify-content:center;">
+<section class="section-container">
+  <div class="left-div">
+    <div class="wrapper">
       {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
       <div
-        style="
-          background: rgba(0, 0, 0, 0.7);
-          border-radius:9999px;
-          width:94px;
-          height:94px;
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          font-size:3rem;
-          position: absolute;
-        "
-        class="follower {{section.settings.link_font_style}}"
+        class="follower hide-on-mobile {{section.settings.link_font_style}}"
+        data-url="{{section.settings.first_product.url}}"
       >
         <span>VIEW</span>
       </div>
     </div>
   </div>
 
-  <div style="width:160%">
+  <div class="center-div">
     {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
   </div>
 
-  <div
-    style="width:60%;margin-top:auto;margin-bottom:5%;"
-  >
-    <div class="wrapper" style="position:relative;display:flex;align-items:center;justify-content:center;">
+  <div class="right-div">
+    <div class="wrapper">
       {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
       <div
-        style="
-          background: rgba(0, 0, 0, 0.7);
-          border-radius:9999px;
-          width:94px;
-          height:94px;
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          font-size:3rem;
-          position: absolute;
-        "
-        class="follower {{section.settings.link_font_style}}"
+        class="follower hide-on-mobile {{section.settings.link_font_style}}"
+        data-url="{{section.settings.second_product.url}}"
       >
         <span>VIEW</span>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .section-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  .left-div {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: auto;
+    position: relative;
+  }
+
+  .center-div {
+    width: 160%;
+  }
+
+  .right-div {
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: 5%;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .follower {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 9999px;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .follower > span {
+    user-select: none;
+  }
+
+  /* For responsive design */
+  @media screen and (max-width: 990px) {
+    .left-div,
+    .center-div,
+    .right-div {
+      width: 100%;
+      margin: 0;
+    }
+
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+</style>
 
 <script>
   function clamp(value, min, max) {
@@ -104,25 +139,25 @@
       });
     });
   });
+
+  // Convert HTMLCollection to an array and loop through each element
+  Array.from(document.getElementsByClassName('follower')).forEach((follower) => {
+    // Add a click event listener to each follower element
+    follower.addEventListener('click', (e) => {
+      // Check if the clicked follower element has a 'data-url' attribute
+      if (follower.getAttribute('data-url')) {
+        // If it does, navigate to the URL specified in the 'data-url' attribute
+        window.location = follower.getAttribute('data-url');
+      }
+    });
+  });
 </script>
-
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
 
 {% schema %}
 {
   "name": "Multi Column Product",
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
       "type": "image_picker",
@@ -148,11 +183,6 @@
       "type": "product",
       "id": "second_product",
       "label": "Second Product"
-    },
-    {
-      "type": "product",
-      "id": "third_product",
-      "label": "Third Product"
     },
     {
       "type": "text",
