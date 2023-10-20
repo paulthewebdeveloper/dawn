@@ -2,17 +2,18 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "header": {
+    "header_secondary": {
       "type": "header",
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "none",
-        "absolute_header_type": "yes",
+        "absolute_header_type": "no",
         "show_line_separator": false,
-        "color_scheme": "inverse",
-        "menu_color_scheme": "inverse",
+        "use_secondary_logo": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
@@ -23,6 +24,6 @@
     }
   },
   "order": [
-    "header"
+    "header_secondary"
   ]
 }

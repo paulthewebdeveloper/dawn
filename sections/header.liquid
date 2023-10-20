@@ -33,6 +33,11 @@
     margin-left: -1.2rem;
   }
 
+  .heading-positon-absolute {
+    position: absolute;
+    width:100%;
+  }
+
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
@@ -143,7 +148,36 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} style="position:absolute; width:100%" class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- if section.settings.use_secondary_logo -%}
+    {%- assign current_logo = settings.secondary_logo -%}
+{%- else -%}
+    {%- assign current_logo = settings.logo -%}
+{%- endif -%}
+
+{%- assign logo_alt = current_logo.alt | default: shop.name | escape -%}
+{%- assign logo_aspect_ratio = current_logo.aspect_ratio -%}
+
+{%- if settings.use_secondary_logo -%}
+    {%- assign logo_width = settings.secondary_logo_width -%}
+{%- else -%}
+    {%- assign logo_width = settings.logo_width -%}
+{%- endif -%}
+
+{%- assign logo_height = logo_width | divided_by: logo_aspect_ratio -%}
+
+{%- if settings.use_secondary_logo -%}
+    {%- assign sizes = "(max-width: " | append: settings.secondary_logo_width | times: 2 | append: "px) 50vw, " | append: settings.secondary_logo_width | append: "px" -%}
+{%- else -%}
+    {%- assign sizes = "(max-width: " | append: settings.logo_width | times: 2 | append: "px) 50vw, " | append: settings.logo_width | append: "px" -%}
+{%- endif -%}
+
+{%- if settings.use_secondary_logo -%}
+    {%- assign widths = settings.secondary_logo_width | append: ", " | append: settings.secondary_logo_width | times: 1.5 | round | append: ", " | append: settings.secondary_logo_width | times: 2 -%}
+{%- else -%}
+    {%- assign widths = settings.logo_width | append: ", " | append: settings.logo_width | times: 1.5 | round | append: ", " | append: settings.logo_width | times: 2 -%}
+{%- endif -%}
+
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %} {%if section.settings.absolute_header_type != "no"%}heading-positon-absolute{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -172,17 +206,15 @@
         <h1 class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
+            {%- if current_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
+                {% capture sizes %}(max-width: {{ logo_width | times: 2 }}px) 50vw, {{ logo_width }}px{% endcapture %}
+                {% capture widths %}{{logo_width }}, {{ logo_width | times: 1.5 | round }}, {{ logo_width | times: 2 }}{% endcapture %}
+                {{ current_logo | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo motion-reduce',
                   widths: widths,
                   height: logo_height,
-                  width: settings.logo_width,
+                  width: logo_width,
                   alt: logo_alt,
                   sizes: sizes,
                   preload: true
@@ -212,17 +244,15 @@
         <h1 class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
+            {%- if current_logo != blank -%}
               <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
+                {% capture sizes %}(min-width: 750px) {{ logo_width }}px, 50vw{% endcapture %}
+                {% capture widths %}{{ logo_width }}, {{ logo_width | times: 1.5 | round }}, {{ logo_width | times: 2 }}{% endcapture %}
+                {{ current_logo | image_url: width: 600 | image_tag:
                   class: 'header__heading-logo',
                   widths: widths,
                   height: logo_height,
-                  width: settings.logo_width,
+                  width: logo_width,
                   alt: logo_alt,
                   sizes: sizes,
                   preload: true
@@ -462,8 +492,8 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": {{ shop.name | json }},
-    {% if settings.logo %}
-      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {% if current_logo %}
+      "logo": {{ current_logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},
@@ -580,10 +610,32 @@
       "label": "t:sections.header.settings.sticky_header_type.label"
     },
     {
+      "type": "select",
+      "id": "absolute_header_type",
+      "options": [
+        {
+          "value": "no",
+          "label": "No"
+        },
+        {
+          "value": "yes",
+          "label": "Yes"
+        }
+      ],
+      "default": "no",
+      "label": "Absolute Header?"
+    },
+    {
       "type": "checkbox",
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_secondary_logo",
+      "default": false,
+      "label": "Use secondary logo?"
     },
     {
       "type": "header",

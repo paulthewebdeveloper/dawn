@@ -93,7 +93,7 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
-.page-width {
+/* .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -156,7 +156,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     max-width: var(--page-width);
     padding: 0 5rem;
   }
-}
+} */
 
 .isolate {
   position: relative;
@@ -1138,6 +1138,10 @@ summary::-webkit-details-marker {
 
 .media--transparent {
   background-color: transparent;
+}
+
+.media--background {
+  background-color: #e8e8e8;
 }
 
 .media > *:not(.zoom):not(.deferred-media__poster-button),

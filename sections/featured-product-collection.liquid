@@ -1,4 +1,4 @@
-<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} padding-section">
+<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="margin-bottom-div">
     <h2 class="{{ section.settings.heading_font_style_one }} m-0 lh title inline-richtext h0 scroll-trigger animate--slide-in color-red">
       Le Cercle
@@ -53,10 +53,6 @@
     height: auto;
   }
 
-  .padding-section {
-    padding: 0 1.5rem;
-  }
-
   .color-red {
     color: #a60632;
   }
@@ -90,10 +86,6 @@
   }
 
   @media screen and (min-width: 990px) {
-    .padding-section {
-      padding: 0 3rem; /* Increase padding on larger screens */
-    }
-
     .flex-gap-div {
       flex-direction: row; /* Make items side-by-side on larger screens */
     }

@@ -101,7 +101,7 @@
         <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
-    <div class="product__media media media--transparent">
+    <div class="product__media media media--backdrop">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,
         loading: lazy,
@@ -118,9 +118,9 @@
 
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}
-      <product-model class="deferred-media media media--transparent no-js-hidden" data-media-id="{{ media.id }}">
+      <product-model class="deferred-media media media--backdrop no-js-hidden" data-media-id="{{ media.id }}">
     {%- else -%}
-      <deferred-media class="deferred-media media media--transparent no-js-hidden" data-media-id="{{ media.id }}">
+      <deferred-media class="deferred-media media media--backdrop no-js-hidden" data-media-id="{{ media.id }}">
     {%- endif -%}
     <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
       <span class="deferred-media__poster-button motion-reduce">

@@ -2,6 +2,7 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/nadine_aysoy_logo.svg",
     "logo_width": 180,
+    "secondary_logo": "shopify:\/\/shop_images\/nadine_aysoy_logo_black.svg",
     "type_header_font": "assistant_n4",
     "heading_scale": 150,
     "type_body_font": "assistant_n4",
@@ -133,18 +134,18 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#636363",
+          "button": "#a60632",
+          "button_label": "#fff",
+          "secondary_button_label": "#a60632",
+          "shadow": "#636363"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#ffffff",
+          "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#636363",
           "button": "#000000",
@@ -155,7 +156,7 @@
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
