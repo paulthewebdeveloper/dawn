@@ -30,8 +30,10 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
       "type": "featured-collection",
       "settings": {
-        "title": "Our Favourites",
-        "heading_font_style": "font-grifinito-italic",
+        "title": "",
+        "title_special": "Our Favourites",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-light",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
@@ -153,10 +155,10 @@
         "title_normal": "Explore Our",
         "title_red": "Categories",
         "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
+        "heading_font_style_one": "font-grifinito-light",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-grifinito-light",
+        "link_font_style": "font-grifinito-light-italic"
       }
     },
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
@@ -166,8 +168,8 @@
         "product": "catena-autum-eternity-ring",
         "title": "",
         "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-italic",
-        "heading_font_style_two": "font-grifinito-regular",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-helvetica-now-micro-light",
         "link_font_style": "font-grifinito-regular"
       }
@@ -199,8 +201,10 @@
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bracelets",
-        "heading_font_style": "font-grifinito-italic",
+        "title": "",
+        "title_special": "Bracelets",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-light",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",

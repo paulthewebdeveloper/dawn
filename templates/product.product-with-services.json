@@ -92,59 +92,6 @@
         "columns_mobile": "2"
       }
     },
-    "f25a05c4-5cd2-425d-b77c-cb2b8136249e": {
-      "type": "fourbyfour",
-      "blocks": {
-        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
-            "title": "Lilly Collins - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
-          }
-        },
-        "7a995718-081d-4a18-a01a-dd97ae2b691d": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
-            "title": "Sabrina Claudio",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
-          }
-        },
-        "1b11cff4-c77d-436c-8437-ee3b34c2162e": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ahsley_park_in_nadine_aysoy.webp",
-            "title": "Ashley Park - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
-          }
-        },
-        "ff904bca-7d77-4eb0-8040-65e374fe2d11": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
-            "title": "Lilly Collins - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440",
-        "7a995718-081d-4a18-a01a-dd97ae2b691d",
-        "1b11cff4-c77d-436c-8437-ee3b34c2162e",
-        "ff904bca-7d77-4eb0-8040-65e374fe2d11"
-      ],
-      "settings": {
-        "title": "Featured",
-        "title_special": "By",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-light",
-        "heading_font_style_two": "font-grifinito-light-italic",
-        "heading_font_style_subheading": "font-helvetica-now-micro-medium",
-        "heading_font_style_body": "font-helvetica-now-micro-regular"
-      }
-    },
     "64bc0d2d-08f8-4887-9a9e-0cccb7a9962a": {
       "type": "featured-collection",
       "settings": {
@@ -177,12 +124,65 @@
         "padding_top": 124,
         "padding_bottom": 0
       }
+    },
+    "f25a05c4-5cd2-425d-b77c-cb2b8136249e": {
+      "type": "fourbyfour",
+      "blocks": {
+        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/COVER_Bvlgari_Holiday_Season_Campaign_2_1.png",
+            "title": "Expert Advice",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "7a995718-081d-4a18-a01a-dd97ae2b691d": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rb9lSwpV-bvlgari-festive-serpenti-20191-1200x900_1.png",
+            "title": "Digital Warranty",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "1b11cff4-c77d-436c-8437-ee3b34c2162e": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vQPh2PbQ-bvlgari-holiday-2019-campaign-2-1-1200x900_1_1.png",
+            "title": "Complimentary Shipping",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "ff904bca-7d77-4eb0-8040-65e374fe2d11": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bvlgari-glam-rebel-serpenti-forever_1.png",
+            "title": "Complimentary Exchanges",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440",
+        "7a995718-081d-4a18-a01a-dd97ae2b691d",
+        "1b11cff4-c77d-436c-8437-ee3b34c2162e",
+        "ff904bca-7d77-4eb0-8040-65e374fe2d11"
+      ],
+      "settings": {
+        "title": "Exclusive",
+        "title_special": "Services",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-light",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "heading_font_style_subheading": "font-helvetica-now-micro-medium",
+        "heading_font_style_body": "font-helvetica-now-micro-regular"
+      }
     }
   },
   "order": [
     "product-main",
     "related-products",
-    "f25a05c4-5cd2-425d-b77c-cb2b8136249e",
-    "64bc0d2d-08f8-4887-9a9e-0cccb7a9962a"
+    "64bc0d2d-08f8-4887-9a9e-0cccb7a9962a",
+    "f25a05c4-5cd2-425d-b77c-cb2b8136249e"
   ]
 }
