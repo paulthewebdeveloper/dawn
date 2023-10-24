@@ -1,7 +1,46 @@
 {
   "sections": {
+    "a98c27da-1594-46f2-974f-f0640fc09a00": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "41031322-825d-42b1-ad5f-df3f7867d6fb": {
+          "type": "heading",
+          "settings": {
+            "heading": "ALL JEWELLERY",
+            "heading_size": "h0",
+            "heading_font_style": "font-grifinito-light-italic"
+          }
+        },
+        "decd134e-de70-4829-a00b-308ee83dfacf": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
+            "text_style": "body",
+            "body_font_style": "font-helvetica-now-micro-regular"
+          }
+        }
+      },
+      "block_order": [
+        "41031322-825d-42b1-ad5f-df3f7867d6fb",
+        "decd134e-de70-4829-a00b-308ee83dfacf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -9,23 +48,25 @@
       }
     },
     "product-grid": {
-      "type": "main-collection-product-grid",
+      "type": "custom-main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "columns_mobile": "2"
       }
     }
   },
   "order": [
+    "a98c27da-1594-46f2-974f-f0640fc09a00",
     "banner",
     "product-grid"
   ]

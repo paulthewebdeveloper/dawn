@@ -558,7 +558,11 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {%- if template == 'index' -%}
+    <script>
+      console.log({{template | json}})
+    </script>
+
+    {%- if template == 'index' or template == 'collection' -%}
       {%- sections 'header-group' -%}
     {%- else -%}
       {%- sections 'header-group-secondary' -%}
