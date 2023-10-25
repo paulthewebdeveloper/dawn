@@ -229,29 +229,47 @@
 </div>
 
 <style>
+  /* Default Mobile Layout */
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .small-banner {
+  .small-banner,
+  .large-banner {
     grid-row: span 2;
+    grid-column: span 1;
+  }
+
+  /* Tablet Layout */
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Desktop Layout */
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .large-banner {
+      grid-column: span 2;
+    }
+  }
+
+  /* Other styles you already have */
+  .small-banner {
     height: 100%;
   }
 
   .large-banner {
-    grid-row: span 2;
-    grid-column: span 2;
     height: 100%;
   }
 
-  .small-banner > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
+  .small-banner > img,
   .large-banner > img {
     height: 100%;
     width: 100%;

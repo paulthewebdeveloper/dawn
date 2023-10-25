@@ -1,0 +1,81 @@
+<div>
+  <div>
+    <div></div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div>
+    <h2>CATENA COLLECTION</h2>
+    <p>
+      Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title
+      ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is anything but
+      traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the Rainbow bangle
+      spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow gold band.
+    </p>
+    <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+      {%
+        render 'card-product',
+        card_product: section.settings.product,
+        media_aspect_ratio: 'adapt',
+        extend_height: true,
+      %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Product Section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:sections.featured-product.settings.product.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_image",
+      "name": "Product Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Choose an image"
+        }
+      ]
+    },
+    {
+      "type": "product_description",
+      "name": "Product Description",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Product Name",
+          "default": "CATENA RAINBOW BAGLE"
+        },
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "Description",
+          "default": "Description here..."
+        },
+        {
+          "type": "text",
+          "id": "product_price",
+          "label": "Price",
+          "default": "$4,245.00 USD"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Featured Section"
+    }
+  ]
+}
+{% endschema %}

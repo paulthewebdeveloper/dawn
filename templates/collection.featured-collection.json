@@ -6,7 +6,7 @@
         "41031322-825d-42b1-ad5f-df3f7867d6fb": {
           "type": "heading",
           "settings": {
-            "heading": "ALL JEWELLERY",
+            "heading": "{{ collection.title }}",
             "heading_size": "h0",
             "heading_font_style": "font-grifinito-light-italic"
           }
@@ -75,6 +75,7 @@
         "e84944f8-26ed-45db-866c-01bc80dfb89a",
         "fc113a38-6056-4f7b-a711-fd6c1d1caead"
       ],
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
