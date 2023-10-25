@@ -49,6 +49,32 @@
     },
     "product-grid": {
       "type": "custom-main-collection-product-grid",
+      "blocks": {
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/catena_collection_banner.png",
+            "title": "CATENA COLLECTION",
+            "description": "EXPLORE MORE",
+            "heading_font_style": "font-grifinito-regular",
+            "body_font_style": "font-grifinito-regular"
+          }
+        },
+        "b4f1a694-303d-4526-a601-bacc735a544f": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/catena_multi_stone.png",
+            "title": "Catena Multi Stone Rainbow Tennis Necklace",
+            "description": "Discover More",
+            "heading_font_style": "font-grifinito-regular",
+            "body_font_style": "font-grifinito-regular"
+          }
+        }
+      },
+      "block_order": [
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394",
+        "b4f1a694-303d-4526-a601-bacc735a544f"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
