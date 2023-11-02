@@ -38,6 +38,118 @@
         "show_text_below": true
       }
     },
+    "59ee2c9a-1ac0-4492-a105-0ae00de8b4b6": {
+      "type": "custom-product-section",
+      "blocks": {
+        "a2945ef5-4908-4b57-8096-31a775f0354e": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/main-banner.jpg"
+          }
+        },
+        "86f0b242-a478-4983-98a1-1da81a4e40e8": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-multicoloured-gemstone-rainbow-bangle_20847769_45954467_1000.png"
+          }
+        },
+        "e2037d1d-9750-4d0c-aa58-84396b6aaebf": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-multicoloured-gemstone-rainbow-bangle_20847769_45954481_1000.png"
+          }
+        }
+      },
+      "block_order": [
+        "a2945ef5-4908-4b57-8096-31a775f0354e",
+        "86f0b242-a478-4983-98a1-1da81a4e40e8",
+        "e2037d1d-9750-4d0c-aa58-84396b6aaebf"
+      ],
+      "settings": {
+        "product": "catena-autumn-bangle",
+        "heading_font_style": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular"
+      }
+    },
+    "f25a05c4-5cd2-425d-b77c-cb2b8136249e": {
+      "type": "fourbyfour",
+      "blocks": {
+        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
+            "title": "Lilly Collins - Emily In Paris",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "7a995718-081d-4a18-a01a-dd97ae2b691d": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
+            "title": "Sabrina Claudio",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "1b11cff4-c77d-436c-8437-ee3b34c2162e": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ahsley_park_in_nadine_aysoy.webp",
+            "title": "Ashley Park - Emily In Paris",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        },
+        "ff904bca-7d77-4eb0-8040-65e374fe2d11": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
+            "title": "Lilly Collins - Emily In Paris",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440",
+        "7a995718-081d-4a18-a01a-dd97ae2b691d",
+        "1b11cff4-c77d-436c-8437-ee3b34c2162e",
+        "ff904bca-7d77-4eb0-8040-65e374fe2d11"
+      ],
+      "settings": {
+        "title": "Featured",
+        "title_special": "By",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-light",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "heading_font_style_subheading": "font-helvetica-now-micro-medium",
+        "heading_font_style_body": "font-helvetica-now-micro-regular"
+      }
+    },
+    "e52190c9-68e9-4761-978a-00b7e8c65497": {
+      "type": "feature-product-list",
+      "blocks": {
+        "9eb1e01b-1a2f-467e-b229-12975545be03": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/cercle_main_5defc9d8-c79c-4b57-9bc5-7ff3ad202810.jpg"
+          }
+        },
+        "4af9d083-896f-451d-8128-f54d99ccb46a": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/Flower_Earring_DSC5450_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "9eb1e01b-1a2f-467e-b229-12975545be03",
+        "4af9d083-896f-451d-8128-f54d99ccb46a"
+      ],
+      "settings": {
+        "product": "",
+        "heading_font_style": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -90,11 +202,34 @@
         "enable_sorting": true,
         "columns_mobile": "2"
       }
+    },
+    "57a715a4-7195-425a-acff-98737b2f4729": {
+      "type": "feature-product-list-vertical",
+      "blocks": {
+        "7469af5b-482d-4d00-a3d3-325947bc7035": {
+          "type": "product_image",
+          "settings": {
+            "product_image": "shopify:\/\/shop_images\/Flower_Earring_DSC5450_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "7469af5b-482d-4d00-a3d3-325947bc7035"
+      ],
+      "settings": {
+        "product": "",
+        "heading_font_style": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular"
+      }
     }
   },
   "order": [
     "a98c27da-1594-46f2-974f-f0640fc09a00",
+    "59ee2c9a-1ac0-4492-a105-0ae00de8b4b6",
+    "e52190c9-68e9-4761-978a-00b7e8c65497",
     "banner",
-    "product-grid"
+    "product-grid",
+    "57a715a4-7195-425a-acff-98737b2f4729",
+    "f25a05c4-5cd2-425d-b77c-cb2b8136249e"
   ]
 }

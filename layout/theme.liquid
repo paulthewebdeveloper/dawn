@@ -562,7 +562,7 @@
       console.log({{template | json}})
     </script>
 
-    {%- if template == 'index' or template == 'collection' -%}
+    {%- if template == 'index' or template contains 'collection' -%}
       {%- sections 'header-group' -%}
     {%- else -%}
       {%- sections 'header-group-secondary' -%}
