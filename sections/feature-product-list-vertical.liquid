@@ -1,161 +1,78 @@
-<div class="container">
-  <div class="main-flex">
-    <!-- first section -->
-    <div class="first">
-      {% if section.blocks[0] %}
-        {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
-      {% endif %}
-    </div>
-    <!-- second section -->
-    <div class="second">
-      <div class="text-section">
-        <h2 class="{{section.settings.heading_font_style}}">CATENA COLLECTION</h2>
-        <p class="{{section.settings.body_font_style}} description">
-          Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the
-          title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is
-          anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the
-          Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow
-          gold band.
-        </p>
-      </div>
-      <div class="product-card">
-        {% render 'card-product',
-          card_product: section.settings.product,
-          show_secondary_image: section.settings.second_image
-        %}
-      </div>
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.image_shape == 'blob' %}
+  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- if section.settings.enable_quick_add -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<div class="main-container">
+  <div class="flex-column">
+    <div>
+      {%- for product in collection.products limit: 3 -%}
+        <div
+          class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: section.settings.image_ratio,
+            image_shape: section.settings.image_shape,
+            show_secondary_image: section.settings.show_secondary_image,
+            show_vendor: section.settings.show_vendor,
+            show_rating: section.settings.show_rating,
+            lazy_load: lazy_load,
+            show_quick_add: section.settings.enable_quick_add,
+            section_id: section.id
+          %}
+        </div>
+      {% endfor %}
     </div>
   </div>
-  <div class="image-flex hide-on-mobile" style="width:70%;padding-right:16px">
-    {% for block in section.blocks offset: 1 %}
-      <div class="test">
-        {{ block.settings.product_image | image_url: width: 1024 | image_tag }}
-      </div>
-    {% endfor %}
+  <div style="width:100%">
+    {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
   </div>
 </div>
 
 <style>
-  h2,
-  p {
-    margin: 0;
-  }
-
-  .container {
+  .main-container {
     display: flex;
-    flex-direction: column;
     gap: 24px;
+    height: 100vh;
   }
 
-  .main-flex,
-  .image-flex {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-    flex: 1 1 auto;
-  }
-
-  .first {
-    flex: 1 1 auto;
-    width: 70%;
-    display: flex;
-    height: 700px;
-  }
-
-  .second {
-    flex: 1 1 auto;
-    width: 30%;
+  .flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 700px;
-  }
-
-  .text-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .description {
-    font-size: 1.1rem;
   }
 
   img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
   }
 
-  .test {
-    background-color: #f8f8f8;
-    padding: 3rem;
-    height: 400px;
-  }
-
-  .test > img {
-    object-fit: contain;
-  }
-
-  @media (max-width: 992px) {
-    .main-flex,
-    .image-flex {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .first,
-    .second {
-      width: 100%;
-      height: auto;
-    }
-
-    .second {
-      display: block;
-    }
-
-    .image-flex {
-      flex-direction: row;
-      overflow-x: auto;
-      width: 100%;
-    }
-
-    .test {
-      flex: 0 0 auto; /* This will prevent the items from stretching and only take up as much width as they need */
-    }
-
-    .hide-on-mobile {
-      display: none;
-    }
-  }
-
-  /* For mobile devices */
-  @media (max-width: 576px) {
-    .text-section h2 {
-      font-size: 1.5rem;
-    }
-
-    .description {
-      font-size: 1rem;
-    }
-
-    .image-flex {
-      gap: 16px;
-    }
-
-    .test {
-      padding: 1.5rem;
-      height: 300px;
-    }
-
-    .hide-on-mobile {
-      display: none;
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column; /* stack children vertically on small screens */
+      height: 100%;
     }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Custom Product Section",
+  "name": "Featured Product List 2",
   "class": "section",
   "tag": "section",
   "settings": [
@@ -356,53 +273,8 @@
   ],
   "presets": [
     {
-      "name": "Custom Featured Section"
+      "name": "Featured Product List 2"
     }
   ]
 }
 {% endschema %}
-
-{% comment %}
-  <div class="outer-wrapper">
-    <div class="wrapper flex-box-wrapper">
-      <!-- First div (with product images) -->
-      <div class="test">
-        <div>
-          {% if section.blocks[0] %}
-            {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
-          {% endif %}
-        </div>
-      </div>
-
-      <!-- Second div (with the CATENA COLLECTION details) -->
-      <div class="basis-45">
-        <div class="collection-text">
-          <h2 class="{{section.settings.heading_font_style}}">CATENA COLLECTION</h2>
-          <p class="{{section.settings.body_font_style}}" style="font-size:1rem;">
-            Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the
-            title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is
-            anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the
-            Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow
-            gold band.
-          </p>
-        </div>
-        {% comment %}
-          <div style="width:100%">
-            {%
-              render 'card-product',
-              card_product: section.settings.product,
-              show_secondary_image: section.settings.second_image,
-            %}
-          </div>
-        {% endcomment %}
-      </div>
-    </div>
-    <div>
-      {% for block in section.blocks offset: 1 %}
-        <div class="image-container">
-          {{ block.settings.product_image | image_url: width: 1024 | image_tag }}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-{% endcomment %}

@@ -201,7 +201,7 @@
         "type": "range",
         "id": "spacing_sections_horizontal",
         "min": 0,
-        "max": 124,
+        "max": 164,
         "step": 2,
         "unit": "px",
         "label": "Horizontal spacing",

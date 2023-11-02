@@ -1,25 +1,29 @@
 <!-- snippets/feature-block.liquid -->
 <div>
-  <div class="img-container">
+  <div class="fb-img-container">
     {{ block.settings.image | image_url: height: '350px' | image_tag }}
   </div>
-  <div>
+  <div style="display:flex;flex-direction:column; margin-top:24px;">
     <h2 style="font-size:1.5rem" class="{{ block.settings.heading_font_style_subheading }}">
       {{ block.settings.title }}
     </h2>
-    <p style="font-size:1rem" class="{{ block.settings.heading_font_style_body }}">
+    <p style="font-size:1rem; margin-top:12px;" class="{{ block.settings.heading_font_style_body }}">
       {{ block.settings.description }}
     </p>
   </div>
 </div>
 
 <style>
-  .img-container {
+  h2,
+  p {
+    margin: 0;
+  }
+  .fb-img-container {
     height: 400px;
     overflow: hidden;
   }
 
-  .img-container > img {
+  .fb-simg-container > img {
     height: 100%;
     object-fit: cover;
   }
