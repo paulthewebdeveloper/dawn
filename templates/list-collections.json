@@ -1,15 +1,125 @@
 {
   "sections": {
+    "ef1a7a08-d7fc-49ee-86a7-a8f34a8b3db0": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "83b488d3-fd42-47ad-9e18-3fa2baa82f5a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collections",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "90b46ac6-cda2-447e-a883-ce98171d6a7e": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
+            "text_style": "body",
+            "body_font_style": "font-helvetica-now-micro-regular"
+          }
+        }
+      },
+      "block_order": [
+        "83b488d3-fd42-47ad-9e18-3fa2baa82f5a",
+        "90b46ac6-cda2-447e-a883-ce98171d6a7e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "32cb44a3-ede4-4c5c-a3c3-7c2dd4144133": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_special": "Bracelets",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bracelets",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
+      }
+    },
+    "f9a9baf5-dd70-4d68-8f8c-84a31078d2b5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_special": "Le Cercle",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "le-cercle",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "main"
+    "ef1a7a08-d7fc-49ee-86a7-a8f34a8b3db0",
+    "main",
+    "32cb44a3-ede4-4c5c-a3c3-7c2dd4144133",
+    "f9a9baf5-dd70-4d68-8f8c-84a31078d2b5"
   ]
 }

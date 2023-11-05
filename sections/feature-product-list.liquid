@@ -88,67 +88,24 @@
 
   /* Media query for large tablets and below */
   @media (max-width: 1024px) {
-    h2 {
-      font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1024 - 320)));
-    }
-
-    p {
-      font-size: 16px;
-    }
   }
 
   /* Media query for small tablets and below */
   @media (max-width: 768px) {
-    .fp-container {
-      flex-direction: column;
-    }
-    h2 {
-      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
-    }
-
-    p {
-      font-size: 15px;
-    }
-
-    .fp-product-container {
-      flex-direction: column;
-    }
   }
 
   /* Media query for mobile phones and below */
   @media (max-width: 480px) {
-    h2 {
-      font-size: 16px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-
-    .fp-container {
-      gap: 16px;
-    }
-
-    .fp-text-section {
-      gap: 16px;
-    }
   }
 
   /* Adjustments for product grid on different viewports */
   @media (min-width: 769px) {
-    .fp-container > div {
-      flex: 1;
-    }
   }
+
   @media (max-width: 768px) and (min-width: 481px) {
-    .fp-container > div {
-      flex-basis: 50%;
-    }
   }
+
   @media (max-width: 480px) {
-    .fp-container > div {
-      flex-basis: 100%;
-    }
   }
 </style>
 
