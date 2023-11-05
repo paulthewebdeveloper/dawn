@@ -1,0 +1,603 @@
+<section class="{{ section.settings.color_scheme }} main-section">
+  <div class="header-section">
+    <h2 class="heading-one {{section.settings.heading_font_style_one}}">NADINE AYSOY</h2>
+    <h2 class="heading-two {{section.settings.heading_font_style_two}}">AWARDS</h2>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="awards-list">
+      {% for block in section.blocks %}
+        <div class="award">
+          <div class="award-header">
+            <h3 class="award-name {{section.settings.link_font_style}}">
+              {{ block.settings.award_name }}
+            </h3>
+            <h3 class="award-year {{section.settings.link_font_style}}">
+              {{ block.settings.award_year }}
+            </h3>
+          </div>
+          <div class="separator"></div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <p class="description {{section.settings.body_font_style}}">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</section>
+
+<style>
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+  h3 {
+    line-height: 0.8;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .awards-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .heading-one {
+    font-size: 7rem;
+    color: #a60632;
+  }
+
+  .heading-two {
+    font-size: 7rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  .award {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .award-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .award-name {
+    font-size: 6rem;
+    width: 275px;
+    text-transform: uppercase;
+  }
+
+  .award-year {
+    font-size: 3rem;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #636363;
+    display: flex !important;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .header-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-end;
+    }
+
+    .content-wrapper {
+      flex-direction: row;
+    }
+
+    .heading-one {
+      font-size: 7rem;
+      color: #a60632;
+    }
+
+    .heading-two {
+      font-size: 7rem;
+    }
+
+    .awards-list {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .award {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .award-name {
+      font-size: 6rem;
+      width: 275px;
+      text-transform: uppercase;
+    }
+
+    .award-year {
+      font-size: 3rem;
+    }
+
+    .separator {
+      width: 100%;
+      height: 1px;
+      background-color: #636363;
+      display: flex !important;
+    }
+
+    .description {
+      width: 40%;
+      font-size: 1.2rem;
+    }
+
+    .awards-list {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Featured Awards",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Main Product"
+    },
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Featured Collection"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_style_one",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "heading_font_style_two",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "body_font_style",
+      "label": "Body Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "link_font_style",
+      "label": "Link Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "award",
+      "name": "Award",
+      "settings": [
+        {
+          "type": "text",
+          "id": "award_name",
+          "label": "Award Name",
+          "default": "UK NEW DESIGNER OF THE YEAR"
+        },
+        {
+          "type": "text",
+          "id": "award_year",
+          "label": "Year",
+          "default": "2018"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Awards",
+      "settings": {
+        "title": "Featured Awards"
+      }
+    }
+  ]
+}
+{% endschema %}
