@@ -247,15 +247,15 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
-        "8f8936ab-376b-40ed-97af-2217353e5783": {
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_portrait.jpg",
+            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         },
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
+        "29f2ce6a-bca2-4569-9272-011f4507d42f": {
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
@@ -266,8 +266,8 @@
       },
       "block_order": [
         "2223899d-77dc-4744-890d-ab8041d195a5",
-        "8f8936ab-376b-40ed-97af-2217353e5783",
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760"
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760",
+        "29f2ce6a-bca2-4569-9272-011f4507d42f"
       ],
       "settings": {
         "heading_font_style": "font-grifinito-light-italic"
