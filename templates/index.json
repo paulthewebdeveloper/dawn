@@ -64,11 +64,16 @@
       "type": "video",
       "settings": {
         "heading": "",
+        "heading_special": "Special",
+        "description": "",
+        "heading_font_style": "font-grifinito-regular",
+        "heading_special_font_style": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
         "cover_image": "shopify:\/\/shop_images\/pink-tennis-necklace.jpg",
-        "description": "",
+        "alt_text": "",
         "full_width": true,
         "color_scheme": ""
       }
@@ -230,6 +235,43 @@
         "padding_top": 124,
         "padding_bottom": 124
       }
+    },
+    "d810a605-312e-4cd8-bedc-9fccf02f9070": {
+      "type": "special-press",
+      "blocks": {
+        "2223899d-77dc-4744-890d-ab8041d195a5": {
+          "type": "press",
+          "settings": {
+            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "8f8936ab-376b-40ed-97af-2217353e5783": {
+          "type": "press",
+          "settings": {
+            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_portrait.jpg",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
+          "type": "press",
+          "settings": {
+            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        }
+      },
+      "block_order": [
+        "2223899d-77dc-4744-890d-ab8041d195a5",
+        "8f8936ab-376b-40ed-97af-2217353e5783",
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760"
+      ],
+      "settings": {
+        "heading_font_style": "font-grifinito-light-italic"
+      }
     }
   },
   "order": [
@@ -240,6 +282,7 @@
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "24446479-442f-4e70-817a-f6ee5a0e705f",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77"
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }

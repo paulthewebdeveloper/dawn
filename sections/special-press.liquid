@@ -1,0 +1,420 @@
+<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+  <div class="custom-bg-color fp-section-padding full-height-section">
+    <div>
+      <h2 class="{{section.settings.heading_font_style}} press-heading">As Seen On</h2>
+    </div>
+    <div class="fp-flex-container">
+      <div class="fp-press-image-container">
+        <div class="fp-press-image-screen">
+          {% for block in section.blocks %}
+            <div class="banner-image" style="height:100%;width:100%">
+              {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="fp-text-container">
+        <div>
+          {% for block in section.blocks %}
+            <div class="fp-press-block">
+              <div class="separator"></div>
+              <div class="fp-press-block-content">
+                <svg
+                  class="fp-quote-icon"
+                  width="24"
+                  height="11"
+                  viewBox="0 0 24 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5.48211 11.0059L6.57263 9.93007L2.93263 6.29007L24 6.29007L24 4.75744L2.93263 4.75744L6.57263 1.11744L5.48211 0.0416482L4.79261e-07 5.52375L5.48211 11.0059Z" fill="#A60632"/>
+                </svg>
+                <h3 class="{{block.settings.heading_font_style}}">{{ block.settings.press_text }}</h3>
+              </div>
+              {% if forloop.last %}
+                <div class="separator"></div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <p class="fp-description-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac
+          habitasse platea dictumst. Donec at erat erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Wait for the DOM to load
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select all the .fp-press-block elements
+    var pressBlocks = document.querySelectorAll('.fp-press-block');
+
+    function highlightBlock(index) {
+      gsap.to(this.querySelectorAll('.separator'), { backgroundColor: '#a60632' }, 0.3);
+      gsap.to(this.querySelectorAll('h3'), { color: '#a60632' }, 0.3);
+      if (index !== 0) {
+        gsap.to('.fp-press-image-screen', { yPercent: -100 * index, delay: 0.1, duration: 0.85, ease: 'expo.out' });
+      }
+    }
+
+    function unhighlightBlock(index) {
+      gsap.to(this.querySelectorAll('.separator'), { backgroundColor: '#636363' }, 0.3);
+      gsap.to(this.querySelectorAll('h3'), { color: '#636363' }, 0.3);
+      if (index !== 0) {
+        gsap.to('.fp-press-image-screen', { yPercent: 0, delay: 0.1, duration: 0.85, ease: 'expo.out' });
+      }
+    }
+
+    // Add event listeners for each block
+    pressBlocks.forEach(function (block, index) {
+      block.addEventListener('mouseenter', function () {
+        highlightBlock.call(block, index);
+      });
+      block.addEventListener('mouseleave', function () {
+        unhighlightBlock.call(block, index);
+      });
+    });
+  });
+</script>
+
+<style>
+  .full-height-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #636363;
+    display: flex !important;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .custom-bg-color {
+    background-color: #e3c6b1;
+  }
+
+  .press-heading {
+    text-align: center;
+    margin: -15rem 0 0 0;
+    font-size: 7.5rem;
+  }
+
+  /* New classes with fp- prefix for the inline styles */
+  .fp-section-padding {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0;
+  }
+
+  .fp-press-image-container {
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .fp-press-image-screen {
+    height: 100%;
+    width: 100%;
+  }
+
+  .fp-flex-container {
+    display: flex;
+    gap: 24px;
+    padding: 0 124px;
+    height: 100%; /* Make sure the parent has a defined height or flex properties to stretch its children */
+  }
+
+  .fp-text-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* This will make the element grow to occupy the height */
+  }
+
+  .fp-press-block {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .fp-press-block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 24px;
+  }
+
+  .fp-quote-icon {
+    fill: #a60632;
+  }
+
+  .fp-description-paragraph {
+    /* Styles for p elements, any specific styles for this paragraph should be added here */
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .full-height-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .fp-flex-container {
+      flex-direction: column;
+      padding: 0 20px; /* Adjust padding as needed for smaller screens */
+    }
+
+    /* Update the widths of the child containers since they're now stacked */
+    .fp-press-image-container,
+    .fp-text-container {
+      width: 100%;
+      justify-content: normal;
+      gap: 24px;
+    }
+
+    .fp-press-image-container {
+      height: 500px; /* Adjust height as needed for the new layout */
+    }
+
+    .full-height-section {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Special Press",
+  "class": "section no-padding",
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_font_style",
+      "label": "Heading Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "press",
+      "name": "Press",
+      "settings": [
+        {
+          "type": "text",
+          "id": "press_text",
+          "label": "Text",
+          "default": "VOGUE MEXICO JANUARY 2018"
+        },
+        {
+          "type": "image_picker",
+          "id": "press_image",
+          "label": "Press Image",
+          "info": "Upload the image that appears in the 'As Seen On' section."
+        },
+        {
+          "type": "select",
+          "id": "heading_font_style",
+          "label": "Heading Font Style",
+          "default": "font-grifinito-regular",
+          "options": [
+            {
+              "value": "font-grifinito-regular",
+              "label": "GrifinitoL Regular"
+            },
+            {
+              "value": "font-grifinito-bold",
+              "label": "GrifinitoL Bold"
+            },
+            {
+              "value": "font-grifinito-bold-italic",
+              "label": "GrifinitoL Bold Italic"
+            },
+            {
+              "value": "font-grifinito-italic",
+              "label": "GrifinitoL Italic"
+            },
+            {
+              "value": "font-grifinito-light",
+              "label": "GrifinitoL Light"
+            },
+            {
+              "value": "font-grifinito-light-italic",
+              "label": "GrifinitoL Light Italic"
+            },
+            {
+              "value": "font-grifinito-medium",
+              "label": "GrifinitoL Medium"
+            },
+            {
+              "value": "font-grifinito-medium-italic",
+              "label": "GrifinitoL Medium Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-regular",
+              "label": "HelveticaNowMicro Regular"
+            },
+            {
+              "value": "font-helvetica-now-micro-reg-ita",
+              "label": "HelveticaNowMicro Regular Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-medium",
+              "label": "HelveticaNowMicro Medium"
+            },
+            {
+              "value": "font-helvetica-now-micro-med-ita",
+              "label": "HelveticaNowMicro Medium Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-light",
+              "label": "HelveticaNowMicro Light"
+            },
+            {
+              "value": "font-helvetica-now-micro-light-italic",
+              "label": "HelveticaNowMicro Light Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-extra-light",
+              "label": "HelveticaNowMicro Extra Light"
+            },
+            {
+              "value": "font-helvetica-now-micro-extra-bold",
+              "label": "HelveticaNowMicro Extra Bold"
+            },
+            {
+              "value": "font-helvetica-now-micro-ext-lt-ita",
+              "label": "HelveticaNowMicro Extra Light Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-ext-bd-ita",
+              "label": "HelveticaNowMicro Extra Bold Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-bold-italic",
+              "label": "HelveticaNowMicro Bold Italic"
+            },
+            {
+              "value": "font-helvetica-now-micro-bold",
+              "label": "HelveticaNowMicro Bold"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Special Press",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
