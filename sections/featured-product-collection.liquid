@@ -1,30 +1,30 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-  <div class="margin-bottom-div">
-    <h2 class="{{ section.settings.heading_font_style_one }} m-0 lh title inline-richtext h0 scroll-trigger animate--slide-in color-red">
+  <div class="mb-24">
+    <h2 class="{{ section.settings.heading_font_style_one }} m-0 lh-08 title inline-richtext h0 scroll-trigger animate--slide-in special-red">
       Le Cercle
     </h2>
-    <h2 class="{{ section.settings.heading_font_style_two }} m-0 lh title inline-richtext h0 scroll-trigger animate--slide-in">
+    <h2 class="{{ section.settings.heading_font_style_two }} m-0 lh-08 title inline-richtext h0 scroll-trigger animate--slide-in">
       Jewellery Collection
     </h2>
   </div>
-  <div class="flex-gap-div">
-    <div class="width-100 scroll-trigger animate--slide-in">
+  <div class="jd-responsive-flex gap-24">
+    <div class="w-100 scroll-trigger animate--slide-in">
       {{ section.settings.image | image_url: width: 1024 | image_tag }}
     </div>
-    <div class="width-100">
+    <div class="w-100">
       <p {{ section.settings.body_font_style }} class="m-0 scroll-trigger animate--slide-in">
         Consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at
         erat erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In
         hac habitasse platea dictumst.
       </p>
-      <div class="flex-center-gap-div scroll-trigger animate--slide-in">
+      <div class="jd-flex gap-24 align-items-center scroll-trigger animate--slide-in">
         <a class="{{ section.settings.link_font_style }} large-font">EXPLORE MORE</a>
         <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18.5179 0.517578L17.4274 1.59337L21.0674 5.23337H0V6.766H21.0674L17.4274 10.406L18.5179 11.4818L24 5.99968L18.5179 0.517578Z" fill="#636363" />
         </svg>
       </div>
     </div>
-    <div class="width-70">
+    <div class="jd-proudct-container">
       <div class="scroll-trigger animate--slide-in">
         {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
         {% render 'card-product',
@@ -40,66 +40,18 @@
 </section>
 
 <style>
-  .m-0 {
-    margin: 0 !important;
-  }
-
-  .lh {
-    line-height: 0.8;
-  }
-
   img {
     width: 100%;
     height: auto;
   }
 
-  .color-red {
-    color: #a60632;
-  }
-
-  .margin-bottom-div {
-    margin-bottom: 24px;
-  }
-
-  .flex-gap-div {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .width-100 {
-    width: 100%;
-  }
-
-  .flex-center-gap-div {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .large-font {
-    font-size: 3rem;
-  }
-
-  .width-70 {
-    width: 100%; /* Assuming it takes full width on mobile/small screens */
-  }
-
   @media screen and (min-width: 990px) {
-    .flex-gap-div {
-      flex-direction: row; /* Make items side-by-side on larger screens */
-    }
-
     h2 {
       font-size: 1.5em; /* Increase font size for h2 elements */
     }
 
     .large-font {
       font-size: 3.5rem; /* Slightly increase the large font size */
-    }
-
-    .width-70 {
-      width: 70%; /* Revert to 70% width on larger screens */
     }
   }
 </style>

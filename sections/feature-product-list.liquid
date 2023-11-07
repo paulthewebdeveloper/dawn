@@ -21,9 +21,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac
         habitasse platea dictumst. Donec at erat erat.
       </p>
-      {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+      <div class="jd-image">
+        {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+      </div>
     </div>
-    <div>
+    <div class="jd-image">
       {{ section.blocks[1].settings.product_image | image_url: width: 1024 | image_tag }}
     </div>
   </div>
@@ -84,28 +86,6 @@
     width: 100%;
     height: auto; /* adjust to auto for correct aspect ratio */
     object-fit: cover;
-  }
-
-  /* Media query for large tablets and below */
-  @media (max-width: 1024px) {
-  }
-
-  /* Media query for small tablets and below */
-  @media (max-width: 768px) {
-  }
-
-  /* Media query for mobile phones and below */
-  @media (max-width: 480px) {
-  }
-
-  /* Adjustments for product grid on different viewports */
-  @media (min-width: 769px) {
-  }
-
-  @media (max-width: 768px) and (min-width: 481px) {
-  }
-
-  @media (max-width: 480px) {
   }
 </style>
 

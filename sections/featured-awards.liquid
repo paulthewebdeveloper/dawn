@@ -1,18 +1,18 @@
-<section class="{{ section.settings.color_scheme }} main-section">
-  <div class="header-section">
-    <h2 class="heading-one {{section.settings.heading_font_style_one}}">NADINE AYSOY</h2>
-    <h2 class="heading-two {{section.settings.heading_font_style_two}}">AWARDS</h2>
+<section class="{{ section.settings.color_scheme }} flex-column gap-24">
+  <div class="flex-column w-100 items-flex-end">
+    <h2 class="jd-heading-one m-0 lh-1 {{section.settings.heading_font_style_one}}">NADINE AYSOY</h2>
+    <h2 class="jd-heading-two m-0 lh-1 {{section.settings.heading_font_style_two}}">AWARDS</h2>
   </div>
 
-  <div class="content-wrapper">
-    <div class="awards-list">
+  <div class="jd-awards-wrapper flex-column-reverse gap-24">
+    <div class="jd-awards-list">
       {% for block in section.blocks %}
-        <div class="award">
-          <div class="award-header">
-            <h3 class="award-name {{section.settings.link_font_style}}">
+        <div class="flex-column w-100">
+          <div class="flex-row gap-24 flex-wrap justify-space-between my-24">
+            <h3 class="jd-award-name m-0 lh-08 {{section.settings.link_font_style}}">
               {{ block.settings.award_name }}
             </h3>
-            <h3 class="award-year {{section.settings.link_font_style}}">
+            <h3 class="jd-award-year m-0 lh-08 {{section.settings.link_font_style}}">
               {{ block.settings.award_year }}
             </h3>
           </div>
@@ -21,7 +21,7 @@
       {% endfor %}
     </div>
 
-    <p class="description {{section.settings.body_font_style}}">
+    <p class="jd-description m-0 {{section.settings.body_font_style}}">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -30,169 +30,10 @@
   </div>
 </section>
 
-<style>
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
-
-  h2 {
-    line-height: 1;
-  }
-
-  h3 {
-    line-height: 0.8;
-  }
-
-  .main-section {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .description {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-
-  .awards-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 24px;
-  }
-
-  .header-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-end;
-  }
-
-  .heading-one {
-    font-size: 7rem;
-    color: #a60632;
-  }
-
-  .heading-two {
-    font-size: 7rem;
-  }
-
-  .content-wrapper {
-    display: flex;
-    gap: 24px;
-  }
-
-  .award {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .award-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .award-name {
-    font-size: 6rem;
-    width: 275px;
-    text-transform: uppercase;
-  }
-
-  .award-year {
-    font-size: 3rem;
-  }
-
-  .separator {
-    width: 100%;
-    height: 1px;
-    background-color: #636363;
-    display: flex !important;
-  }
-
-  @media only screen and (min-width: 992px) {
-    .header-section {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      align-items: flex-end;
-    }
-
-    .content-wrapper {
-      flex-direction: row;
-    }
-
-    .heading-one {
-      font-size: 7rem;
-      color: #a60632;
-    }
-
-    .heading-two {
-      font-size: 7rem;
-    }
-
-    .awards-list {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .award {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .award-name {
-      font-size: 6rem;
-      width: 275px;
-      text-transform: uppercase;
-    }
-
-    .award-year {
-      font-size: 3rem;
-    }
-
-    .separator {
-      width: 100%;
-      height: 1px;
-      background-color: #636363;
-      display: flex !important;
-    }
-
-    .description {
-      width: 40%;
-      font-size: 1.2rem;
-    }
-
-    .awards-list {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-  }
-</style>
-
 {% schema %}
 {
   "name": "Featured Awards",
+
   "class": "section",
   "tag": "section",
   "settings": [

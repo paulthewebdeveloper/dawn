@@ -1,0 +1,75 @@
+<!-- sections/hero-special.liquid -->
+<div class="flex-column justify-center align-items-center text-center">
+  <h2 class="jd-hero-special m-0">
+    {{ section.settings.heading }}
+    <span class="jd-special-text">{{ section.settings.highlight_one | escape }}</span> {{ section.settings.subtext }}
+    <span class="jd-special-text">{{ section.settings.highlight_two | escape }}</span> and
+    <span class="jd-special-text">{{ section.settings.highlight_three | escape }}</span>
+    {{ section.settings.closing_text }}
+    <span class="jd-special-text">{{ section.settings.highlight_four | escape }}</span>
+    {{ section.settings.final_statement }}
+  </h2>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Special",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to the extraordinary world of"
+    },
+    {
+      "type": "text",
+      "id": "highlight_one",
+      "label": "First Highlighted Text",
+      "default": "Nadine Aysoy"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "where unique jewellery designs emanate"
+    },
+    {
+      "type": "text",
+      "id": "highlight_two",
+      "label": "Second Highlighted Text",
+      "default": "luxury"
+    },
+    {
+      "type": "text",
+      "id": "highlight_three",
+      "label": "Third Highlighted Text",
+      "default": "elegance."
+    },
+    {
+      "type": "text",
+      "id": "closing_text",
+      "label": "Closing Text",
+      "default": "Explore masterpieces that marry tradition with innovation within the"
+    },
+    {
+      "type": "text",
+      "id": "highlight_four",
+      "label": "Fourth Highlighted Text",
+      "default": "Catena Jewellery Collection,"
+    },
+    {
+      "type": "text",
+      "id": "final_statement",
+      "label": "Final Statement",
+      "default": "crafting a legacy of beauty and refinement."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Special"
+    }
+  ]
+}
+{% endschema %}

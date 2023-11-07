@@ -1,53 +1,24 @@
 <!-- sections/your-section-file.liquid -->
-<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} fbf-section-style">
+<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} p-20">
   <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} {{ section.settings.heading_font_style_one }} scroll-trigger animate--slide-in{% endif %}">
     {{ section.settings.title }}
     <span class="heading-special {{ section.settings.heading_font_style_two }}">
       {{- section.settings.title_special -}}
     </span>
   </h2>
-  <div class="fbf-flex-column">
-    <div class="fbf-flex-row">
+  <div class="flex-column gap-24">
+    <div class="flex-row gap-24">
       {% for block in section.blocks limit: 2 %}
         {% render 'feature-block', block: block %}
       {% endfor %}
     </div>
-    <div class="fbf-flex-row">
+    <div class="flex-row gap-24">
       {% for block in section.blocks offset: 2 %}
         {% render 'feature-block', block: block %}
       {% endfor %}
     </div>
   </div>
 </section>
-
-<style>
-  .fbf-section-style {
-    padding: 20px;
-  }
-
-  .fbf-flex-column {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .fbf-flex-row {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (max-width: 768px) {
-    .fbf-flex-row {
-      flex-direction: column;
-    }
-  }
-</style>
 
 {% schema %}
 {
