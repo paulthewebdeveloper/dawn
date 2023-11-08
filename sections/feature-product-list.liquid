@@ -14,25 +14,23 @@
 {%- endif -%}
 
 <div>
-  <div class="fp-container">
-    <div class="fp-text-section">
+  <div class="flex-row gap-24">
+    <div class="flex-column gap-24">
       <h2 class="{{section.settings.heading_font_style}}">CATENA RAINBOW SET</h2>
       <p class="{{section.settings.body_font_style}}">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac
         habitasse platea dictumst. Donec at erat erat.
       </p>
-      <div class="jd-image">
-        {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
-      </div>
+      {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
     </div>
-    <div class="jd-image">
+    <div class="hidden-on-mobile">
       {{ section.blocks[1].settings.product_image | image_url: width: 1024 | image_tag }}
     </div>
   </div>
-  <div class="fp-product-container">
+  <div class="flex-row gap-24 jd-cards-container">
     {%- for product in collection.products limit: 4 -%}
       <div
-        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="{% if settings.animations_reveal_on_scroll %}  w-full scroll-trigger animate--slide-in{% endif %}"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
           style="--animation-order: {{ forloop.index }};"
@@ -55,37 +53,22 @@
 </div>
 
 <style>
-  h2,
-  p {
-    margin: 0;
-  }
-
-  h2 {
-    line-height: 1;
-  }
-
-  .fp-container {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .fp-text-section {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .fp-product-container {
-    display: flex;
+  .jd-cards-container {
     flex-direction: row;
   }
 
-  img {
-    width: 100%;
-    height: auto; /* adjust to auto for correct aspect ratio */
-    object-fit: cover;
+  .hidden-on-mobile {
+    display: block;
+  }
+
+  @media (max-width: 992px) {
+    .hidden-on-mobile {
+      display: none;
+    }
+
+    .jd-cards-container {
+      flex-direction: column;
+    }
   }
 </style>
 

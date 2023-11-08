@@ -13,58 +13,51 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div class="main-container">
-  <div class="flex-column">
-    <div>
-      {%- for product in collection.products limit: 3 -%}
-        <div
-          class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-        >
-          {% render 'card-product',
-            card_product: product,
-            media_aspect_ratio: section.settings.image_ratio,
-            image_shape: section.settings.image_shape,
-            show_secondary_image: section.settings.show_secondary_image,
-            show_vendor: section.settings.show_vendor,
-            show_rating: section.settings.show_rating,
-            lazy_load: lazy_load,
-            show_quick_add: section.settings.enable_quick_add,
-            section_id: section.id
-          %}
-        </div>
-      {% endfor %}
-    </div>
+<div class="flex-row gap-24 h-screen jd-list-container">
+  <div class="flex-column gap-24">
+    {%- for product in collection.products limit: 3 -%}
+      <div
+        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger w-full h-full animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
+      >
+        {% render 'card-product',
+          card_product: product,
+          media_aspect_ratio: section.settings.image_ratio,
+          image_shape: section.settings.image_shape,
+          show_secondary_image: section.settings.show_secondary_image,
+          show_vendor: section.settings.show_vendor,
+          show_rating: section.settings.show_rating,
+          lazy_load: lazy_load,
+          show_quick_add: section.settings.enable_quick_add,
+          section_id: section.id
+        %}
+      </div>
+    {% endfor %}
   </div>
-  <div style="width:100%">
+  <div class="flex-row jd-image-cover hidden-on-mobile">
     {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
   </div>
 </div>
 
 <style>
-  .main-container {
-    display: flex;
-    gap: 24px;
+  .jd-list-container {
+    flex-direction: row;
     height: 100vh;
   }
 
-  .flex-column {
-    display: flex;
-    flex-direction: column;
+  .hidden-on-mobile {
+    display: block;
   }
 
-  img {
-    height: 100%;
-    width: 100%;
-  }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .main-container {
-      flex-direction: column; /* stack children vertically on small screens */
+  @media (max-width: 992px) {
+    .hidden-on-mobile {
+      display: none;
+    }
+    .jd-list-container {
+      flex-direction: column;
       height: 100%;
     }
   }

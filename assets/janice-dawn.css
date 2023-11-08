@@ -384,16 +384,19 @@
 .jd-image-cover {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .jd-image-contain {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .jd-image {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .jd-image-cover > img {
