@@ -36,6 +36,11 @@
 }
 
 /* Gap Utilities */
+
+.gap-6 {
+  gap: 6px;
+}
+
 .gap-12 {
   gap: 12px;
 }
@@ -359,6 +364,10 @@
 
 .align-items-center {
   align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
 }
 
 .align-items-stretch {

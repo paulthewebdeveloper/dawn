@@ -171,7 +171,9 @@
                 {%- elsif forloop.index0 == 11 -%}
                   <div class="jd-large-banner" style="display:flex;flex-direction:column;color:#A60632;gap:12px;">
                     {{ section.blocks[1].settings.image | image_url: width: 624 | image_tag }}
-                    <div style="display:flex;justify-content: space-between;align-items:end;">
+                    <div
+                      class="flex-wrap flex-row justify-space-between align-items-end"
+                    >
                       <h2
                         style="margin:0;color:#A60632;max-width:350px;line-height:0.75;"
                         class="uppercase {{section.blocks[1].settings.heading_font_style}}"
