@@ -1,5 +1,5 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-  <div class="special-bg jd-section-padding h-screen flex-column justify-center">
+  <div class="special-bg jd-section-padding h-screen flex-column justify-center jd-special-press-container">
     <div>
       <h2 class="{{section.settings.heading_font_style}} press-heading">As Seen On</h2>
     </div>
@@ -49,6 +49,18 @@
     </div>
   </div>
 </section>
+
+<style>
+  .jd-special-press-container {
+    height: 100vh;
+  }
+
+  @media (max-width: 768px) {
+    .jd-special-press-container {
+      height: 100%;
+    }
+  }
+</style>
 
 <script>
   // Wait for the DOM to load

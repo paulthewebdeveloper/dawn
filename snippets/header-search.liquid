@@ -8,84 +8,203 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
-<details-modal class="header__search">
-  <details>
-    <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
-      <span>
-        <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
-          <use href="#icon-search">
-        </svg>
-        <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false">
-          <use href="#icon-close">
-        </svg>
-      </span>
-    </summary>
-    <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
-      <div class="modal-overlay"></div>
-      <div class="search-modal__content{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} search-modal__content-top{% else %} search-modal__content-bottom{% endif %}" tabindex="-1">
-        {%- if settings.predictive_search_enabled -%}
-          <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-        {%- else -%}
-          <search-form class="search-modal__form">
-        {%- endif -%}
-            <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-              <div class="field">
-                <input class="search__input field__input"
-                  id="{{ input_id }}"
-                  type="search"
-                  name="q"
-                  value="{{ search.terms | escape }}"
-                  placeholder="{{ 'general.search.search' | t }}"
-                  {%- if settings.predictive_search_enabled -%}
-                    role="combobox"
-                    aria-expanded="false"
-                    aria-owns="predictive-search-results"
-                    aria-controls="predictive-search-results"
-                    aria-haspopup="listbox"
-                    aria-autocomplete="list"
-                    autocorrect="off"
-                    autocomplete="off"
-                    autocapitalize="off"
-                    spellcheck="false"
-                  {%- endif -%}
-                >
-                <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
-                <input type="hidden" name="options[prefix]" value="last">
-                <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
-                  <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                    <use xlink:href="#icon-reset">
-                  </svg>
-                </button>
-                <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                  <svg class="icon icon-search" aria-hidden="true" focusable="false">
-                    <use href="#icon-search">
-                  </svg>
-                </button>
-              </div>
+{%- if settings.predictive_search_enabled -%}
+  <predictive-search class="w-full" data-loading-text="{{ 'accessibility.loading' | t }}">
+{%- else -%}
+  <search-form class="w-full">
+{%- endif -%}
+<form action="{{ routes.search_url }}" method="get" class="search-bar" role="search">
+  <div class="input-group input-group--inner-button w-full" style="display:flex; gap:12px;padding:1.5rem">
+    <button aria-label="{{ 'general.search.search' | t }}" class="jd-button">
+      <svg
+        id="submit"
+        class="cursor-pointer"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="jd-search-icon"
+      >
+        <path d="M9.0498 1.54999C11.039 1.54999 12.9466 2.34017 14.3532 3.74672C15.7597 5.15326 16.5499 7.06094 16.5499 9.05009C16.5499 11.0392 15.7597 12.9469 14.3532 14.3535C12.9466 15.76 11.039 16.5502 9.0498 16.5502C7.06067 16.5502 5.153 15.76 3.74647 14.3535C2.33994 12.9469 1.54975 11.0393 1.54975 9.05014C1.54975 7.061 2.33994 5.15333 3.74647 3.7468C5.153 2.34027 7.06067 1.54999 9.0498 1.54999ZM9.0498 0.0499878C6.66286 0.0499878 4.37367 0.998199 2.68584 2.68603C0.998016 4.37385 0.0498047 6.66304 0.0498047 9.04999C0.0498047 11.4369 0.998016 13.7261 2.68584 15.4139C4.37367 17.1018 6.66286 18.05 9.0498 18.05C11.4368 18.05 13.7259 17.1018 15.4138 15.4139C17.1016 13.7261 18.0498 11.4369 18.0498 9.04999C18.0498 6.66304 17.1016 4.37385 15.4138 2.68603C13.7259 0.998199 11.4368 0.0499878 9.0498 0.0499878Z" fill="black"/>
+        <path d="M14.7199 14.72L19.2799 19.28Z" fill="black"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7496 19.8103L14.1896 15.2503L15.2502 14.1897L19.8102 18.7497L18.7496 19.8103Z" fill="black"/>
+      </svg>
+    </button>
+    <input
+      class="input-group-field"
+      class="search__input field__input"
+      id="{{ input_id }}"
+      type="search"
+      name="q"
+      value="{{ search.terms | escape }}"
+      placeholder="Search..."
+      {%- if settings.predictive_search_enabled -%}
+        role="combobox"
+        aria-expanded="false"
+        aria-owns="predictive-search-results"
+        aria-controls="predictive-search-results"
+        aria-haspopup="listbox"
+        aria-autocomplete="list"
+        autocorrect="off"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+      {%- endif -%}
+    >
+    <input type="hidden" name="options[prefix]" value="last">
+    <div class="flex-row gap-6">
+      <button
+        type="reset"
+        class="{% if search.terms == blank %} hidden{% endif %} jd-button cursor-pointer"
+        aria-label="{{ 'general.search.reset' | t }}"
+      >
+        Clear
+      </button>
+    </div>
+  </div>
 
-              {%- if settings.predictive_search_enabled -%}
-                <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                  <div class="predictive-search__loading-state">
-                    <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-              {%- endif -%}
-            </form>
-          {%- if settings.predictive_search_enabled -%}
-            </predictive-search>
-          {%- else -%}
-            </search-form>
-          {%- endif -%}
-        <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-          <svg class="icon icon-close" aria-hidden="true" focusable="false">
-            <use href="#icon-close">
-          </svg>
-        </button>
+  {%- if settings.predictive_search_enabled -%}
+    <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+      <div class="predictive-search__loading-state">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="spinner"
+          viewBox="0 0 66 66"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
       </div>
     </div>
-  </details>
-</details-modal>
+
+    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+  {%- endif -%}
+</form>
+{%- if settings.predictive_search_enabled -%}
+  </predictive-search>
+{%- else -%}
+  </search-form>
+{%- endif -%}
+<style>
+  .jd-button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.75rem;
+  }
+
+  .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+  }
+
+  input,
+  input::placeholder {
+    font-size: 1.75rem;
+  }
+
+  .input-group .input-group-field:first-child,
+  .input-group .input-group-button:first-child,
+  .input-group .input-group-button:first-child > .btn,
+  .input-group input[type='hidden']:first-child + .input-group-field,
+  .input-group input[type='hidden']:first-child + .input-group-button > .btn {
+    border-radius: 0;
+  }
+  .input-group .input-group-field:last-child,
+  .input-group .input-group-button:last-child > .btn {
+    border-radius: 0;
+  }
+  .input-group input {
+    /* Nasty Firefox hack for inputs http://davidwalsh.name/firefox-buttons */
+  }
+  .input-group input::-moz-placeholder {
+    color: inherit;
+    opacity: 0.7;
+  }
+  .input-group input::placeholder {
+    color: inherit;
+    opacity: 0.7;
+  }
+
+  .input-group input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+
+  .input-group-field,
+  .input-group-button {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .input-group .btn,
+  .input-group .input-group-field {
+    height: 37px;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-group .input-group-field {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .input-group-button {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding: 0;
+  }
+
+  .input-group--inner-button {
+    padding: 5px;
+    border-radius: 0;
+    border: 1px solid 0;
+    background-color: white;
+  }
+  .input-group--inner-button .input-group-button,
+  .input-group--inner-button .input-group-button .btn--outline {
+    border-radius: 0;
+  }
+  .input-group--inner-button input {
+    border: none;
+  }
+  .input-group--inner-button input:active,
+  .input-group--inner-button input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    input {
+      font-size: 12px;
+    }
+
+    input::placeholder {
+      font-size: 12px;
+    }
+
+    .jd-button {
+      font-size: 12px;
+    }
+
+    .jd-search-icon {
+      height: 12px;
+      width: 12px;
+    }
+  }
+</style>
