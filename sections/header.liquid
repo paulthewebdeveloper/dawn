@@ -308,6 +308,7 @@
     document.querySelector('.jd-navbar-close').classList.toggle('is-active');
     document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
     document.querySelector('.jd-mobile-search').classList.toggle('is-active');
+    console.log(document.querySelector('.jd-navbar').classList.contains('position-absolute'));
     if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
       document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
       document.querySelector('.jd-navbar-content').classList.toggle('jd-transparent-header');
@@ -320,7 +321,9 @@
     document.querySelector('.jd-navbar-close').classList.toggle('is-active');
     document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
     document.querySelector('.jd-mobile-search').classList.toggle('is-active');
+    console.log(document.querySelector('.jd-navbar').classList.contains('position-absolute'));
     if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
+      console.log('test');
       document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
       document.querySelector('.jd-navbar-content').classList.toggle('jd-transparent-header');
     }

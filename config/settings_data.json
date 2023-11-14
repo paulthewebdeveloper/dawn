@@ -156,13 +156,13 @@
       },
       "inverse": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#fff",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#636363",
           "button": "#ffffff",
-          "button_label": "#fff",
+          "button_label": "#ffffff",
           "secondary_button_label": "#ffffff",
-          "shadow": "#fff"
+          "shadow": "#ffffff"
         }
       },
       "accent-1": {
