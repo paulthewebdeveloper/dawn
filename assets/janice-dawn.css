@@ -386,6 +386,10 @@
   cursor: pointer;
 }
 
+.background-transparent {
+  background-color: transparent !important;
+}
+
 .text-center {
   text-align: center;
 }
