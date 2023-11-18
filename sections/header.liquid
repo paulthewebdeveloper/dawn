@@ -2,7 +2,21 @@
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
 
-<nav class="jd-navbar {%if section.settings.absolute_header_type != "no"%}position-absolute{% endif %}">
+{%- style -%}
+  .padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<nav class="jd-navbar {%if section.settings.absolute_header_type != "no"%}position-absolute{% endif %} padding">
   <div class="jd-search-container">
     {% render 'header-search', input_id: 'Search-In-Modal' %}
     <svg
@@ -97,6 +111,7 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    z-index: 1000;
   }
 
   .jd-transparent-header {
@@ -105,7 +120,7 @@
   }
 
   .jd-search-container {
-    height: 75px;
+    height: 124px;
     display: flex;
     gap: 24px;
     align-items: center;
@@ -113,6 +128,7 @@
     position: absolute;
     width: 100%;
     padding: 5rem;
+    top: 0;
   }
 
   .jd-navbar-container {
@@ -266,7 +282,7 @@
 </style>
 
 <script>
-  gsap.set('.jd-search-container', { yPercent: -100 });
+  gsap.set('.jd-search-container', { yPercent: -124 });
 
   var isSearchContainerOpen = false;
 
@@ -284,19 +300,19 @@
     var isClickInsideComponent = yourComponent.contains(event.target);
 
     if (!isClickInsideComponent) {
-      gsap.to('.jd-search-container', { yPercent: -100, duration: 0.2 });
+      gsap.to('.jd-search-container', { yPercent: -124, duration: 0.2 });
       isSearchContainerOpen = false;
     }
   });
 
   document.querySelector('#close-search').addEventListener('click', () => {
-    gsap.to('.jd-search-container', { yPercent: -100, duration: 0.2 });
+    gsap.to('.jd-search-container', { yPercent: -124, duration: 0.2 });
     isSearchContainerOpen = false;
   });
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && isSearchContainerOpen) {
-      gsap.to('.jd-search-container', { yPercent: -100, duration: 0.2 });
+      gsap.to('.jd-search-container', { yPercent: -124, duration: 0.2 });
       isSearchContainerOpen = false;
     }
   });

@@ -669,26 +669,26 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .jd-hero {
-    font-size: 6rem; /* Smaller font size for smaller screens */
+  .jd-hero-special {
+    font-size: 7rem; /* Smaller font size for smaller screens */
   }
 }
 
 @media (max-width: 992px) {
-  .jd-hero {
-    font-size: 4rem;
+  .jd-hero-special {
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .jd-hero {
-    font-size: 3rem; /* Even smaller font size for mobile screens */
+  .jd-hero-special {
+    font-size: 4rem; /* Even smaller font size for mobile screens */
   }
 }
 
 @media (max-width: 576px) {
-  .jd-hero {
-    font-size: 2rem; /* Small font size for very small screens */
+  .jd-hero-special {
+    font-size: 3rem; /* Small font size for very small screens */
     line-height: 1.2;
   }
 }

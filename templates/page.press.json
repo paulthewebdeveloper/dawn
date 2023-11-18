@@ -8,6 +8,40 @@
     },
     "df46b9f2-8ce6-4a4f-9b7e-833a742ee20c": {
       "type": "featured-press",
+      "blocks": {
+        "0fb36448-9a15-4dd7-8ff0-86ec11abc968": {
+          "type": "press",
+          "settings": {
+            "press_title": "VOGUE MEXICO",
+            "press_year": "JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
+            "Body_font_style": "font-grifinito-regular"
+          }
+        },
+        "2234c44e-2bdc-4052-88aa-7d0bc4673248": {
+          "type": "press",
+          "settings": {
+            "press_title": "VOGUE MEXICO",
+            "press_year": "JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
+            "Body_font_style": "font-grifinito-regular"
+          }
+        },
+        "c43299cd-db73-41f0-ad65-62a78fe409a7": {
+          "type": "press",
+          "settings": {
+            "press_title": "VOGUE MEXICO",
+            "press_year": "JANUARY 2018",
+            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
+            "Body_font_style": "font-grifinito-regular"
+          }
+        }
+      },
+      "block_order": [
+        "0fb36448-9a15-4dd7-8ff0-86ec11abc968",
+        "2234c44e-2bdc-4052-88aa-7d0bc4673248",
+        "c43299cd-db73-41f0-ad65-62a78fe409a7"
+      ],
       "settings": {
         "heading_font_style": "font-grifinito-regular"
       }

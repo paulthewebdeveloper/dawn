@@ -1,20 +1,260 @@
-<div>
-  <div>
-    <h2>FEATURED PRESS</h2>
+<div class="overall-container">
+  <div class="left-section">
+    <h2 class="{{section.settings.heading_font_style }}">FEATURED PRESS</h2>
+    <p class="{{section.settings.body_font_style }} left-section-paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </p>
   </div>
 
-  <div>
-    <div>
-      <h2>VOUGE MEXICO</h2>
-      <h3>JANUARY 2018</h3>
-    </div>
+  <div class="parent-div" id="parentDiv">
+    {% for block in section.blocks %}
+      <div class="press-section">
+        <div class="vertical-text-container">
+          <div class="vertical-text-inner">
+            <h2 class="{{section.settings.heading_font_style }}">{{ block.settings.press_title }}</h2>
+            <h3 class="{{section.settings.heading_font_style }}">{{ block.settings.press_year }}</h3>
+          </div>
+        </div>
+        <div class="image-text-container">
+          <div class="image-text-inner">
+            <div class="jd-image-cover">
+              {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
+
+<style>
+  h2,
+  p {
+    margin: 0;
+  }
+
+  .overall-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100vw;
+    padding-left: 148px;
+    overflow-y: scroll;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #636363;
+    background: white;
+  }
+
+  .left-section {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: 100%;
+    padding: 42px;
+    min-width: 600px;
+    background: white;
+  }
+
+  .left-section-paragraph {
+    max-width: 450px;
+  }
+
+  .parent-div {
+    display: flex;
+    height: 100%;
+  }
+
+  .press-section {
+    display: flex;
+    height: 100%;
+  }
+
+  .vertical-text-container {
+    height:100%;
+    cursor:pointer;
+  }
+
+  .vertical-text-inner {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-left: 1px solid #636363;
+    border-right: 1px solid #636363;
+    border-top: 0px solid #636363;
+    border-bottom: 0px solid #636363;
+    padding: 42px;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    pointer-events:none;
+
+  }
+
+  .image-text-container {
+    position:relative;
+    overflow:hidden;
+    width:0;
+    transform-origin: left;
+  }
+
+  .image-text-inner {
+    height:100%;
+    width:600px;
+    display:flex;
+    padding:24px;
+    gap:24px;
+    flex-direction:column;
+    position:absolute;
+  }
+
+  .overall-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .overall-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .inner-content {
+    margin-right: -16px; /* Adjust this value depending on the scrollbar width */
+  }
+
+  {% comment %} @media (max-width: 992px) {
+    .vertical-text-container {
+      writing-mode: unset;
+      border-top: 1px solid #636363;
+      border-bottom: 1px solid #636363;
+      border-left: 0 solid #636363;
+      border-right: 0 solid #636363;
+      padding: 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .left-section {
+      width: 100%;
+      min-width: 100%;
+      padding-bottom: 124px;
+    }
+
+    .image-text-container {
+      width: 100%;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin-left: 0;
+      background: white;
+      top: 0;
+    }
+
+    .overall-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding-left: 0;
+      justify-content: space-between;
+      border-bottom: 0;
+      overflow-y: unset;
+    }
+
+    .press-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .parent-div {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+
+    .left-section-paragraph {
+      max-width: 100%;
+    }
+  } {% endcomment %}
+</style>
+
+<script>
+  var parentDiv = document.getElementById('parentDiv');
+  var previousElement = null;
+  var isOpen = false; // Flag to track if the current element is open
+
+  parentDiv.addEventListener('click', function (event) {
+    var clickedElement = event.target;
+
+    // Get the second child of the parent of the clicked element
+    var targetElement = clickedElement.parentElement.querySelector('.image-text-container');
+    if (!targetElement) return;
+
+    // Check if the clicked element is the same as the previous one
+    if (targetElement === previousElement) {
+      if (isOpen) {
+        // Close the same element
+        gsap.to(targetElement, {
+          width: 0,
+          duration: 0.6,
+          ease: 'power2.out',
+        });
+        isOpen = false;
+      } else {
+        // Open it again if it was previously closed
+        gsap.to(targetElement, {
+          width: 600, // Adjust width as needed
+          duration: 0.6,
+          ease: 'power2.out',
+        });
+        isOpen = true;
+      }
+    } else {
+      // If a different element is clicked, proceed with opening the new one and closing the previous
+      gsap.to(targetElement, {
+        width: 600, // Adjust width as needed
+        duration: 0.6,
+        ease: 'power2.out',
+      });
+      if (previousElement) {
+        gsap.to(previousElement, {
+          width: 0,
+          duration: 0.6,
+          ease: 'power2.out',
+        });
+      }
+      previousElement = targetElement;
+      isOpen = true; // Set the flag as open for the new element
+    }
+
+    // Delay the scroll
+    setTimeout(function () {
+      var overallContainer = document.querySelector('.overall-container');
+      var maxScrollLeft = overallContainer.scrollWidth - overallContainer.clientWidth;
+
+      if (maxScrollLeft > 0) {
+        overallContainer.scrollTo({
+          left: maxScrollLeft,
+          behavior: 'smooth',
+        });
+      }
+    }, 600); // Adjust the timeout to match the end of your GSAP animation
+  });
+</script>
 
 {% schema %}
 {
   "name": "Featured Press",
-  "class": "section no-padding",
+  "class": "section",
   "settings": [
     {
       "type": "select",
@@ -112,9 +352,15 @@
       "settings": [
         {
           "type": "text",
-          "id": "press_text",
+          "id": "press_title",
           "label": "Text",
-          "default": "VOGUE MEXICO JANUARY 2018"
+          "default": "VOGUE MEXICO"
+        },
+        {
+          "type": "text",
+          "id": "press_year",
+          "label": "Text",
+          "default": "JANUARY 2018"
         },
         {
           "type": "image_picker",
@@ -124,8 +370,8 @@
         },
         {
           "type": "select",
-          "id": "heading_font_style",
-          "label": "Heading Font Style",
+          "id": "Body_font_style",
+          "label": "Body Font Style",
           "default": "font-grifinito-regular",
           "options": [
             {
