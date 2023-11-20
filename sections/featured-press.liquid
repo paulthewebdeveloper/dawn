@@ -68,17 +68,14 @@
 
   .parent-div {
     display: flex;
-    height: 100%;
   }
 
   .press-section {
     display: flex;
-    height: 100%;
   }
 
   .vertical-text-container {
-    height:100%;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   .vertical-text-inner {
@@ -89,30 +86,29 @@
     border-top: 0px solid #636363;
     border-bottom: 0px solid #636363;
     padding: 42px;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    pointer-events:none;
-
+    pointer-events: none;
   }
 
   .image-text-container {
-    position:relative;
-    overflow:hidden;
-    width:0;
+    position: relative;
+    overflow: hidden;
+    width: 0;
     transform-origin: left;
   }
 
   .image-text-inner {
-    height:100%;
-    width:600px;
-    display:flex;
-    padding:24px;
-    gap:24px;
-    flex-direction:column;
-    position:absolute;
+    height: 100%;
+    width: 600px;
+    display: flex;
+    padding: 24px;
+    gap: 24px;
+    flex-direction: column;
+    position: absolute;
   }
 
   .overall-container {
@@ -128,69 +124,57 @@
     margin-right: -16px; /* Adjust this value depending on the scrollbar width */
   }
 
-  {% comment %} @media (max-width: 992px) {
-    .vertical-text-container {
-      writing-mode: unset;
-      border-top: 1px solid #636363;
-      border-bottom: 1px solid #636363;
-      border-left: 0 solid #636363;
-      border-right: 0 solid #636363;
-      padding: 42px;
+  @media (max-width: 992px) {
+    .overall-container {
+      height: 100%;
+      width: 100%;
+      gap: 124px;
+      padding: 0;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      cursor: pointer;
+      flex-direction: column;
+      overflow-y: unset;
     }
 
-    .left-section {
-      width: 100%;
-      min-width: 100%;
-      padding-bottom: 124px;
+    .vertical-text-inner {
+      writing-mode: unset;
+      border-left: 0 solid #636363;
+      border-right: 0 solid #636363;
+      border-top: 1px solid #636363;
+      border-bottom: 1px solid #636363;
     }
 
     .image-text-container {
       width: 100%;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      margin-left: 0;
-      background: white;
-      top: 0;
+      height: 0;
+      transform-origin: top;
     }
 
-    .overall-container {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      padding-left: 0;
-      justify-content: space-between;
-      border-bottom: 0;
-      overflow-y: unset;
-    }
-
-    .press-section {
-      display: flex;
-      flex-direction: column;
+    .image-text-inner {
+      width: 100%;
+      height: 600px;
     }
 
     .parent-div {
       display: flex;
       flex-direction: column;
-      height: auto;
+      width: 100%;
     }
 
-    .left-section-paragraph {
-      max-width: 100%;
+    .press-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
-  } {% endcomment %}
+
+    .vertical-text-container {
+      width: 100%;
+    }
+  }
 </style>
 
 <script>
   var parentDiv = document.getElementById('parentDiv');
   var previousElement = null;
-  var isOpen = false; // Flag to track if the current element is open
 
   parentDiv.addEventListener('click', function (event) {
     var clickedElement = event.target;
@@ -199,42 +183,17 @@
     var targetElement = clickedElement.parentElement.querySelector('.image-text-container');
     if (!targetElement) return;
 
-    // Check if the clicked element is the same as the previous one
-    if (targetElement === previousElement) {
-      if (isOpen) {
-        // Close the same element
-        gsap.to(targetElement, {
-          width: 0,
-          duration: 0.6,
-          ease: 'power2.out',
-        });
-        isOpen = false;
-      } else {
-        // Open it again if it was previously closed
-        gsap.to(targetElement, {
-          width: 600, // Adjust width as needed
-          duration: 0.6,
-          ease: 'power2.out',
-        });
-        isOpen = true;
-      }
-    } else {
-      // If a different element is clicked, proceed with opening the new one and closing the previous
-      gsap.to(targetElement, {
-        width: 600, // Adjust width as needed
-        duration: 0.6,
-        ease: 'power2.out',
-      });
-      if (previousElement) {
-        gsap.to(previousElement, {
-          width: 0,
-          duration: 0.6,
-          ease: 'power2.out',
-        });
-      }
-      previousElement = targetElement;
-      isOpen = true; // Set the flag as open for the new element
+    var isSameElement = targetElement === previousElement;
+    var shouldOpen = isSameElement ? !targetElement.isOpen : true;
+
+    animateElement(targetElement, shouldOpen);
+
+    if (!isSameElement && previousElement) {
+      animateElement(previousElement, false);
     }
+
+    previousElement = targetElement;
+    targetElement.isOpen = shouldOpen;
 
     // Delay the scroll
     setTimeout(function () {
@@ -247,8 +206,19 @@
           behavior: 'smooth',
         });
       }
-    }, 600); // Adjust the timeout to match the end of your GSAP animation
+    }, 600);
   });
+
+  function animateElement(element, open) {
+    var dimension = window.innerWidth <= 992 ? 'height' : 'width';
+    var size = open ? 600 : 0;
+
+    gsap.to(element, {
+      [dimension]: size,
+      duration: 0.6,
+      ease: 'power2.out',
+    });
+  }
 </script>
 
 {% schema %}
