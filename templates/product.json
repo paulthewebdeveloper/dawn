@@ -8,11 +8,6 @@
           "settings": {
           }
         },
-        "a5fce375-a45f-491c-9404-eadebbfcff71": {
-          "type": "short_description",
-          "settings": {
-          }
-        },
         "caption": {
           "type": "text",
           "settings": {
@@ -51,7 +46,6 @@
       },
       "block_order": [
         "title",
-        "a5fce375-a45f-491c-9404-eadebbfcff71",
         "caption",
         "price",
         "variant_picker",
@@ -60,17 +54,19 @@
         "description"
       ],
       "settings": {
+        "heading_font_style": "font-grifinito-light",
         "enable_sticky_info": true,
-        "heading_font_style": "font-grifinito-regular",
-        "media_size": "medium",
-        "constrain_to_viewport": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
         "media_fit": "cover",
-        "gallery_layout": "stacked_no_grid",
+        "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -89,7 +85,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2"
+        "columns_mobile": "1"
       }
     },
     "f25a05c4-5cd2-425d-b77c-cb2b8136249e": {
@@ -152,8 +148,8 @@
         "title_special": "Like",
         "heading_font_style_one": "font-grifinito-light",
         "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-light",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -162,9 +158,9 @@
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "link",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "background-2",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -172,7 +168,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
