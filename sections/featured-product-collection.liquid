@@ -13,9 +13,7 @@
     </div>
     <div class="w-100">
       <p {{ section.settings.body_font_style }} class="m-0 scroll-trigger animate--slide-in">
-        Consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at
-        erat erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In
-        hac habitasse platea dictumst.
+        {{ section.settings.description }}
       </p>
       <div class="jd-flex gap-24 align-items-center scroll-trigger animate--slide-in">
         <a class="{{ section.settings.link_font_style }} large-font">EXPLORE MORE</a>
@@ -78,12 +76,21 @@
       "id": "title",
       "default": "Featured Collection"
     },
+
+    {
+      "type": "richtext",
+      "id": "description",
+      "default": "<p>Lorem ipsum dolor sit amet. Ea porro voluptates est minus porro eos illo saepe aut explicabo ratione qui placeat quod? Ut perspiciatis quibusdam id reprehenderit corporis qui iste reiciendis sed soluta adipisci.<p>",
+      "label": "Description"
+    },
+
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "background-1"
     },
+
     {
       "type": "select",
       "id": "heading_font_style_one",

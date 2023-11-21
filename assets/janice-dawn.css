@@ -109,6 +109,18 @@
   display: flex !important; /* there is some Shopify code that forces a display block for empty divs */
 }
 
+.first-section {
+  padding-left: var(--spacing-sections-horizontal-mobile);
+  padding-right: var(--spacing-sections-horizontal-mobile);
+}
+
+@media screen and (min-width: 750px) {
+  .first-section {
+    padding-left: var(--spacing-sections-horizontal-desktop);
+    padding-right: var(--spacing-sections-horizontal-desktop);
+  }
+}
+
 .special-red {
   color: #a60632;
 }
@@ -670,25 +682,25 @@ img {
 
 @media (max-width: 1200px) {
   .jd-hero-special {
-    font-size: 7rem; /* Smaller font size for smaller screens */
+    font-size: 8rem; /* Smaller font size for smaller screens */
   }
 }
 
 @media (max-width: 992px) {
   .jd-hero-special {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
 @media (max-width: 768px) {
   .jd-hero-special {
-    font-size: 4rem; /* Even smaller font size for mobile screens */
+    font-size: 6rem; /* Even smaller font size for mobile screens */
   }
 }
 
 @media (max-width: 576px) {
   .jd-hero-special {
-    font-size: 3rem; /* Small font size for very small screens */
+    font-size: 5rem; /* Small font size for very small screens */
     line-height: 1.2;
   }
 }
