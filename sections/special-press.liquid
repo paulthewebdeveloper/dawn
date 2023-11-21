@@ -1,7 +1,9 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="special-bg jd-section-padding h-screen flex-column justify-center jd-special-press-container">
     <div>
-      <h2 class="{{section.settings.heading_font_style}} press-heading">As Seen On</h2>
+      <h2 class="{{section.settings.heading_font_style}} press-heading heading-special">
+        {{ section.settings.title }}
+      </h2>
     </div>
     <div class="jd-flex-container">
       <div class="jd-press-image-container">
@@ -40,10 +42,7 @@
           {% endfor %}
         </div>
         <p class="jd-description-paragraph m-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac
-          habitasse platea dictumst. Donec at erat erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst.
+          {{ section.settings.description }}
         </p>
       </div>
     </div>
@@ -101,6 +100,12 @@
   "name": "Special Press",
   "class": "section no-padding",
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "As Seen On",
+      "label": "Title"
+    },
     {
       "type": "select",
       "id": "heading_font_style",
@@ -188,6 +193,11 @@
           "label": "HelveticaNowMicro Bold"
         }
       ]
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "description"
     }
   ],
   "blocks": [
