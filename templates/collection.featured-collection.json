@@ -8,7 +8,7 @@
           "settings": {
             "heading": "{{ collection.title }}",
             "heading_size": "h0",
-            "heading_font_style": "font-grifinito-light-italic"
+            "heading_font_style": "font-grifinito-italic"
           }
         },
         "decd134e-de70-4829-a00b-308ee83dfacf": {
@@ -27,7 +27,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "large",
+        "image_height": "full",
         "desktop_content_position": "bottom-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",

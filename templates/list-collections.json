@@ -6,9 +6,9 @@
         "83b488d3-fd42-47ad-9e18-3fa2baa82f5a": {
           "type": "heading",
           "settings": {
-            "heading": "Collections",
-            "heading_size": "h1",
-            "heading_font_style": "font-grifinito-regular"
+            "heading": "COLLECTIONS",
+            "heading_size": "h0",
+            "heading_font_style": "font-grifinito-italic"
           }
         },
         "90b46ac6-cda2-447e-a883-ce98171d6a7e": {
@@ -58,7 +58,7 @@
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular",
         "link_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
         "show_description": false,
         "description_style": "body",
@@ -76,7 +76,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
@@ -91,7 +91,7 @@
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular",
         "link_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>",
         "show_description": false,
         "description_style": "body",
@@ -109,7 +109,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
