@@ -27,7 +27,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "full",
         "desktop_content_position": "bottom-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
