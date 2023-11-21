@@ -16,7 +16,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "large",
+        "image_height": "full",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -275,6 +275,7 @@
         "29f2ce6a-bca2-4569-9272-011f4507d42f"
       ],
       "settings": {
+        "title": "As Seen On",
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, our creations have captured the imagination of fashion's finest. Featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.<\/p>"
       }
