@@ -11,18 +11,6 @@ slider-component.slider-component-full-width {
   --desktop-margin-left-first-item: 1.5rem;
 }
 
-@media screen and (max-width: 749px) {
-  slider-component.page-width {
-    padding: 0 1.5rem;
-  }
-}
-
-@media screen and (min-width: 749px) and (max-width: 990px) {
-  slider-component.page-width {
-    padding: 0 5rem;
-  }
-}
-
 @media screen and (max-width: 989px) {
   .no-js slider-component .slider {
     padding-bottom: 3rem;
@@ -38,7 +26,7 @@ slider-component.slider-component-full-width {
   padding-bottom: 0;
 }
 
-.slider__slide[aria-hidden="true"] {
+.slider__slide[aria-hidden='true'] {
   visibility: hidden;
 }
 

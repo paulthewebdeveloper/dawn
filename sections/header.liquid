@@ -35,7 +35,9 @@
   <div
     class="jd-navbar-content w-full color-{{ section.settings.menu_color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} {%if section.settings.absolute_header_type != "no" %}jd-transparent-header{% endif %}"
   >
-    <a class="full-unstyled-link" href="{{ routes.root_url }}"><div class="jd-navbar-logo">NADINE AYSOY</div></a>
+    <a class="full-unstyled-link" href="{{ routes.root_url }}">
+      <div class="jd-navbar-logo mobile-invisible">NADINE AYSOY</div>
+    </a>
     <div class="jd-navbar-container">
       <div class="flex-row gap-24 align-items-center">
         <svg
@@ -94,6 +96,9 @@
           {% endfor %}
         </ul>
       </div>
+      <a class="full-unstyled-link mobile-visible" href="{{ routes.root_url }}">
+        <div class="jd-navbar-logo">NADINE AYSOY</div>
+      </a>
 
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.9701 6.97V4.97C13.97 3.90915 13.5486 2.89177 12.7985 2.14163C12.0483 1.3915 11.031 0.970054 9.9701 0.970001C8.90923 0.970001 7.89182 1.39143 7.14167 2.14157C6.39153 2.89172 5.9701 3.90913 5.9701 4.97V6.97M19 6.99H1V18.99H19V6.99Z" class="jd-stroke-current" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -117,6 +122,10 @@
   .jd-transparent-header {
     background-color: transparent !important;
     color: white !important;
+  }
+
+  .mobile-visible {
+    display: none;
   }
 
   .jd-search-container {
@@ -207,6 +216,10 @@
     display: none;
   }
 
+  .mobile-invisible {
+    display: block;
+  }
+
   /* Responsive design adjustments */
   @media (max-width: 768px) {
     .burger-menu {
@@ -231,7 +244,7 @@
     }
 
     .jd-mobile-search.is-active {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid currentColor;
       display: block;
     }
 
@@ -250,10 +263,16 @@
       z-index: 9999;
       justify-content: flex-end;
       padding: 1.5rem;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid currentColor;
+    }
+
+    .jd-navbar-wrapper {
+      display:none;
+      transform:translateX(-768px)
     }
 
     .jd-navbar-wrapper.is-active {
+      display:block;
       position: fixed;
       z-index: 99999;
       height: 100%;
@@ -271,7 +290,7 @@
 
     .jd-navbar-menu li {
       padding: 1.5rem;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid currentColor;
     }
 
     .jd-navbar-menu li a {
@@ -279,8 +298,54 @@
       font-size: 12px;
       color: currentColor;
     }
+
+    {% comment %} .jd-navbar-wrapper {
+      display: none;
+    } {% endcomment %}
+
+    .mobile-visible {
+      display: block;
+    }
+
+    .mobile-invisible {
+      display: none;
+    }
   }
 </style>
+
+<script>
+  document.getElementById('burger-menu').addEventListener('click', function () {
+    document.querySelector('.jd-navbar-menu').classList.toggle('is-active');
+    document.querySelector('.jd-navbar-close').classList.toggle('is-active');
+    document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
+    document.querySelector('.jd-mobile-search').classList.toggle('is-active');
+
+    gsap.to('.jd-navbar-wrapper', { translateX: 0, duration: 0.5 });
+
+    if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
+      document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
+    }
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+  });
+
+  document.getElementById('close-nav').addEventListener('click', function () {
+    gsap.to('.jd-navbar-wrapper', {
+      duration: 0.5,
+      translateX: '-768px',
+      onComplete: () => {
+        document.querySelector('.jd-navbar-menu').classList.toggle('is-active');
+        document.querySelector('.jd-navbar-close').classList.toggle('is-active');
+        document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
+        document.querySelector('.jd-mobile-search').classList.toggle('is-active');
+
+        if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
+          document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
+        }
+        document.body.style.overflow = ''; // Prevent scrolling
+      },
+    });
+  });
+</script>
 
 <script>
   gsap.set('.jd-search-container', { yPercent: -124 });
@@ -316,35 +381,6 @@
       gsap.to('.jd-search-container', { yPercent: -124, duration: 0.2 });
       isSearchContainerOpen = false;
     }
-  });
-</script>
-
-<script>
-  document.getElementById('burger-menu').addEventListener('click', function () {
-    document.querySelector('.jd-navbar-menu').classList.toggle('is-active');
-    document.querySelector('.jd-navbar-close').classList.toggle('is-active');
-    document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
-    document.querySelector('.jd-mobile-search').classList.toggle('is-active');
-    console.log(document.querySelector('.jd-navbar').classList.contains('position-absolute'));
-    if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
-      document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
-      document.querySelector('.jd-navbar-content').classList.toggle('jd-transparent-header');
-    }
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
-  });
-
-  document.getElementById('close-nav').addEventListener('click', function () {
-    document.querySelector('.jd-navbar-menu').classList.toggle('is-active');
-    document.querySelector('.jd-navbar-close').classList.toggle('is-active');
-    document.querySelector('.jd-navbar-wrapper').classList.toggle('is-active');
-    document.querySelector('.jd-mobile-search').classList.toggle('is-active');
-    console.log(document.querySelector('.jd-navbar').classList.contains('position-absolute'));
-    if (document.querySelector('.jd-navbar').classList.contains('position-absolute')) {
-      console.log('test');
-      document.querySelector('.jd-navbar-wrapper').classList.toggle('jd-transparent-header');
-      document.querySelector('.jd-navbar-content').classList.toggle('jd-transparent-header');
-    }
-    document.body.style.overflow = ''; // Prevent scrolling
   });
 </script>
 
