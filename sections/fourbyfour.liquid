@@ -6,7 +6,7 @@
       {{- section.settings.title_special -}}
     </span>
   </h2>
-  <div class=" gap-24">
+  <div class="flex-column gap-24">
     <div class="flex-row gap-24 jd-fourbyfour">
       {% for block in section.blocks limit: 2 %}
         {% render 'feature-block', block: block %}
@@ -23,6 +23,11 @@
 <style>
   .jd-fourbyfour {
     flex-direction: row;
+  }
+
+  h2,
+  p {
+    margin: 0;
   }
 
   @media (max-width: 992px) {

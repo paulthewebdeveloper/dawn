@@ -39,9 +39,9 @@
     <div class="collection__title collection__flex-box title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} {{ section.settings.heading_font_style_one }} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.title }}
-        <span class="heading-special {{ section.settings.heading_font_style_two }}">
+        <div class="heading-special lh-08 {{ section.settings.heading_font_style_two }}">
           {{- section.settings.title_special -}}
-        </span>
+        </div>
       </h2>
       {%- if section.settings.description != blank
         or section.settings.show_description

@@ -1,5 +1,5 @@
 <!-- sections/hero-special.liquid -->
-<div class="flex-column justify-center align-items-center text-center">
+<div class="flex-column justify-center align-items-center text-center gap-24">
   <h2 class="jd-hero-special m-0">
     {{ section.settings.heading }}
     <span class="jd-special-text">{{ section.settings.highlight_one | escape }}</span> {{ section.settings.subtext }}
@@ -9,6 +9,12 @@
     <span class="jd-special-text">{{ section.settings.highlight_four | escape }}</span>
     {{ section.settings.final_statement }}
   </h2>
+  <div class="flex-row gap-6 align-items-center justify-center scroll-trigger animate--slide-in justify-end">
+    <a class="{{ section.settings.link_font_style }} large-font" style="color:#636363">DISCOVER MORE</a>
+    <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.5179 0.517578L17.4274 1.59337L21.0674 5.23337H0V6.766H21.0674L17.4274 10.406L18.5179 11.4818L24 5.99968L18.5179 0.517578Z" fill="#636363" />
+    </svg>
+  </div>
 </div>
 
 {% schema %}
@@ -17,6 +23,94 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "link_font_style",
+      "label": "Link Font Style",
+      "default": "font-grifinito-italic",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
+    },
     {
       "type": "text",
       "id": "heading",

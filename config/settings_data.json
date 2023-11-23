@@ -145,10 +145,10 @@
       },
       "background-2": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#fff",
           "background_gradient": "",
           "text": "#636363",
-          "button": "#000000",
+          "button": "#fff",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
           "shadow": "#121212"

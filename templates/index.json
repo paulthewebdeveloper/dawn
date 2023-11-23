@@ -63,6 +63,7 @@
     },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_special": "Special",
@@ -178,7 +179,7 @@
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-regular"
+        "link_font_style": "font-grifinito-italic"
       }
     },
     "ec606534-e764-4070-8311-b7bdff2193da": {

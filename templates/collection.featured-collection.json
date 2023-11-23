@@ -163,6 +163,7 @@
       "block_order": [
         "7469af5b-482d-4d00-a3d3-325947bc7035"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "heading_font_style": "font-grifinito-regular",

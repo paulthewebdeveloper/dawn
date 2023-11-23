@@ -19,7 +19,12 @@
         <div>
           {% for block in section.blocks %}
             <div class="jd-press-block flex-column cursor-pointer">
-              <div class="separator"></div>
+              {% if forloop.index == 1 %}
+                <div class="separator">
+                  <div class="red-line"></div>
+                  <div class="gray-line"></div>
+                </div>
+              {% endif %}
               <div
                 class="flex-row justify-space-between align-center gap-24 m-24"
               >
@@ -31,13 +36,14 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M5.48211 11.0059L6.57263 9.93007L2.93263 6.29007L24 6.29007L24 4.75744L2.93263 4.75744L6.57263 1.11744L5.48211 0.0416482L4.79261e-07 5.52375L5.48211 11.0059Z" fill="#A60632"/>
+                  <path d="M5.48211 11.0059L6.57263 9.93007L2.93263 6.29007L24 6.29007L24 4.75744L2.93263 4.75744L6.57263 1.11744L5.48211 0.0416482L4.79261e-07 5.52375L5.48211 11.0059Z" fill="#636363"/>
                 </svg>
                 <h3 class="{{block.settings.heading_font_style}} m-0">{{ block.settings.press_text }}</h3>
               </div>
-              {% if forloop.last %}
-                <div class="separator"></div>
-              {% endif %}
+              <div class="separator">
+                <div class="red-line"></div>
+                <div class="gray-line"></div>
+              </div>
             </div>
           {% endfor %}
         </div>
@@ -68,16 +74,38 @@
     var pressBlocks = document.querySelectorAll('.jd-press-block');
 
     function highlightBlock(index) {
-      gsap.to(this.querySelectorAll('.separator'), { backgroundColor: '#a60632' }, 0.3);
-      gsap.to(this.querySelectorAll('h3'), { color: '#a60632' }, 0.3);
+      gsap.to(this.querySelector('h3'), { color: '#a60632', duration: 0.45 });
+      gsap.to(this.querySelector('.jd-quote-icon').firstElementChild, { fill: '#a60632', duration: 0.45 });
+      if (index !== 0) {
+        gsap.to(this.querySelector('.separator').querySelector('.red-line'), {
+          scaleX: '100%',
+          duration: 0.45,
+        });
+      } else {
+        gsap.to(this.querySelectorAll('.separator')[1].querySelector('.red-line'), {
+          scaleX: '100%',
+          duration: 0.45,
+        });
+      }
       if (index !== 0) {
         gsap.to('.jd-press-image-screen', { yPercent: -100 * index, delay: 0.1, duration: 0.85, ease: 'expo.out' });
       }
     }
 
     function unhighlightBlock(index) {
-      gsap.to(this.querySelectorAll('.separator'), { backgroundColor: '#636363' }, 0.3);
-      gsap.to(this.querySelectorAll('h3'), { color: '#636363' }, 0.3);
+      gsap.to(this.querySelectorAll('h3'), { color: '#636363', duration: 0.45 });
+      gsap.to(this.querySelector('.jd-quote-icon').firstElementChild, { fill: '#636363', duration: 0.45 });
+      if (index !== 0) {
+        gsap.to(this.querySelector('.separator').querySelector('.red-line'), {
+          scaleX: '0',
+          duration: 0.45,
+        });
+      } else {
+        gsap.to(this.querySelectorAll('.separator')[1].querySelector('.red-line'), {
+          scaleX: '0',
+          duration: 0.45,
+        });
+      }
       if (index !== 0) {
         gsap.to('.jd-press-image-screen', { yPercent: 0, delay: 0.1, duration: 0.85, ease: 'expo.out' });
       }

@@ -1,61 +1,52 @@
-<section class="section-container">
-  <div class="left-div">
-    <div class="wrapper">
-      {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
-      <div
-        class="follower hide-on-mobile {{section.settings.link_font_style}}"
-        data-url="{{section.settings.first_product.url}}"
-      >
-        <span>VIEW</span>
-      </div>
+<section class="h-full w-full flex-row gap-24">
+  <div class="image-container">
+    {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
+    <div
+      class="follower hide-follow {{section.settings.link_font_style}}"
+      data-url="{{section.settings.first_product.url}}"
+    >
+      <span style="color:white">VIEW</span>
     </div>
   </div>
 
-  <div class="center-div">
+  <div class="image-container">
     {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
   </div>
 
-  <div class="right-div">
-    <div class="wrapper">
-      {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
-      <div
-        class="follower hide-on-mobile {{section.settings.link_font_style}}"
-        data-url="{{section.settings.second_product.url}}"
-      >
-        <span>VIEW</span>
-      </div>
+  <div class="image-container">
+    {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
+    <div
+      class="follower hide-follow {{section.settings.link_font_style}}"
+      data-url="{{section.settings.second_product.url}}"
+    >
+      <span style="color:white">VIEW</span>
     </div>
   </div>
 </section>
 
 <style>
-  .section-container {
-    display: flex;
-    gap: 24px;
-  }
-
-  .left-div {
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: auto;
+  .image-container {
     position: relative;
-  }
-
-  .center-div {
-    width: 160%;
-  }
-
-  .right-div {
-    width: 60%;
-    margin-top: auto;
-    margin-bottom: 5%;
-  }
-
-  .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+  }
+
+  .image-container:first-child {
+    width: 40%;
+    height: 20%;
+    margin-top: 3%;
+  }
+
+  .image-container:nth-child(2) {
+    width: 80%;
+  }
+
+  .image-container:last-child {
+    width: 40%;
+    height: 20%;
+    margin-top: 20%;
   }
 
   .follower {
@@ -71,20 +62,22 @@
     cursor: pointer;
   }
 
-  .follower > span {
-    user-select: none;
-  }
-
-  /* For responsive design */
-  @media screen and (max-width: 990px) {
-    .left-div,
-    .center-div,
-    .right-div {
-      width: 100%;
-      margin: 0;
+  @media screen and (max-width: 1200px) {
+    .image-container {
+      height: 350px !important;
+      margin: 0 !important;
+      transform-origin: top;
+      flex: 1;
+      display: flex;
     }
 
-    .hide-on-mobile {
+    .image-container img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hide-follow {
       display: none;
     }
   }
@@ -95,49 +88,51 @@
     return Math.min(Math.max(value, min), max);
   }
 
-  let wrappers = document.querySelectorAll('.wrapper');
+  let wrappers = document.querySelectorAll('.image-container');
 
-  wrappers.forEach((wrapper) => {
-    let follower = wrapper.querySelector('.follower');
+  wrappers.forEach((wrapper, index) => {
+    if (index !== 1) {
+      let follower = wrapper.querySelector('.follower');
 
-    function setFollowerToCenter() {
-      let rect = wrapper.getBoundingClientRect();
-      let centerX = rect.width / 2 - 47;
-      let centerY = rect.height / 2 - 47;
+      function setFollowerToCenter() {
+        let rect = wrapper.getBoundingClientRect();
+        let centerX = rect.width / 2 - 47;
+        let centerY = rect.height / 2 - 47;
 
-      follower.style.left = `${centerX}px`;
-      follower.style.top = `${centerY}px`;
+        follower.style.left = `${centerX}px`;
+        follower.style.top = `${centerY}px`;
+      }
+
+      setFollowerToCenter();
+
+      wrapper.addEventListener('mousemove', (e) => {
+        let rect = wrapper.getBoundingClientRect();
+        let x = e.clientX - rect.left - 47;
+        let y = e.clientY - rect.top - 47;
+        x = clamp(x, 0, rect.width - 94);
+        y = clamp(y, 0, rect.height - 94);
+
+        gsap.to(follower, {
+          duration: 0.3,
+          left: `${x}px`,
+          top: `${y}px`,
+          ease: 'power1.out',
+        });
+      });
+
+      wrapper.addEventListener('mouseleave', () => {
+        let rect = wrapper.getBoundingClientRect();
+        let centerX = rect.width / 2 - 47;
+        let centerY = rect.height / 2 - 47;
+
+        gsap.to(follower, {
+          duration: 0.3,
+          left: `${centerX}px`,
+          top: `${centerY}px`,
+          ease: 'power1.out',
+        });
+      });
     }
-
-    setFollowerToCenter();
-
-    wrapper.addEventListener('mousemove', (e) => {
-      let rect = wrapper.getBoundingClientRect();
-      let x = e.clientX - rect.left - 47;
-      let y = e.clientY - rect.top - 47;
-      x = clamp(x, 0, rect.width - 94);
-      y = clamp(y, 0, rect.height - 94);
-
-      gsap.to(follower, {
-        duration: 0.3,
-        left: `${x}px`,
-        top: `${y}px`,
-        ease: 'power1.out',
-      });
-    });
-
-    wrapper.addEventListener('mouseleave', () => {
-      let rect = wrapper.getBoundingClientRect();
-      let centerX = rect.width / 2 - 47;
-      let centerY = rect.height / 2 - 47;
-
-      gsap.to(follower, {
-        duration: 0.3,
-        left: `${centerX}px`,
-        top: `${centerY}px`,
-        ease: 'power1.out',
-      });
-    });
   });
 
   // Convert HTMLCollection to an array and loop through each element
