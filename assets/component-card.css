@@ -108,7 +108,6 @@
 
 .card .media {
   width: 100%;
-  background: #444 !important;
 }
 
 .card__media {
@@ -117,7 +116,7 @@
 }
 
 .card .media {
-  background: #e8e8e8 !important;
+  background: #f8f8f8 !important;
 }
 
 .card--standard .card__media {

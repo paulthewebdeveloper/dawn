@@ -11,8 +11,8 @@
 -%}
 
 <div
-  style="{%- if section.settings.first_section_padding == "yes" %} margin-top:124px; {% endif %}"
-  class="{%- if section.settings.first_section_padding == "yes" %} first-section {% endif %}gradient color-{{ section.settings.section_color_scheme }}"
+  style="{%- if section.settings.first_section_padding == "yes" %} {% endif %}"
+  class="{%- if section.settings.first_section_padding == "yes" %} custom-section pb-0 {% endif %}gradient color-{{ section.settings.section_color_scheme }}"
 >
   <div class="page-width">
     <div

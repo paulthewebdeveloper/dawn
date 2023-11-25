@@ -7,7 +7,7 @@
   <div class="jd-awards-wrapper flex-column-reverse gap-24">
     <div class="jd-awards-list">
       {% for block in section.blocks %}
-        <div class="flex-column w-100">
+        <div class="flex-column w-100 jd-award">
           <div class="flex-row gap-24 flex-wrap justify-space-between my-24">
             <h3 class="jd-award-name m-0 lh-08 {{section.settings.link_font_style}}">
               {{ block.settings.award_name }}
@@ -16,7 +16,6 @@
               {{ block.settings.award_year }}
             </h3>
           </div>
-          <div class="separator"></div>
         </div>
       {% endfor %}
     </div>

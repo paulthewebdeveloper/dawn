@@ -136,13 +136,13 @@
   top: 0;
 }
 
-.first-section {
+.custom-section {
   padding-left: var(--spacing-sections-horizontal-mobile);
   padding-right: var(--spacing-sections-horizontal-mobile);
 }
 
 @media screen and (min-width: 750px) {
-  .first-section {
+  .custom-section {
     padding-left: var(--spacing-sections-horizontal-desktop);
     padding-right: var(--spacing-sections-horizontal-desktop);
   }
@@ -236,6 +236,14 @@
 
 .border-0 {
   border-width: 0;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
 }
 
 /* Border-radius */
@@ -586,6 +594,14 @@ img {
   font-size: 7rem;
 }
 
+.jd-award:first-child {
+  border-top: 1px solid #636363;
+}
+
+.jd-award {
+  border-bottom: 1px solid #636363;
+}
+
 .jd-award-name {
   font-size: 6rem;
   width: 275px;
@@ -594,6 +610,10 @@ img {
 
 .jd-award-year {
   font-size: 3rem;
+}
+
+.jd-banner-wrapper {
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 992px) {
@@ -633,13 +653,16 @@ img {
 /* special-press */
 .press-heading {
   text-align: center;
-  margin: -15rem 0 0 0;
+  margin: calc(var(--spacing-sections-horizontal-mobile) * -2.6) 0 0 0;
   font-size: 7.5rem;
 }
 
-/* New classes with jd- prefix for the inline styles */
-.jd-section-padding {
-  padding: 10rem 0;
+@media screen and (min-width: 750px) {
+  .press-heading {
+    text-align: center;
+    margin: calc(var(--spacing-sections-horizontal-desktop) * -1.4) 0 0 0;
+    font-size: 7.5rem;
+  }
 }
 
 .jd-press-image-container {
@@ -656,7 +679,7 @@ img {
 .jd-flex-container {
   display: flex;
   gap: 24px;
-  padding: 0 124px;
+
   height: 100%; /* Make sure the parent has a defined height or flex properties to stretch its children */
 }
 
@@ -672,10 +695,9 @@ img {
   fill: #a60632;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .jd-flex-container {
     flex-direction: column;
-    padding: 0 20px; /* Adjust padding as needed for smaller screens */
   }
 
   /* Update the widths of the child containers since they're now stacked */
@@ -721,6 +743,14 @@ img {
 @media (max-width: 768px) {
   .jd-hero-special {
     font-size: 6rem; /* Even smaller font size for mobile screens */
+  }
+
+  .jd-banner-wrapper {
+    justify-content: center;
+  }
+
+  .hide-text-on-mobile {
+    display: none;
   }
 }
 

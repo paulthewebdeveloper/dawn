@@ -452,6 +452,48 @@
   </form>
 </cart-items>
 
+<style>
+  .title {
+    font-family: 'GrifinitoL';
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .cart-empty {
+    font-family: 'GrifinitoL';
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  {% comment %} a {
+    font-family: 'HelveticaNowMicro';
+  } {% endcomment %}
+  cart-items {
+    padding: var(--spacing-sections-horizontal-mobile);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  @media screen and (min-width: 750px) {
+    cart-items {
+      padding: var(--spacing-sections-horizontal-desktop);
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  .cart-item__name {
+    font-family: 'GrifinitoL';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 3.5rem;
+  }
+  .product-option {
+    font-size: 2rem;
+  }
+  .price--end {
+    font-size: 2rem !important;
+  }
+</style>
+
 {% schema %}
 {
   "name": "t:sections.main-cart-items.name",

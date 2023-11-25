@@ -116,28 +116,21 @@
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div
-      class="content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient"
-      style="
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      "
+      class="content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} jd-banner-wrapper gradient gap-24 flex-row w-full flex-wrap"
     >
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
               style="margin:0;"
-              class="banner__heading inline-richtext {{ block.settings.heading_size }} {{block.settings.heading_font_style}}"
+              class="banner__heading lh-08 inline-richtext {{ block.settings.heading_size }} {{block.settings.heading_font_style}}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
             <div
-              class="banner__text rte {{ block.settings.text_style }} {{block.settings.body_font_style}}"
+              class="banner__text rte hide-text-on-mobile {{ block.settings.text_style }} {{block.settings.body_font_style}}"
               {{ block.shopify_attributes }}
               style="max-width:748px;"
             >

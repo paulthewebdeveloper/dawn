@@ -73,7 +73,7 @@ cart-items {
   margin-left: auto;
 }
 
-.cart__footer > * + * {
+.cart__footer {
   margin-top: 6.5rem;
 }
 
@@ -85,8 +85,6 @@ cart-items {
   height: fit-content;
   top: 2.5rem;
 }
-
-
 
 .cart__note label {
   display: flex;
@@ -143,10 +141,6 @@ cart-items {
     padding-top: 0;
   }
 
-  .cart__footer > * {
-    width: 35rem;
-  }
-
   .cart__footer > * + * {
     margin-left: 4rem;
     margin-top: 0;
@@ -188,10 +182,6 @@ cart-items {
   margin: 2.2rem 0 1.6rem auto;
   text-align: center;
   display: block;
-}
-
-.cart__checkout-button {
-  max-width: 36rem;
 }
 
 .cart__ctas {

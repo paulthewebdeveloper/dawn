@@ -38,7 +38,7 @@
     <a class="full-unstyled-link" href="{{ routes.root_url }}">
       <div class="jd-navbar-logo mobile-invisible">NADINE AYSOY</div>
     </a>
-    <div class="jd-navbar-container">
+    <div class="jd-navbar-container custom-section pb-0 pt-0">
       <div class="flex-row gap-24 align-items-center">
         <svg
           id="burger-menu"
@@ -100,9 +100,11 @@
         <div class="jd-navbar-logo">NADINE AYSOY</div>
       </a>
 
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.9701 6.97V4.97C13.97 3.90915 13.5486 2.89177 12.7985 2.14163C12.0483 1.3915 11.031 0.970054 9.9701 0.970001C8.90923 0.970001 7.89182 1.39143 7.14167 2.14157C6.39153 2.89172 5.9701 3.90913 5.9701 4.97V6.97M19 6.99H1V18.99H19V6.99Z" class="jd-stroke-current" stroke-width="1.5" stroke-miterlimit="10"/>
-      </svg>
+      <a href="{{ routes.cart_url }}">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.9701 6.97V4.97C13.97 3.90915 13.5486 2.89177 12.7985 2.14163C12.0483 1.3915 11.031 0.970054 9.9701 0.970001C8.90923 0.970001 7.89182 1.39143 7.14167 2.14157C6.39153 2.89172 5.9701 3.90913 5.9701 4.97V6.97M19 6.99H1V18.99H19V6.99Z" class="jd-stroke-current" stroke-width="1.5" stroke-miterlimit="10"/>
+        </svg>
+      </a>
     </div>
   </div>
 </nav>
@@ -143,12 +145,10 @@
 
   .jd-navbar-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
   }
 
   .jd-navbar-logo {
@@ -187,7 +187,8 @@
   }
 
   .jd-navbar-icons a {
-    display: inline-block;
+    display: block;
+    width:100%;
   }
 
   .jd-mobile-search {
@@ -290,12 +291,14 @@
     }
 
     .jd-navbar-menu li {
-      padding: 1.5rem;
+      padding:1.5rem;
       border-bottom: 1px solid currentColor;
     }
 
     .jd-navbar-menu li a {
       text-decoration: none;
+      display:block;
+      width:100%;
       font-size: 12px;
       color: currentColor;
     }

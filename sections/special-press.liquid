@@ -1,5 +1,5 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-  <div class="special-bg jd-section-padding h-screen flex-column justify-center jd-special-press-container">
+  <div class="special-bg h-screen custom-section flex-column justify-center jd-special-press-container">
     <div>
       <h2 class="{{section.settings.heading_font_style}} press-heading heading-special">
         {{ section.settings.title }}
@@ -64,7 +64,7 @@
     height: 100vh;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .jd-special-press-container {
       height: 100%;
     }
