@@ -1,11 +1,7 @@
 <div class="overall-container">
   <div class="left-section">
-    <h2 class="{{section.settings.heading_font_style }}">FEATURED PRESS</h2>
-    <p class="{{section.settings.body_font_style }} left-section-paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.
-    </p>
+    <h2 class="{{section.settings.heading_font_style }} h-08 uppercase">{{ section.settings.section_title }}</h2>
+    <div class="{{ section.settings.body_font_style }}">{{ section.settings.description }}</div>
   </div>
 
   <div class="parent-div" id="parentDiv">
@@ -22,11 +18,9 @@
             <div class="jd-image-cover">
               {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
-            </p>
+            <div class="{{ section.settings.body_font_style }}">
+              {{ block.settings.press_description }}
+            </div>
           </div>
         </div>
       </div>
@@ -313,6 +307,96 @@
           "label": "HelveticaNowMicro Bold"
         }
       ]
+    },
+    { "type": "text", "id": "section_title", "label": "Title", "default": "Featured Press" },
+    { "type": "richtext", "id": "description", "label": "Description" },
+    {
+      "type": "select",
+      "id": "body_font_style",
+      "label": "Body Font Style",
+      "default": "font-grifinito-regular",
+      "options": [
+        {
+          "value": "font-grifinito-regular",
+          "label": "GrifinitoL Regular"
+        },
+        {
+          "value": "font-grifinito-bold",
+          "label": "GrifinitoL Bold"
+        },
+        {
+          "value": "font-grifinito-bold-italic",
+          "label": "GrifinitoL Bold Italic"
+        },
+        {
+          "value": "font-grifinito-italic",
+          "label": "GrifinitoL Italic"
+        },
+        {
+          "value": "font-grifinito-light",
+          "label": "GrifinitoL Light"
+        },
+        {
+          "value": "font-grifinito-light-italic",
+          "label": "GrifinitoL Light Italic"
+        },
+        {
+          "value": "font-grifinito-medium",
+          "label": "GrifinitoL Medium"
+        },
+        {
+          "value": "font-grifinito-medium-italic",
+          "label": "GrifinitoL Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-regular",
+          "label": "HelveticaNowMicro Regular"
+        },
+        {
+          "value": "font-helvetica-now-micro-reg-ita",
+          "label": "HelveticaNowMicro Regular Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-medium",
+          "label": "HelveticaNowMicro Medium"
+        },
+        {
+          "value": "font-helvetica-now-micro-med-ita",
+          "label": "HelveticaNowMicro Medium Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-light",
+          "label": "HelveticaNowMicro Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-light-italic",
+          "label": "HelveticaNowMicro Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-light",
+          "label": "HelveticaNowMicro Extra Light"
+        },
+        {
+          "value": "font-helvetica-now-micro-extra-bold",
+          "label": "HelveticaNowMicro Extra Bold"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-lt-ita",
+          "label": "HelveticaNowMicro Extra Light Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-ext-bd-ita",
+          "label": "HelveticaNowMicro Extra Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold-italic",
+          "label": "HelveticaNowMicro Bold Italic"
+        },
+        {
+          "value": "font-helvetica-now-micro-bold",
+          "label": "HelveticaNowMicro Bold"
+        }
+      ]
     }
   ],
   "blocks": [
@@ -323,108 +407,21 @@
         {
           "type": "text",
           "id": "press_title",
-          "label": "Text",
+          "label": "Press Title",
           "default": "VOGUE MEXICO"
         },
         {
           "type": "text",
           "id": "press_year",
-          "label": "Text",
+          "label": "Press Year",
           "default": "JANUARY 2018"
         },
+        { "type": "richtext", "id": "press_description", "label": "Description" },
         {
           "type": "image_picker",
           "id": "press_image",
           "label": "Press Image",
           "info": "Upload the image that appears in the 'As Seen On' section."
-        },
-        {
-          "type": "select",
-          "id": "Body_font_style",
-          "label": "Body Font Style",
-          "default": "font-grifinito-regular",
-          "options": [
-            {
-              "value": "font-grifinito-regular",
-              "label": "GrifinitoL Regular"
-            },
-            {
-              "value": "font-grifinito-bold",
-              "label": "GrifinitoL Bold"
-            },
-            {
-              "value": "font-grifinito-bold-italic",
-              "label": "GrifinitoL Bold Italic"
-            },
-            {
-              "value": "font-grifinito-italic",
-              "label": "GrifinitoL Italic"
-            },
-            {
-              "value": "font-grifinito-light",
-              "label": "GrifinitoL Light"
-            },
-            {
-              "value": "font-grifinito-light-italic",
-              "label": "GrifinitoL Light Italic"
-            },
-            {
-              "value": "font-grifinito-medium",
-              "label": "GrifinitoL Medium"
-            },
-            {
-              "value": "font-grifinito-medium-italic",
-              "label": "GrifinitoL Medium Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-regular",
-              "label": "HelveticaNowMicro Regular"
-            },
-            {
-              "value": "font-helvetica-now-micro-reg-ita",
-              "label": "HelveticaNowMicro Regular Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-medium",
-              "label": "HelveticaNowMicro Medium"
-            },
-            {
-              "value": "font-helvetica-now-micro-med-ita",
-              "label": "HelveticaNowMicro Medium Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-light",
-              "label": "HelveticaNowMicro Light"
-            },
-            {
-              "value": "font-helvetica-now-micro-light-italic",
-              "label": "HelveticaNowMicro Light Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-extra-light",
-              "label": "HelveticaNowMicro Extra Light"
-            },
-            {
-              "value": "font-helvetica-now-micro-extra-bold",
-              "label": "HelveticaNowMicro Extra Bold"
-            },
-            {
-              "value": "font-helvetica-now-micro-ext-lt-ita",
-              "label": "HelveticaNowMicro Extra Light Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-ext-bd-ita",
-              "label": "HelveticaNowMicro Extra Bold Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-bold-italic",
-              "label": "HelveticaNowMicro Bold Italic"
-            },
-            {
-              "value": "font-helvetica-now-micro-bold",
-              "label": "HelveticaNowMicro Bold"
-            }
-          ]
         }
       ]
     }

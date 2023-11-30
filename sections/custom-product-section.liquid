@@ -8,15 +8,9 @@
     </div>
     <!-- second section -->
     <div class="second">
-      <div class="text-section">
-        <h2 class="{{section.settings.heading_font_style}}">CATENA COLLECTION</h2>
-        <p class="{{section.settings.body_font_style}} description">
-          Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the
-          title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is
-          anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the
-          Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow
-          gold band.
-        </p>
+      <div class="text-section flex-column gap-24">
+        <h2 class="{{section.settings.heading_font_style}} lh-08">{{ section.settings.collection_title }}</h2>
+        {{ section.settings.description }}
       </div>
       <div class="product-card">
         {% render 'card-product',
@@ -163,6 +157,22 @@
       "type": "product",
       "id": "product",
       "label": "t:sections.featured-product.settings.product.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "collection_title",
+      "label": "Collection Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
     },
     {
       "type": "select",

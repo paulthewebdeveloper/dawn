@@ -20,12 +20,9 @@
       {% endfor %}
     </div>
 
-    <p class="jd-description m-0 {{section.settings.body_font_style}}">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <div class="jd-description {{ section.settings.body_font_style }}" style="font-size:1.25rem">
+      {{ section.settings.description }}
+    </div>
   </div>
 </section>
 
@@ -37,20 +34,15 @@
   "tag": "section",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Main Image"
-    },
-    {
-      "type": "product",
-      "id": "product",
-      "label": "Main Product"
-    },
-    {
       "type": "text",
       "label": "Section Title",
       "id": "title",
       "default": "Featured Collection"
+    },
+    {
+      "type": "richtext",
+      "label": "Description",
+      "id": "description"
     },
     {
       "type": "color_scheme",

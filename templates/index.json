@@ -35,7 +35,7 @@
         "title_special": "Our Favourites",
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-helvetica-now-micro-light",
+        "body_font_style": "font-helvetica-now-micro-regular",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
         "description": "<p>Discover elegance with our signature collection. Each piece, from sapphire-adorned earrings to our luxurious ruby hoops, is crafted to accentuate your style with sophistication. Embrace the allure of these gems and find your favorite. View the complete array for more exquisite designs.<\/p>",
@@ -164,7 +164,7 @@
         "color_scheme": "background-2",
         "heading_font_style_one": "font-grifinito-light",
         "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-grifinito-light",
+        "body_font_style": "font-grifinito-light-italic",
         "link_font_style": "font-grifinito-light-italic"
       }
     },
@@ -185,6 +185,7 @@
     "ec606534-e764-4070-8311-b7bdff2193da": {
       "type": "hero-special",
       "settings": {
+        "link_font_style": "font-grifinito-italic",
         "heading": "Welcome to the extraordinary world of",
         "highlight_one": "Nadine Aysoy,",
         "subtext": "where unique jewellery designs emanate",

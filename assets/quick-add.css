@@ -3,6 +3,23 @@
   grid-row-start: 4;
   margin: 0 0 1rem;
   z-index: 1;
+  display: none;
+}
+
+.card--card:hover .quick-add {
+  display: block;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card--card .quick-add {

@@ -15,8 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
-            "text_style": "body",
-            "body_font_style": "font-helvetica-now-micro-regular"
+            "text_style": "body"
           }
         }
       },
@@ -55,6 +54,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/catena_collection_banner.png",
             "title": "CATENA COLLECTION",
+            "product": "",
             "description": "EXPLORE MORE",
             "heading_font_style": "font-grifinito-light-italic",
             "body_font_style": "font-grifinito-light"
@@ -65,6 +65,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/catena_multi_stone.png",
             "title": "Catena Multi Stone Rainbow Tennis Necklace",
+            "product": "",
             "description": "Discover More",
             "heading_font_style": "font-grifinito-light-italic",
             "body_font_style": "font-grifinito-light"
@@ -83,7 +84,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,

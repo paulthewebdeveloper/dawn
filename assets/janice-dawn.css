@@ -136,18 +136,6 @@
   top: 0;
 }
 
-.custom-section {
-  padding-left: var(--spacing-sections-horizontal-mobile);
-  padding-right: var(--spacing-sections-horizontal-mobile);
-}
-
-@media screen and (min-width: 750px) {
-  .custom-section {
-    padding-left: var(--spacing-sections-horizontal-desktop);
-    padding-right: var(--spacing-sections-horizontal-desktop);
-  }
-}
-
 .special-red {
   color: #a60632;
 }
@@ -566,7 +554,7 @@ img {
   width: 100%; /* Assuming it takes full width on mobile/small screens */
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .jd-responsive-flex {
     flex-direction: row; /* Make items side-by-side on larger screens */
   }

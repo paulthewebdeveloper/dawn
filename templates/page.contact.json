@@ -2,7 +2,38 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "bc9f39f8-1efc-4ff0-ad95-771e81d6947b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cotact Us",
+            "heading_size": "h1"
+          }
+        },
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1",
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "form": {
@@ -16,6 +47,7 @@
   },
   "order": [
     "main",
+    "bc9f39f8-1efc-4ff0-ad95-771e81d6947b",
     "form"
   ]
 }

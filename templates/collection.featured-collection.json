@@ -67,20 +67,21 @@
       ],
       "settings": {
         "product": "catena-autumn-bangle",
+        "description": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is          anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the          Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow          gold band.<\/p>",
         "heading_font_style": "font-grifinito-regular",
         "body_font_style": "font-helvetica-now-micro-regular"
       }
     },
-    "e52190c9-68e9-4761-978a-00b7e8c65497": {
-      "type": "feature-product-list",
+    "75f677e3-d4d7-4f92-b76b-a618ce6b40b5": {
+      "type": "featured-product-list",
       "blocks": {
-        "9eb1e01b-1a2f-467e-b229-12975545be03": {
+        "3289c72e-7f1a-4751-aca0-9a2e71f0daec": {
           "type": "product_image",
           "settings": {
             "product_image": "shopify:\/\/shop_images\/cercle_main_5defc9d8-c79c-4b57-9bc5-7ff3ad202810.jpg"
           }
         },
-        "4af9d083-896f-451d-8128-f54d99ccb46a": {
+        "68278223-f538-4416-a737-cf4d194a28d3": {
           "type": "product_image",
           "settings": {
             "product_image": "shopify:\/\/shop_images\/Flower_Earring_DSC5450_1.png"
@@ -88,11 +89,12 @@
         }
       },
       "block_order": [
-        "9eb1e01b-1a2f-467e-b229-12975545be03",
-        "4af9d083-896f-451d-8128-f54d99ccb46a"
+        "3289c72e-7f1a-4751-aca0-9a2e71f0daec",
+        "68278223-f538-4416-a737-cf4d194a28d3"
       ],
       "settings": {
         "product": "",
+        "description": "<p>Discover the vibrant and colorful Catena Rainbow Set. Handcrafted with precision and care for a stunning addition to your jewelry collection.<\/p>",
         "heading_font_style": "font-grifinito-regular",
         "body_font_style": "font-helvetica-now-micro-regular"
       }
@@ -134,7 +136,6 @@
         "e84944f8-26ed-45db-866c-01bc80dfb89a",
         "fc113a38-6056-4f7b-a711-fd6c1d1caead"
       ],
-      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -148,26 +149,6 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2"
-      }
-    },
-    "57a715a4-7195-425a-acff-98737b2f4729": {
-      "type": "feature-product-list-vertical",
-      "blocks": {
-        "7469af5b-482d-4d00-a3d3-325947bc7035": {
-          "type": "product_image",
-          "settings": {
-            "product_image": "shopify:\/\/shop_images\/Flower_Earring_DSC5450_1.png"
-          }
-        }
-      },
-      "block_order": [
-        "7469af5b-482d-4d00-a3d3-325947bc7035"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "",
-        "heading_font_style": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular"
       }
     },
     "f25a05c4-5cd2-425d-b77c-cb2b8136249e": {
@@ -227,10 +208,9 @@
   "order": [
     "a98c27da-1594-46f2-974f-f0640fc09a00",
     "59ee2c9a-1ac0-4492-a105-0ae00de8b4b6",
-    "e52190c9-68e9-4761-978a-00b7e8c65497",
+    "75f677e3-d4d7-4f92-b76b-a618ce6b40b5",
     "banner",
     "product-grid",
-    "57a715a4-7195-425a-acff-98737b2f4729",
     "f25a05c4-5cd2-425d-b77c-cb2b8136249e"
   ]
 }

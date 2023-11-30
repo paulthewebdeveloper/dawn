@@ -53,9 +53,9 @@
         <div class="image-with-text__text-item grid__item">
           <div
             id="ImageWithText--{{ section.id }}"
-            style="{% if section.settings.first_section_padding == 'yes' %}padding:0!important;margin-right:48px;{% endif %}"
+            style="{% if section.settings.first_section_padding == 'yes' %}padding:0!important{% endif %}"
 
-            class="{% if section.settings.first_section_padding == 'yes' %}m-mt-24{% endif %}" image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+            class="{% if section.settings.first_section_padding == 'yes' %}m-mt-24 d-mr-24 {% endif %}" image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
@@ -79,14 +79,15 @@
                   {%- endif -%}
                 {%- when 'caption' -%}
                   <p
-                    class="image-with-text__text image-with-text__text--caption mt-24 {{block.settings.body_font_style}} {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    class="image-with-text__text image-with-text__text--caption mt-24 {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.caption | escape }}
                   </p>
                 {%- when 'text' -%}
                   <div
-                    class="image-with-text__text rte mt-24 {{ block.settings.text_style }}"
+                    style="font-size:1.25rem"
+                    class="image-with-text__text rte mt-24 {{block.settings.body_font_style}} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.text }}
@@ -127,9 +128,17 @@
     line-height: 0.75 !important;
   }
 
+  .d-mr-24 {
+    margin-right: 24px;
+  }
+
   @media only screen and (max-width: 749px) {
     .m-mt-24 {
       margin-top: 24px;
+    }
+
+    .d-mr-24 {
+      margin-right:0;
     }
   }
 </style>
@@ -544,7 +553,6 @@
           "default": "body",
           "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
         },
-
         {
           "type": "select",
           "id": "body_font_style",

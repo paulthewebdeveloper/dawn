@@ -154,15 +154,16 @@
                           style="margin:0;color:#A60632;max-width:350px;line-height:0.75;font-size:3rem;overflow-wrap: break-word;"
                           class="uppercase {{section.blocks[0].settings.heading_font_style}}"
                         >
-                          {{ section.blocks[0].settings.title }}
+                          {{ section.blocks[0].settings.collection.title }}
                         </h2>
                         <div style="display:flex;align-items:center;gap:4px">
-                          <p
-                            style="margin:0;font-size:1.5rem;line-height:1;"
-                            class="{{section.blocks[0].settings.body_font_style}} uppercase"
+                          <a
+                            style="font-size:1.5rem;"
+                            href="{{section.blocks[0].settings.collection.url }}"
+                            class="{{section.blocks[0].settings.body_font_style}} lh-1 m-0 full-unstyled-link uppercase"
                           >
                             {{ section.blocks[0].settings.description }}
-                          </p>
+                          </a>
                           <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.0305 0.5L9.43983 0.990591L11.4115 2.65054H0V3.34946H11.4115L9.43983 5.00941L10.0305 5.5L13 3L10.0305 0.5Z" fill="#A60632"/>
                           </svg>
@@ -179,15 +180,19 @@
                           style="margin:0;color:#A60632;max-width:350px;line-height:0.75;"
                           class="uppercase {{section.blocks[1].settings.heading_font_style}}"
                         >
-                          {{ section.blocks[1].settings.title }}
+                          {{ section.blocks[1].settings.collection.title }}
                         </h2>
                         <div style="display:flex;align-items: center;gap:6px">
-                          <p
-                            style="margin:0;font-size:3rem;line-height:0.8;"
-                            class="{{section.blocks[1].settings.body_font_style}} uppercase"
+                          <script>
+                            console.log({{section.blocks[0].settings | json }})
+                          </script>
+                          <a
+                            href="{{section.blocks[1].settings.collection.url }}"
+                            style="font-size:3rem;"
+                            class="{{section.blocks[1].settings.body_font_style}} m-0 lh-08 full-unstyled-link uppercase"
                           >
                             {{ section.blocks[1].settings.description }}
-                          </p>
+                          </a>
                           <svg width="18" height="12" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.0305 0.5L9.43983 0.990591L11.4115 2.65054H0V3.34946H11.4115L9.43983 5.00941L10.0305 5.5L13 3L10.0305 0.5Z" fill="#A60632"/>
                           </svg>
@@ -444,9 +449,9 @@
           "label": "Image"
         },
         {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
         },
         {
           "type": "text",

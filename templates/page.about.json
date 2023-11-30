@@ -28,7 +28,7 @@
         "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "text": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow gold band.<\/p>",
             "text_style": "body",
             "body_font_style": "font-helvetica-now-micro-regular"
           }
@@ -103,8 +103,8 @@
         "09654edd-1b1b-4139-bb89-d3da98595843"
       ],
       "settings": {
-        "product": "",
         "title": "Featured Awards",
+        "description": "<p>Welcome to the distinguished awards section where we honor the creativity, innovation, and excellence in the field of design. Here, we spotlight the prestigious accolades bestowed upon Nadine Aysoy, a testament to her visionary work and her significant impact on the industry. These awards underscore the exceptional talent and dedication that Nadine brings to her craft, setting her apart as a leader and trendsetter in design.<\/p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-regular",
         "heading_font_style_two": "font-grifinito-regular",

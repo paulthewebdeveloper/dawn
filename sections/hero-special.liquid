@@ -10,7 +10,12 @@
     {{ section.settings.final_statement }}
   </h2>
   <div class="flex-row gap-6 align-items-center justify-center scroll-trigger animate--slide-in justify-end">
-    <a class="{{ section.settings.link_font_style }} large-font" style="color:#636363">DISCOVER MORE</a>
+    <a
+      class="{{ section.settings.link_font_style }} full-unstyled-link"
+      style="color:#636363;font-size:3.5rem;"
+      href="{{section.settings.collection.url }}"
+      >DISCOVER MORE</a
+    >
     <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M18.5179 0.517578L17.4274 1.59337L21.0674 5.23337H0V6.766H21.0674L17.4274 10.406L18.5179 11.4818L24 5.99968L18.5179 0.517578Z" fill="#636363" />
     </svg>
@@ -23,6 +28,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
     {
       "type": "select",
       "id": "link_font_style",

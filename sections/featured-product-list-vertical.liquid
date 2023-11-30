@@ -13,48 +13,40 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div>
-  <div class="flex-row gap-24">
-    <div class="flex-column gap-24">
-      <h2 class="{{section.settings.heading_font_style}}">CATENA RAINBOW SET</h2>
-      <p class="{{section.settings.body_font_style}} description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac
-        habitasse platea dictumst. Donec at erat erat.
-      </p>
-      {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
-    </div>
-    <div class="hidden-on-mobile">
-      {{ section.blocks[1].settings.product_image | image_url: width: 1024 | image_tag }}
-    </div>
-  </div>
-  <div class="flex-row gap-24 jd-cards-container">
-    {%- for product in collection.products limit: 4 -%}
+<div class="flex-row gap-24 h-screen jd-list-container">
+  <div class="flex-column gap-24">
+    {%- for product in collection.products limit: 3 -%}
       <div
-        class="{% if settings.animations_reveal_on_scroll %}  w-full scroll-trigger animate--slide-in{% endif %}"
+        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger w-full h-full animate--slide-in{% endif %}"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
           style="--animation-order: {{ forloop.index }};"
         {% endif %}
       >
-        {% render 'card-product',
+        {%
+          render 'card-product',
           card_product: product,
           media_aspect_ratio: section.settings.image_ratio,
           image_shape: section.settings.image_shape,
           show_secondary_image: section.settings.show_secondary_image,
           show_vendor: section.settings.show_vendor,
           show_rating: section.settings.show_rating,
-          lazy_load: lazy_load,
+          lazy_load: true,
           show_quick_add: section.settings.enable_quick_add,
-          section_id: section.id
+          section_id: section.id,
         %}
       </div>
     {% endfor %}
   </div>
+  <div class="flex-row jd-image-cover hidden-on-mobile">
+    {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+  </div>
 </div>
 
 <style>
-  .jd-cards-container {
+  .jd-list-container {
     flex-direction: row;
+    height: 100vh;
   }
 
   .hidden-on-mobile {
@@ -65,16 +57,16 @@
     .hidden-on-mobile {
       display: none;
     }
-
-    .jd-cards-container {
+    .jd-list-container {
       flex-direction: column;
+      height: 100%;
     }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Featured Product List",
+  "name": "Featured Product List 2",
   "class": "section",
   "tag": "section",
   "settings": [
@@ -258,6 +250,12 @@
           "label": "HelveticaNowMicro Bold"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
     }
   ],
   "blocks": [
@@ -275,7 +273,7 @@
   ],
   "presets": [
     {
-      "name": "Featured Product List"
+      "name": "Featured Product List 2"
     }
   ]
 }
