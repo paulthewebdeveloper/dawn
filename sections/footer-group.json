@@ -8,7 +8,7 @@
         "71bd476c-375a-47a9-bedd-40a322273c88": {
           "type": "link_list",
           "settings": {
-            "menu": "footer-1"
+            "menu": ""
           }
         }
       },
@@ -19,9 +19,9 @@
         "color_scheme": "accent-2",
         "newsletter_heading": "Subscribe To Our Newsletter",
         "newsletter_enable": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "show_policy": true
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "show_policy": false
       }
     }
   },
