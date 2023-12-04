@@ -6,7 +6,6 @@
         "117e9929-26a0-4e3e-999d-dff8ce0f44db": {
           "type": "image_picker",
           "settings": {
-            "inner_image": "shopify:\/\/shop_images\/hero_text.svg",
             "image_width": 0
           }
         }
@@ -15,7 +14,6 @@
         "117e9929-26a0-4e3e-999d-dff8ce0f44db"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
         "image_overlay_opacity": 10,
         "image_height": "full",
         "desktop_content_position": "middle-center",
@@ -74,7 +72,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
-        "cover_image": "shopify:\/\/shop_images\/pink-tennis-necklace.jpg",
         "alt_text": "",
         "full_width": true,
         "color_scheme": ""
@@ -88,7 +85,6 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Catena",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
             "link": "shopify:\/\/collections\/catena-collection"
           }
         },
@@ -97,7 +93,6 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Le Cercle",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-multicoloured-gemstone-catena-rainbow-earrings_20848617_45959186_1000_1.png",
             "link": "shopify:\/\/collections\/le-cercle"
           }
         },
@@ -106,7 +101,6 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Petit Tsarina",
-            "category_image": "shopify:\/\/shop_images\/petit_tsarina.png",
             "link": ""
           }
         },
@@ -115,7 +109,6 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Earrings",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-emerald-and-sapphire-catena-earrings_19369482_42560459_1000_1.png",
             "link": ""
           }
         },
@@ -124,7 +117,6 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Rings",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
             "link": ""
           }
         },
@@ -133,7 +125,6 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Bracelets",
-            "category_image": "shopify:\/\/shop_images\/atum_bangle.png",
             "link": ""
           }
         },
@@ -142,7 +133,6 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Pendants",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-diamond-catena-illusion-necklace_20848618_46040133_600.png",
             "link": ""
           }
         }
@@ -157,7 +147,6 @@
         "f931a47d-bcae-43e2-8357-a77b7059b49d"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/atum_bangle.png",
         "product": "catena-autumn-bangle",
         "title_normal": "Explore Our",
         "title_red": "Collections",
@@ -171,7 +160,6 @@
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
       "type": "featured-product-collection",
       "settings": {
-        "image": "shopify:\/\/shop_images\/cercle_main.jpg",
         "product": "catena-autum-eternity-ring",
         "collection": "le-cercle",
         "special_title": "{{ section.settings.collection.title }}",
@@ -203,9 +191,6 @@
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
-        "left_image": "shopify:\/\/shop_images\/catena_illusion_ring.jpg",
-        "center_image": "shopify:\/\/shop_images\/main_catena_collection.jpg",
-        "right_image": "shopify:\/\/shop_images\/catena_ring.jpg",
         "first_product": "catena-autum-eternity-ring",
         "second_product": "catena-autumn-hoop-earrings",
         "title": "Multi Column Product",
@@ -255,7 +240,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         },
@@ -263,7 +247,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         },
@@ -271,7 +254,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         }
@@ -286,22 +268,6 @@
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, our creations have captured the imagination of fashion's finest. Featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.<\/p>"
       }
-    },
-    "ea12c5f8-b8ec-4f4a-af82-8df8c14b9ea8": {
-      "type": "featured-product-collection",
-      "settings": {
-        "product": "",
-        "collection": "",
-        "special_title": "",
-        "title": "Product Collection",
-        "enable_quick_add": false,
-        "description": "<p>Lorem ipsum dolor sit amet. Ea porro voluptates est minus porro eos illo saepe aut explicabo ratione qui placeat quod? Ut perspiciatis quibusdam id reprehenderit corporis qui iste reiciendis sed soluta adipisci.<p>",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
-      }
     }
   },
   "order": [
@@ -313,7 +279,6 @@
     "ec606534-e764-4070-8311-b7bdff2193da",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
-    "d810a605-312e-4cd8-bedc-9fccf02f9070",
-    "ea12c5f8-b8ec-4f4a-af82-8df8c14b9ea8"
+    "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }
