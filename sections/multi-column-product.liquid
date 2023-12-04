@@ -1,6 +1,10 @@
 <section class="h-full w-full flex-row gap-24">
-  <div class="image-container">
-    {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
+  <div class="image-container {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+    {% if section.settings.left_image == null %}
+      <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+    {% else %}
+      {{ section.settings.left_image | image_url: width: 1024 | image_tag }}
+    {% endif %}
     <div
       class="follower hide-follow {{section.settings.link_font_style}}"
       data-url="{{section.settings.first_product.url}}"
@@ -9,12 +13,20 @@
     </div>
   </div>
 
-  <div class="image-container">
-    {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
+  <div class="image-container {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+    {% if section.settings.center_image == null %}
+      <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+    {% else %}
+      {{ section.settings.center_image | image_url: height: 1024 | image_tag }}
+    {% endif %}
   </div>
 
-  <div class="image-container">
-    {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
+  <div class="image-container {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+    {% if section.settings.right_image == null %}
+      <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+    {% else %}
+      {{ section.settings.right_image | image_url: width: 1024 | image_tag }}
+    {% endif %}
     <div
       class="follower hide-follow {{section.settings.link_font_style}}"
       data-url="{{section.settings.second_product.url}}"

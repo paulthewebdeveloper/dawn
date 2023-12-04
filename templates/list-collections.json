@@ -15,8 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
-            "text_style": "body",
-            "body_font_style": "font-helvetica-now-micro-regular"
+            "text_style": "body"
           }
         }
       },
@@ -75,7 +74,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 124,
@@ -108,7 +107,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 124,

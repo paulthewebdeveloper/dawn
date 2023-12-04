@@ -1,16 +1,20 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="special-bg h-screen custom-section flex-column justify-center jd-special-press-container">
     <div>
-      <h2 class="{{section.settings.heading_font_style}} press-heading heading-special">
+      <h2 class="h0 {{section.settings.heading_font_style}} press-heading heading-special {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in {% endif %}">
         {{ section.settings.title }}
       </h2>
     </div>
-    <div class="jd-flex-container">
+    <div class="jd-flex-container {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
       <div class="jd-press-image-container">
         <div class="w-full h-full jd-press-image-screen">
           {% for block in section.blocks %}
             <div class="banner-image jd-image-cover object-position-top">
-              {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+              {% if block.settings.press_image == null %}
+                <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+              {% else %}
+                {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+              {% endif %}
             </div>
           {% endfor %}
         </div>
@@ -18,7 +22,7 @@
       <div class="jd-text-container">
         <div>
           {% for block in section.blocks %}
-            <div class="jd-press-block flex-column cursor-pointer">
+            <div class="jd-press-block flex-column cursor-pointer {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
               {% if forloop.index == 1 %}
                 <div class="separator">
                   <div class="red-line"></div>
@@ -47,7 +51,9 @@
             </div>
           {% endfor %}
         </div>
-        {{ section.settings.description }}
+        <div class="{% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in {% endif %}">
+          {{ section.settings.description }}
+        </div>
       </div>
     </div>
   </div>
@@ -341,7 +347,12 @@
   "presets": [
     {
       "name": "Special Press",
-      "category": "Custom"
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "press"
+        }
+      ]
     }
   ]
 }

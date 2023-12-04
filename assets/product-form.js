@@ -42,9 +42,9 @@ if (!customElements.get('product-form')) {
         config.body = formData;
 
         fetch(`${routes.cart_add_url}`, config)
-          .then((response) => response.json())
-          .then((response) => {
-            if (response.status) {
+        .then((response) => response.json())
+        .then((response) => {
+          if (response.status) {
               publish(PUB_SUB_EVENTS.cartError, {
                 source: 'product-form',
                 productVariantId: formData.get('id'),
@@ -61,7 +61,10 @@ if (!customElements.get('product-form')) {
               this.error = true;
               return;
             } else if (!this.cart) {
-              window.location = window.routes.cart_url;
+              // window.location = window.routes.cart_url;
+              const current = parseInt(document.querySelector(".cart-count-bubble").children[0].textContent)
+
+              document.querySelector(".cart-count-bubble").children[0].innerHTML = current + 1;
               return;
             }
 

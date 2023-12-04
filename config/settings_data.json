@@ -97,8 +97,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_facebook_link": "",
-    "social_instagram_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/nadineaysoyjewellery",
+    "social_instagram_link": "https:\/\/www.instagram.com\/nadineaysoyjewellery\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -110,10 +110,10 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "notification",
-    "show_vendor": false,
-    "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_type": "page",
+    "show_vendor": true,
+    "show_cart_note": true,
+    "cart_drawer_collection": "catena-collection",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -145,11 +145,11 @@
       },
       "background-2": {
         "settings": {
-          "background": "#fff",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#636363",
           "button": "#a60632",
-          "button_label": "#fff",
+          "button_label": "#ffffff",
           "secondary_button_label": "#a60632",
           "shadow": "#a60632"
         }
@@ -178,12 +178,12 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#e3c6b1",
+          "background": "#f3eeea",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#121212",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }

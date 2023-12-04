@@ -1,6 +1,6 @@
 <!-- sections/hero-special.liquid -->
 <div class="flex-column justify-center align-items-center text-center gap-24">
-  <h2 class="jd-hero-special m-0">
+  <h2 class="jd-hero-special m-0 {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
     {{ section.settings.heading }}
     <span class="jd-special-text">{{ section.settings.highlight_one | escape }}</span> {{ section.settings.subtext }}
     <span class="jd-special-text">{{ section.settings.highlight_two | escape }}</span> and
@@ -9,7 +9,7 @@
     <span class="jd-special-text">{{ section.settings.highlight_four | escape }}</span>
     {{ section.settings.final_statement }}
   </h2>
-  <div class="flex-row gap-6 align-items-center justify-center scroll-trigger animate--slide-in justify-end">
+  <div class="flex-row gap-6 align-items-center justify-center justify-end {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
     <a
       class="{{ section.settings.link_font_style }} full-unstyled-link"
       style="color:#636363;font-size:3.5rem;"

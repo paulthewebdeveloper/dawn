@@ -19,15 +19,6 @@
     margin-bottom: 3rem;
   }
 
-  .template-search__search {
-    margin: 0 auto 3.5rem;
-    max-width: 74.1rem;
-  }
-
-  .template-search__search .search {
-    margin-top: 3rem;
-  }
-
   .template-search--empty {
     padding-bottom: 18rem;
   }
@@ -52,14 +43,14 @@
 {% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} ">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <h1 class="h2 center">
+      <h1 class="h2 center jd-custom-font jd-special-text">
         {%- if search.performed -%}
           {{- 'templates.search.title' | t -}}
         {%- else -%}
           {{- 'general.search.search' | t -}}
         {%- endif -%}
       </h1>
-      <div class="template-search__search">
+      <div class="custom-section mt-64 pt-0 pb-0">
         {%- if settings.predictive_search_enabled -%}
           <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
         {%- endif -%}
@@ -112,13 +103,19 @@
                 class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
                 aria-label="{{ 'general.search.reset' | t }}"
               >
-                <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                  <use xlink:href="#icon-reset">
-                </svg>
+                Clear
               </button>
               <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                <svg class="icon icon-search" aria-hidden="true" focusable="false">
-                  <use xlink:href="#icon-search">
+                <svg
+                  id="close-search"
+                  class="cursor-pointer"
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.62252L1.62252 0L9.5 7.90099L17.401 0L19 1.62252L11.1225 9.5L19 17.401L17.401 19L9.5 11.1225L1.62252 19L0 17.401L7.90099 9.5L0 1.62252Z" fill="currentColor"></path>
                 </svg>
               </button>
             </div>
@@ -221,7 +218,7 @@
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             <aside
               aria-labelledby="verticalTitle"
-              class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+              class="facets-wrapper custom-section pt-0 pb-0{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
               id="main-search-filters"
               data-id="{{ section.id }}"
             >
@@ -235,7 +232,7 @@
             </aside>
           {%- endif -%}
         {%- endif -%}
-        <div class="product-grid-container" id="ProductGridContainer">
+        <div class="product-grid-container custom-section pt-0 pb-0" id="ProductGridContainer">
           {%- if search.results.size == 0 and search.filters != empty -%}
             <div
               class="template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"

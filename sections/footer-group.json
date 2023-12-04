@@ -4,17 +4,24 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "71bd476c-375a-47a9-bedd-40a322273c88": {
+          "type": "link_list",
+          "settings": {
+            "menu": "footer-1"
+          }
+        }
+      },
+      "block_order": [
+        "71bd476c-375a-47a9-bedd-40a322273c88"
+      ],
       "settings": {
         "color_scheme": "accent-2",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
-        "show_social": false,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": false,
-        "show_policy": false,
-        "margin_top": 100
+        "newsletter_heading": "Subscribe To Our Newsletter",
+        "newsletter_enable": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "show_policy": true
       }
     }
   },

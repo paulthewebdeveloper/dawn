@@ -1,6 +1,6 @@
 <footer
-  style="margin-top:100px"
-  class="footer color-{{ section.settings.color_scheme }} gradient footer-section"
+  style="margin-top:100px;"
+  class="custom-section footer color-{{ section.settings.color_scheme }} gradient"
 >
   <div class="flex-row justify-space-between">
     <div class="flex-row flex-wrap gap-64">
@@ -196,14 +196,14 @@
     </div>
   </div>
   <div
-    class="flex-row justify-end footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}"
+    class="flex-row mt-24 footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}"
   >
     <div class="flex-column">
       <div class="footer__copyright caption">
         <small style="font-size:1.5rem" class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        <small style="font-size:1.5rem" class="copyright__content">{{ powered_by_link }}</small>
+        {% comment %} <small style="font-size:1.5rem" class="copyright__content">{{ powered_by_link }}</small> {% endcomment %}
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -220,7 +220,9 @@
       </div>
       <div style="font-size:1.5rem">
         Desinged & Developed By
-        <a class="full-unstyled-link" href="http://www.paulthewebdeveloper.com" target="_blank">PaulTheWebDeveloper</a>
+        <a style="font-weight:bold" class="full-unstyled-link" href="http://www.paulthewebdeveloper.com" target="_blank"
+          >PaulTheWebDeveloper</a
+        >
       </div>
     </div>
   </div>
@@ -244,7 +246,7 @@
     font-size: 16px; /* Sets the font size */
     line-height: 1;
     padding: 6px 0;
-    color: white; /* Sets the text color, change as needed */
+    color: currentColor; /* Sets the text color, change as needed */
   }
 
   /* If you want to style the links inside the list items */

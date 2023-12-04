@@ -15,8 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
-            "text_style": "body",
-            "body_font_style": "font-helvetica-now-micro-regular"
+            "text_style": "body"
           }
         }
       },
@@ -41,12 +40,6 @@
     "59ee2c9a-1ac0-4492-a105-0ae00de8b4b6": {
       "type": "custom-product-section",
       "blocks": {
-        "a2945ef5-4908-4b57-8096-31a775f0354e": {
-          "type": "product_image",
-          "settings": {
-            "product_image": "shopify:\/\/shop_images\/main-banner.jpg"
-          }
-        },
         "86f0b242-a478-4983-98a1-1da81a4e40e8": {
           "type": "product_image",
           "settings": {
@@ -61,14 +54,16 @@
         }
       },
       "block_order": [
-        "a2945ef5-4908-4b57-8096-31a775f0354e",
         "86f0b242-a478-4983-98a1-1da81a4e40e8",
         "e2037d1d-9750-4d0c-aa58-84396b6aaebf"
       ],
       "settings": {
+        "main_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
         "product": "catena-autumn-bangle",
         "description": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is          anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the          Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow          gold band.<\/p>",
-        "heading_font_style": "font-grifinito-regular",
+        "collection_title": "{{ section.settings.product.title }}",
+        "enable_quick_add": true,
+        "heading_font_style": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular"
       }
     },
@@ -93,9 +88,11 @@
         "68278223-f538-4416-a737-cf4d194a28d3"
       ],
       "settings": {
-        "product": "",
         "description": "<p>Discover the vibrant and colorful Catena Rainbow Set. Handcrafted with precision and care for a stunning addition to your jewelry collection.<\/p>",
-        "heading_font_style": "font-grifinito-regular",
+        "collection": "le-cercle",
+        "enable_quick_add": true,
+        "collection_title": "{{ section.settings.collection.title }} Collection",
+        "heading_font_style": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular"
       }
     },
@@ -115,7 +112,7 @@
           "type": "banner",
           "settings": {
             "image": "shopify:\/\/shop_images\/catena_collection_banner.png",
-            "title": "CATENA COLLECTION",
+            "collection": "",
             "description": "EXPLORE MORE",
             "heading_font_style": "font-grifinito-regular",
             "body_font_style": "font-grifinito-regular"
@@ -125,7 +122,7 @@
           "type": "banner",
           "settings": {
             "image": "shopify:\/\/shop_images\/catena_multi_stone.png",
-            "title": "Catena Multi Stone Rainbow Tennis Necklace",
+            "collection": "",
             "description": "DISCOVER MORE",
             "heading_font_style": "font-grifinito-light-italic",
             "body_font_style": "font-grifinito-light"
@@ -144,7 +141,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,

@@ -75,6 +75,10 @@
   margin-top: 24px;
 }
 
+.mt-64 {
+  margin-top: 64px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
 }
@@ -141,7 +145,7 @@
 }
 
 .special-bg {
-  background-color: #e3c6b1;
+  background-color: #f3eeea;
 }
 
 /* Visibility */
@@ -642,14 +646,12 @@ img {
 .press-heading {
   text-align: center;
   margin: calc(var(--spacing-sections-horizontal-mobile) * -2.6) 0 0 0;
-  font-size: 7.5rem;
 }
 
 @media screen and (min-width: 750px) {
   .press-heading {
     text-align: center;
     margin: calc(var(--spacing-sections-horizontal-desktop) * -1.4) 0 0 0;
-    font-size: 7.5rem;
   }
 }
 
@@ -709,6 +711,14 @@ img {
   font-size: 8.5rem;
   line-height: 0.95;
   margin: 0;
+}
+
+.jd-custom-font {
+  font-family: 'GrifinitoL', sans-serif;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  font-size: 7.5rem;
 }
 
 .jd-special-text {

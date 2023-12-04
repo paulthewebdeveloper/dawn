@@ -621,6 +621,74 @@
       };
     </script>
 
+    <script>
+      const categoryCards = document.querySelectorAll('.category-card');
+
+      if (categoryCards.length != 0) {
+        categoryCards.forEach((card) => {
+          const primaryWrapper = card.querySelector('.primary-image-wrapper');
+          const secondaryWrapper = card.querySelector('.secondary-image-wrapper');
+          const categoryTitle = card.querySelector('.category-title');
+          const targetWrapper = primaryWrapper || secondaryWrapper;
+
+          gsap.set(targetWrapper, { scaleY: 0 });
+          gsap.set(targetWrapper.querySelector('img'), { opacity: 0 });
+
+          card.addEventListener('mouseover', () => {
+            gsap.killTweensOf(targetWrapper);
+            gsap.killTweensOf(targetWrapper.querySelector('img'));
+
+            const tl = gsap.timeline();
+            tl.to(categoryTitle, { color: '#A60632', duration: 0.1 })
+              .to(targetWrapper, { scaleY: 1, duration: 0.25, ease: 'Power2.easeInOut' })
+              .to(targetWrapper.querySelector('img'), {
+                opacity: 1,
+                duration: 0.1,
+                ease: 'Power2.easeInOut',
+              });
+          });
+
+          card.addEventListener('mouseleave', () => {
+            gsap.killTweensOf(targetWrapper);
+            gsap.killTweensOf(targetWrapper.querySelector('img'));
+
+            const tl = gsap.timeline();
+            tl.to(categoryTitle, { color: '#636363', duration: 0.1 })
+              .to(targetWrapper.querySelector('img'), { opacity: 0, duration: 0.1, ease: 'Power2.easeInOut' })
+              .to(targetWrapper, {
+                scaleY: 0,
+                duration: 0.25,
+                ease: 'Power2.easeInOut',
+              });
+          });
+        });
+
+        const cards = document.querySelectorAll('.category-card');
+
+        cards.forEach((card) => {
+          card.addEventListener('click', () => {
+            const cardUrl = card.getAttribute('data-url');
+
+            // Redirect to the URL
+            if (cardUrl) {
+              window.location.href = cardUrl;
+            }
+          });
+        });
+
+        document.querySelectorAll('.mobile-category').forEach((category) => {
+          category.addEventListener('click', () => {
+            const cardUrl = category.getAttribute('data-url');
+
+            // Redirect to the URL
+            if (cardUrl) {
+              window.location.href = cardUrl;
+            }
+          });
+        });
+      }
+    </script>
+
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}

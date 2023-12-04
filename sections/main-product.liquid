@@ -90,8 +90,8 @@
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
                 <h1 class='lh-08 {{section.settings.heading_font_style}}'>{{ product.title | escape }}</h1>
-                <a href="{{ product.url }}" class="product__title">
-                  <h2 class="h1">
+                <a href="{{ product.url }}" class="product__title full-unstyled-link">
+                  <h2 class="h1 lh-08 {{section.settings.heading_font_style}}">
                     {{ product.title | escape }}
                   </h2>
                 </a>

@@ -1,12 +1,12 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="outer-container custom-bg-color">
-    <h2 class="section-heading {{section.settings.heading_font_style_one}}">
+    <h2 class="section-heading {{section.settings.heading_font_style_one}} {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
       {{ section.settings.title_normal }}
       <span class="heading-special {{section.settings.heading_font_style_two }} }}">
         {{- section.settings.title_red -}}
       </span>
     </h2>
-    <div class="content-wrapper">
+    <div class="content-wrapper {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
       <div class="flex-container hide-on-mobile">
         {%- for block in section.blocks -%}
           {% assign next_index = forloop.index0 | plus: 1 %}
@@ -23,7 +23,11 @@
                 {{- block.settings.category_name -}}
               </h3>
               <div class="primary-image-wrapper">
-                {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+                {% if block.settings.category_image == null %}
+                  <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+                {% else %}
+                  {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+                {% endif %}
               </div>
             </div>
             {% unless is_next_bottom %}
@@ -47,7 +51,11 @@
             <div class="category-card category-container" style="cursor:pointer" {{ block.settings.link }}>
               <h3 class="category-title {{ section.settings.link_font_style }}">{{ block.settings.category_name }}</h3>
               <div class="secondary-image-wrapper">
-                {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+                {% if block.settings.category_image == null %}
+                  <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+                {% else %}
+                  {{ block.settings.category_image | image_url: width: 1024 | image_tag }}
+                {% endif %}
               </div>
             </div>
             {% unless forloop.last %}
@@ -82,7 +90,7 @@
   }
 
   .outer-container.custom-bg-color {
-    background-color: #e3c6b1;
+    background-color: #f3eeea;
     padding: 5rem 0;
   }
 
@@ -187,72 +195,6 @@
     }
   }
 </style>
-
-<script>
-  const categoryCards = document.querySelectorAll('.category-card');
-
-  categoryCards.forEach((card) => {
-    const primaryWrapper = card.querySelector('.primary-image-wrapper');
-    const secondaryWrapper = card.querySelector('.secondary-image-wrapper');
-    const categoryTitle = card.querySelector('.category-title');
-    const targetWrapper = primaryWrapper || secondaryWrapper;
-
-    gsap.set(targetWrapper, { scaleY: 0 });
-    gsap.set(targetWrapper.querySelector('img'), { opacity: 0 });
-
-    card.addEventListener('mouseover', () => {
-      gsap.killTweensOf(targetWrapper);
-      gsap.killTweensOf(targetWrapper.querySelector('img'));
-
-      const tl = gsap.timeline();
-      tl.to(categoryTitle, { color: '#A60632', duration: 0.1 })
-        .to(targetWrapper, { scaleY: 1, duration: 0.25, ease: 'Power2.easeInOut' })
-        .to(targetWrapper.querySelector('img'), {
-          opacity: 1,
-          duration: 0.1,
-          ease: 'Power2.easeInOut',
-        });
-    });
-
-    card.addEventListener('mouseleave', () => {
-      gsap.killTweensOf(targetWrapper);
-      gsap.killTweensOf(targetWrapper.querySelector('img'));
-
-      const tl = gsap.timeline();
-      tl.to(categoryTitle, { color: '#636363', duration: 0.1 })
-        .to(targetWrapper.querySelector('img'), { opacity: 0, duration: 0.1, ease: 'Power2.easeInOut' })
-        .to(targetWrapper, {
-          scaleY: 0,
-          duration: 0.25,
-          ease: 'Power2.easeInOut',
-        });
-    });
-  });
-
-  const cards = document.querySelectorAll('.category-card');
-
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      const cardUrl = card.getAttribute('data-url');
-
-      // Redirect to the URL
-      if (cardUrl) {
-        window.location.href = cardUrl;
-      }
-    });
-  });
-
-  document.querySelectorAll('.mobile-category').forEach((category) => {
-    category.addEventListener('click', () => {
-      const cardUrl = category.getAttribute('data-url');
-
-      // Redirect to the URL
-      if (cardUrl) {
-        window.location.href = cardUrl;
-      }
-    });
-  });
-</script>
 
 {% schema %}
 {
@@ -666,7 +608,7 @@
           "type": "text",
           "label": "Category Name",
           "id": "category_name",
-          "default": "Category Name"
+          "default": "Category"
         },
         {
           "type": "image_picker",

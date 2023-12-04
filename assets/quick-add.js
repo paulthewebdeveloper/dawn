@@ -36,6 +36,8 @@ if (!customElements.get('quick-add-modal')) {
 
             if (window.ProductModel) window.ProductModel.loadShopifyXR();
 
+            document.querySelector(".product").classList.toggle("custom-section")
+
             this.removeGalleryListSemantic();
             this.updateImageSizes();
             this.preventVariantURLSwitching();

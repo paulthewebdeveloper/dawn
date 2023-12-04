@@ -2,14 +2,20 @@
   <div class="main-flex">
     <!-- first section -->
     <div class="first">
-      {% if section.blocks[0] %}
-        {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+      {% if section.settings.main_image %}
+        {{ section.settings.main_image | image_url: width: 1024 | image_tag }}
+      {% else %}
+        <div class="jd-image-contain">
+          <img
+            src="{{ 'placeholder_image.jpeg' | asset_url }}"
+          >
+        </div>
       {% endif %}
     </div>
     <!-- second section -->
     <div class="second">
       <div class="text-section flex-column gap-24">
-        <h2 class="{{section.settings.heading_font_style}} lh-08">{{ section.settings.collection_title }}</h2>
+        <h2 class="{{section.settings.heading_font_style}} h0 lh-08">{{ section.settings.collection_title }}</h2>
         {{ section.settings.description }}
       </div>
       <div class="product-card">
@@ -21,10 +27,18 @@
     </div>
   </div>
   <div class="image-flex hide-on-mobile" style="width:70%;padding-right:16px">
-    {% for block in section.blocks offset: 1 %}
-      <div class="test">
-        {{ block.settings.product_image | image_url: width: 1024 | image_tag }}
-      </div>
+    {% for block in section.blocks %}
+      {% if block.settings.product_image %}
+        <div class="test">
+          {{ block.settings.product_image | image_url: width: 1024 | image_tag }}
+        </div>
+      {% else %}
+        <div class="jd-image-contain">
+          <img
+            src="{{ 'placeholder_image.jpeg' | asset_url }}"
+          >
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>
@@ -124,10 +138,6 @@
 
   /* For mobile devices */
   @media (max-width: 576px) {
-    .text-section h2 {
-      font-size: 1.5rem;
-    }
-
     .description {
       font-size: 1rem;
     }
@@ -152,7 +162,13 @@
   "name": "Custom Product Section",
   "class": "section",
   "tag": "section",
+  "max_blocks": 2,
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Product Image"
+    },
     {
       "type": "product",
       "id": "product",
@@ -161,12 +177,14 @@
     {
       "type": "richtext",
       "id": "description",
-      "label": "Description"
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet. Ex doloribus corporis sit ipsa commodi aut enim minima ea cupiditate sunt eos galisum ipsa et unde debitis ut maxime adipisci. Vel dolorem praesentium quo aspernatur harum et rerum voluptatum et accusamus dicta et quibusdam amet. Et omnis consequatur qui enim dolorum eos quae numquam a beatae aperiam et rerum excepturi.</p>"
     },
     {
       "type": "text",
       "id": "collection_title",
-      "label": "Collection Title"
+      "label": "Collection Title",
+      "default": "Title"
     },
     {
       "type": "checkbox",
@@ -266,7 +284,7 @@
       "type": "select",
       "id": "body_font_style",
       "label": "Body Font Style",
-      "default": "font-grifinito-regular",
+      "default": "font-helvetica-now-micro-regular",
       "options": [
         {
           "value": "font-grifinito-regular",

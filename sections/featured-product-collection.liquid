@@ -1,21 +1,25 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="mb-24">
-    <h2 class="{{ section.settings.heading_font_style_one }} m-0 lh-08 title inline-richtext h0 scroll-trigger animate--slide-in special-red">
+    <h2 class="{{ section.settings.heading_font_style_one }} m-0 lh-08 title inline-richtext h0 special-red {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
       {{ section.settings.special_title }}
     </h2>
-    <h2 class="{{ section.settings.heading_font_style_two }} m-0 lh-08 title inline-richtext h0 scroll-trigger animate--slide-in">
+    <h2 class="{{ section.settings.heading_font_style_two }} m-0 lh-08 title inline-richtext h0 {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
       {{ section.settings.title }}
     </h2>
   </div>
   <div class="jd-responsive-flex gap-24">
-    <div class="w-100 scroll-trigger animate--slide-in">
-      {{ section.settings.image | image_url: width: 1024 | image_tag }}
+    <div class="w-100 {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+      {% if section.settings.image == null %}
+        <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+      {% else %}
+        {{ section.settings.image | image_url: width: 1024 | image_tag }}
+      {% endif %}
     </div>
-    <div class="w-100">
-      <p {{ section.settings.body_font_style }} class="m-0 scroll-trigger animate--slide-in">
+    <div class="w-100 {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+      <p {{ section.settings.body_font_style }} class="m-0 ">
         {{ section.settings.description }}
       </p>
-      <div class="flex-row gap-6 align-items-center scroll-trigger animate--slide-in justify-end">
+      <div class="flex-row gap-6 align-items-center justify-end">
         <a
           class="{{ section.settings.link_font_style }} large-font full-unstyled-link"
           style="font-size:3rem;"
@@ -27,9 +31,9 @@
         </svg>
       </div>
     </div>
-    <div class="jd-proudct-container">
-      <div class="scroll-trigger animate--slide-in">
-        {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
+    <div class="jd-proudct-container {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
+      <div>
+        {%- assign placeholder_image = 'product-apparel-' | append: 1 -%}
         {% render 'card-product',
           card_product: section.settings.product,
           media_aspect_ratio: 'adapt',
@@ -47,16 +51,6 @@
   img {
     width: 100%;
     height: auto;
-  }
-
-  @media screen and (min-width: 990px) {
-    h2 {
-      font-size: 1.5em; /* Increase font size for h2 elements */
-    }
-
-    .large-font {
-      font-size: 3.5rem; /* Slightly increase the large font size */
-    }
   }
 </style>
 

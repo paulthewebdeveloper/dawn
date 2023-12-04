@@ -12,20 +12,25 @@
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Cotact Us",
+            "heading": "Contact Us",
             "heading_size": "h1"
           }
         },
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Get in touch with our team for any questions or concerns. We're here to help!<\/p>"
           }
         }
       },
       "block_order": [
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1",
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1"
+      ],
+      "custom_css": [
+        ".rich-text {padding: var(--spacing-sections-horizontal-mobile); padding-top: 0 !important; padding-bottom: 0 !important;}",
+        "@media screen and (min-width: 750px) {.rich-text {padding: var(--spacing-sections-horizontal-desktop) !important; padding-top: 0 !important; padding-bottom: 0 !important; }}",
+        "h2 {font-family: \"GrifinitoL\"; font-weight: 300; font-style: italic; color: #a60632; line-height:0.8;}"
       ],
       "settings": {
         "desktop_content_position": "left",

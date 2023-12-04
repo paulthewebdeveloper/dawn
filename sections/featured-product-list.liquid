@@ -18,10 +18,18 @@
     <div class="flex-column gap-24">
       <h2 class="{{section.settings.heading_font_style}} lh-08">{{ section.settings.collection_title }}</h2>
       {{ section.settings.description }}
-      {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+      {% if section.blocks[0].settings.product_image == null %}
+        <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+      {% else %}
+        {{ section.blocks[0].settings.product_image | image_url: width: 1024 | image_tag }}
+      {% endif %}
     </div>
     <div class="hidden-on-mobile">
-      {{ section.blocks[1].settings.product_image | image_url: width: 1024 | image_tag }}
+      {% if section.blocks[1].settings.product_image == null %}
+        <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+      {% else %}
+        {{ section.blocks[1].settings.product_image | image_url: width: 1024 | image_tag }}
+      {% endif %}
     </div>
   </div>
   <div class="flex-row mt-24 gap-24 jd-cards-container">
@@ -50,6 +58,10 @@
 </div>
 
 <style>
+  h2 {
+    margin: 0;
+  }
+
   .jd-cards-container {
     flex-direction: row;
   }
@@ -78,7 +90,8 @@
     {
       "type": "richtext",
       "id": "description",
-      "label": "Description"
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.</p>"
     },
     {
       "type": "collection",
@@ -94,7 +107,8 @@
     {
       "type": "text",
       "id": "collection_title",
-      "label": "Collection Title"
+      "label": "Collection Title",
+      "default": "Title"
     },
     {
       "type": "select",

@@ -1,12 +1,19 @@
 <div class="overall-container">
   <div class="left-section">
-    <h2 class="{{section.settings.heading_font_style }} h-08 uppercase">{{ section.settings.section_title }}</h2>
-    <div class="{{ section.settings.body_font_style }}">{{ section.settings.description }}</div>
+    <h2 class="{{section.settings.heading_font_style }} {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %} h-08 uppercase">
+      {{ section.settings.section_title }}
+    </h2>
+    <div
+      style="max-width:500px;"
+      class="{{ section.settings.body_font_style }} {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}"
+    >
+      {{ section.settings.description }}
+    </div>
   </div>
 
   <div class="parent-div" id="parentDiv">
     {% for block in section.blocks %}
-      <div class="press-section">
+      <div class="press-section {% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
         <div class="vertical-text-container">
           <div class="vertical-text-inner">
             <h2 class="{{section.settings.heading_font_style }}">{{ block.settings.press_title }}</h2>
@@ -16,7 +23,11 @@
         <div class="image-text-container">
           <div class="image-text-inner">
             <div class="jd-image-cover">
-              {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+              {% if block.settings.press_image == null %}
+                <img src="{{ 'placeholder_image.jpeg' | asset_url }}">
+              {% else %}
+                {{ block.settings.press_image | image_url: width: 1024 | image_tag }}
+              {% endif %}
             </div>
             <div class="{{ section.settings.body_font_style }}">
               {{ block.settings.press_description }}
@@ -309,7 +320,12 @@
       ]
     },
     { "type": "text", "id": "section_title", "label": "Title", "default": "Featured Press" },
-    { "type": "richtext", "id": "description", "label": "Description" },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.</p>"
+    },
     {
       "type": "select",
       "id": "body_font_style",
@@ -416,7 +432,12 @@
           "label": "Press Year",
           "default": "JANUARY 2018"
         },
-        { "type": "richtext", "id": "press_description", "label": "Description" },
+        {
+          "type": "richtext",
+          "id": "press_description",
+          "label": "Description",
+          "default": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.</p>"
+        },
         {
           "type": "image_picker",
           "id": "press_image",
@@ -429,7 +450,12 @@
   "presets": [
     {
       "name": "Featured Press",
-      "category": "Custom"
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "press"
+        }
+      ]
     }
   ]
 }

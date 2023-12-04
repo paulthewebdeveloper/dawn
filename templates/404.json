@@ -1,7 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "custom_css": [
+        "h1,p {font-family: \"GrifinitoL\"; font-weight: 300; font-style: italic; color: #a60632; line-height: 0.8;}"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [

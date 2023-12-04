@@ -37,7 +37,7 @@
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection {% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title collection__flex-box title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} {{ section.settings.heading_font_style_one }} scroll-trigger animate--slide-in{% endif %}">
+      <h2 class="title inline-richtext {{ section.settings.heading_font_style_one }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %}  scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.title }}
         <div style="display:inline-block" class="heading-special lh-08 {{ section.settings.heading_font_style_two }}">
           {{- section.settings.title_special -}}
@@ -363,7 +363,7 @@
       "type": "select",
       "id": "body_font_style",
       "label": "Body Font Style",
-      "default": "font-grifinito-regular",
+      "default": "font-helvetica-now-micro-regular",
       "options": [
         {
           "value": "font-grifinito-regular",
@@ -451,7 +451,7 @@
       "type": "select",
       "id": "link_font_style",
       "label": "Link Font Style",
-      "default": "font-grifinito-regular",
+      "default": "font-grifinito-italic",
       "options": [
         {
           "value": "font-grifinito-regular",
@@ -618,7 +618,7 @@
     {
       "type": "checkbox",
       "id": "show_view_all",
-      "default": true,
+      "default": false,
       "label": "t:sections.featured-collection.settings.show_view_all.label"
     },
     {
@@ -639,7 +639,7 @@
           "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
         }
       ],
-      "default": "solid"
+      "default": "link"
     },
     {
       "type": "checkbox",
@@ -741,7 +741,7 @@
     {
       "type": "checkbox",
       "id": "enable_quick_add",
-      "default": false,
+      "default": true,
       "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
     },
     {
