@@ -36,7 +36,7 @@
         "body_font_style": "font-helvetica-now-micro-regular",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
-        "description": "<p>Playful, petite and easy to stack, the latest rings to join the Le Cercle collection are a favourite this season and it's not hard to see why. <\/p>",
+        "description": "<p>Playful and perfect for everyday wear, the latest additions to Le Cercle celebrate individuality.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "le-cercle",
@@ -100,7 +100,7 @@
           "type": "category",
           "settings": {
             "top_bottom": "top",
-            "category_name": "Sale",
+            "category_name": "Earrings",
             "link": ""
           }
         },
@@ -108,7 +108,7 @@
           "type": "category",
           "settings": {
             "top_bottom": "top",
-            "category_name": "Earrings",
+            "category_name": "Rings",
             "link": ""
           }
         },
@@ -116,15 +116,7 @@
           "type": "category",
           "settings": {
             "top_bottom": "bottom",
-            "category_name": "Rings",
-            "link": ""
-          }
-        },
-        "cf5fd00b-cf7c-4598-8068-b24e733b2f93": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Bracelets",
+            "category_name": "Pendants",
             "link": ""
           }
         },
@@ -132,7 +124,15 @@
           "type": "category",
           "settings": {
             "top_bottom": "bottom",
-            "category_name": "Pendants",
+            "category_name": "Bracelets",
+            "link": ""
+          }
+        },
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Sale",
             "link": ""
           }
         }
@@ -143,8 +143,8 @@
         "772f448d-4dbc-40c3-a06b-840ccf71dc61",
         "3c2fb2b7-ad83-42bb-a2ec-832411458379",
         "853f1f42-fb70-4eb1-b312-ea356136b9fd",
-        "cf5fd00b-cf7c-4598-8068-b24e733b2f93",
-        "f931a47d-bcae-43e2-8357-a77b7059b49d"
+        "f931a47d-bcae-43e2-8357-a77b7059b49d",
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93"
       ],
       "settings": {
         "product": "catena-autumn-bangle",
@@ -160,8 +160,9 @@
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
       "type": "featured-product-collection",
       "settings": {
+        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
         "product": "catena-autum-eternity-ring",
-        "collection": "le-cercle",
+        "collection": "catena",
         "special_title": "{{ section.settings.collection.title }}",
         "title": "Jewellery Collection",
         "enable_quick_add": true,
