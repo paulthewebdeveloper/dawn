@@ -167,7 +167,7 @@
         "special_title": "{{ section.settings.collection.title }}",
         "title": "Illusion Diamonds",
         "enable_quick_add": true,
-        "description": "<p>If you believe in the beauty of wearing diamonds everyday, no matter the occasion, the Catena Illusion Diamond collection may just be the perfect match.<\/p>",
+        "description": "<p>If you believe in the beauty of wearing diamonds everyday, no matter the occasion, the Catena Illusion Diamond collection might just be your perfect match.<\/p>",
         "color_scheme": "background-2",
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light",
