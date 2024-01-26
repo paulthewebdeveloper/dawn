@@ -193,7 +193,10 @@
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
-        "first_product": "catena-autum-eternity-ring",
+        "left_image": "shopify:\/\/shop_images\/F3CCAE0C-8435-4000-B7DC-B8E4CB308DEF.jpg",
+        "center_image": "shopify:\/\/shop_images\/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
+        "right_image": "shopify:\/\/shop_images\/IMG_5612.jpg",
+        "first_product": "catena-autumn-hoop-earrings",
         "second_product": "catena-autumn-hoop-earrings",
         "title": "Multi Column Product",
         "color_scheme": "",
