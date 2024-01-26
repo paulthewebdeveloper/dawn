@@ -113,12 +113,46 @@
         "padding_top": 124,
         "padding_bottom": 0
       }
+    },
+    "featured_collection_mwXNrc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured",
+        "title_special": "Collection",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-italic",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "ef1a7a08-d7fc-49ee-86a7-a8f34a8b3db0",
     "main",
     "32cb44a3-ede4-4c5c-a3c3-7c2dd4144133",
-    "f9a9baf5-dd70-4d68-8f8c-84a31078d2b5"
+    "f9a9baf5-dd70-4d68-8f8c-84a31078d2b5",
+    "featured_collection_mwXNrc"
   ]
 }
