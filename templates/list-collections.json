@@ -76,7 +76,7 @@
         "show_rating": false,
         "enable_quick_add": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 124,
         "padding_bottom": 0
       }
@@ -108,8 +108,8 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 124,
         "padding_bottom": 0
       }
@@ -141,8 +141,8 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 124,
         "padding_bottom": 0
       }
@@ -175,7 +175,7 @@
         "show_rating": false,
         "enable_quick_add": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 124,
         "padding_bottom": 0
       }
