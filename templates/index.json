@@ -27,6 +27,38 @@
         "show_text_below": false
       }
     },
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
+        "product": "catena-diamond-illusion-charm-necklace",
+        "collection": "catena",
+        "special_title": "{{ section.settings.collection.title }}",
+        "title": "Collection",
+        "enable_quick_add": true,
+        "description": "<p>The Catena Collection is an alluring play on classic link chains reimagined into versatile and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-italic"
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
+        "center_image": "shopify:\/\/shop_images\/CatenaAutumn2.jpg",
+        "right_image": "shopify:\/\/shop_images\/Shopify_2.png",
+        "first_product": "catena-autumn-hoop-earrings",
+        "second_product": "catena-autumn-hoop-earrings",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
+      }
+    },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
       "type": "featured-collection",
       "settings": {
@@ -158,23 +190,6 @@
         "link_font_style": "font-grifinito-light-italic"
       }
     },
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
-      "type": "featured-product-collection",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
-        "product": "catena-diamond-illusion-charm-necklace",
-        "collection": "catena",
-        "special_title": "{{ section.settings.collection.title }}",
-        "title": "Illusion Diamonds",
-        "enable_quick_add": true,
-        "description": "<p>If you believe in the beauty of wearing diamonds everyday, no matter the occasion, the Catena Illusion Diamond collection might just be your perfect match.<\/p>",
-        "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-light-italic",
-        "heading_font_style_two": "font-grifinito-light",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-italic"
-      }
-    },
     "ec606534-e764-4070-8311-b7bdff2193da": {
       "type": "hero-special",
       "settings": {
@@ -188,21 +203,6 @@
         "closing_text": "",
         "highlight_four": "",
         "final_statement": ""
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify:\/\/shop_images\/F3CCAE0C-8435-4000-B7DC-B8E4CB308DEF.jpg",
-        "center_image": "shopify:\/\/shop_images\/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
-        "right_image": "shopify:\/\/shop_images\/IMG_5612.jpg",
-        "first_product": "catena-autumn-hoop-earrings",
-        "second_product": "catena-autumn-hoop-earrings",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
       }
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
@@ -277,12 +277,12 @@
   },
   "order": [
     "image_banner",
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "ec606534-e764-4070-8311-b7bdff2193da",
-    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
