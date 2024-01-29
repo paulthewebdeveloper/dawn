@@ -36,7 +36,7 @@
         "special_title": "{{ section.settings.collection.title }}",
         "title": "Collection",
         "enable_quick_add": true,
-        "description": "<p>The Catena Collection is an alluring play on classic link chains reimagined into versatile and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
+        "description": "<p>The Catena Collection is an alluring play on classic link chains reimagined into versatile, articulate and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
         "color_scheme": "background-2",
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light",
