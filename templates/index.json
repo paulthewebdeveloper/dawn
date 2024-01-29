@@ -207,6 +207,7 @@
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "title_special": "Bracelets",
