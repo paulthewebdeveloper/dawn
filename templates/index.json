@@ -59,6 +59,78 @@
         "link_font_style": "font-grifinito-light"
       }
     },
+    "featured_product_collection_79y6k8": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclepinksapphire_8bbdf1b0-b92a-4f57-9df9-9c98ceae351d.jpg",
+        "product": "le-cercle-ombre-pink-sapphire-ring",
+        "collection": "le-cercle",
+        "special_title": "LE CERCLE",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "custom_image_banner_HGCNXm": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "heading_LdMLgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_QmiDpV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LdMLgk",
+        "text_QmiDpV"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_special": "Special",
+        "description": "",
+        "heading_font_style": "font-grifinito-regular",
+        "heading_special_font_style": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
       "type": "featured-collection",
       "settings": {
@@ -90,41 +162,6 @@
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
-      }
-    },
-    "featured_product_collection_79y6k8": {
-      "type": "featured-product-collection",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclepinksapphire_8bbdf1b0-b92a-4f57-9df9-9c98ceae351d.jpg",
-        "product": "le-cercle-ombre-pink-sapphire-ring",
-        "collection": "le-cercle",
-        "special_title": "LE CERCLE",
-        "title": "Collection",
-        "enable_quick_add": false,
-        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
-      }
-    },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_special": "Special",
-        "description": "",
-        "heading_font_style": "font-grifinito-regular",
-        "heading_special_font_style": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
       }
     },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
@@ -298,9 +335,10 @@
     "image_banner",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
-    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_79y6k8",
+    "custom_image_banner_HGCNXm",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
