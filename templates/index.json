@@ -62,8 +62,8 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
-        "title_special": "Latest Additions",
+        "title": "Latest",
+        "title_special": "Additions",
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular",
