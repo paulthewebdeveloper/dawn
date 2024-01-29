@@ -209,6 +209,7 @@
     },
     "ec606534-e764-4070-8311-b7bdff2193da": {
       "type": "hero-special",
+      "disabled": true,
       "settings": {
         "collection": "catena-collection",
         "link_font_style": "font-grifinito-italic",
