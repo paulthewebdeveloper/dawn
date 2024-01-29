@@ -92,6 +92,23 @@
         "padding_bottom": 0
       }
     },
+    "featured_product_collection_79y6k8": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_5612.jpg",
+        "product": "",
+        "collection": "",
+        "special_title": "Le Cercle",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "disabled": true,
@@ -281,6 +298,7 @@
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "featured_product_collection_79y6k8",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "ec606534-e764-4070-8311-b7bdff2193da",
