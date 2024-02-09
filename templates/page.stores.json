@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "f1a84202-c7e6-4223-84d4-f026095eac71": {
+      "type": "image-with-text",
+      "blocks": {
+        "2705b8d7-e7e9-48ce-8549-0a8d3e5ccf74": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-light"
+          }
+        },
+        "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "NADINE AYSOY",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-light-italic"
+          }
+        },
+        "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow gold band.<\/p>",
+            "text_style": "body",
+            "body_font_style": "font-helvetica-now-micro-regular"
+          }
+        }
+      },
+      "block_order": [
+        "2705b8d7-e7e9-48ce-8549-0a8d3e5ccf74",
+        "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-heading-1",
+        "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nadine_aysoy_portrait.jpg",
+        "first_section_padding": "yes",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "c3ecae6d-f9e9-422b-9fd6-a5c72d551fd0": {
+      "type": "video",
+      "settings": {
+        "heading": "DISCOVER THE WORLD OF",
+        "heading_special": "NADINE AYSOY",
+        "description": "<p>Welcome to the extraordinary world of Nadine Aysoy, where unique jewellery designs emanate luxury and elegance. Explore masterpieces that marry tradition with innovation within the Catena Jewellery Collection, crafting a legacy of beauty and refinement.<\/p>",
+        "heading_font_style": "font-grifinito-light",
+        "heading_special_font_style": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
+        "cover_image": "shopify:\/\/shop_images\/jacek-dylag-agsdDgRW2Ps-unsplash_1_1.jpg",
+        "alt_text": "",
+        "full_width": false,
+        "color_scheme": ""
+      }
+    },
+    "0435fca5-c650-4779-a71d-a17e79808ab1": {
+      "type": "featured-awards",
+      "blocks": {
+        "30105a56-dff3-426b-ac7a-8efc4465a679": {
+          "type": "award",
+          "settings": {
+            "award_name": "UK NEW DESIGNER OF THE YEAR",
+            "award_year": "2018"
+          }
+        },
+        "e85fecd8-f144-4547-bc37-31d4b41f80e2": {
+          "type": "award",
+          "settings": {
+            "award_name": "IJL Editors Choice",
+            "award_year": "2017"
+          }
+        },
+        "09654edd-1b1b-4139-bb89-d3da98595843": {
+          "type": "award",
+          "settings": {
+            "award_name": "UK NEW DESIGNER OF THE YEAR",
+            "award_year": "2018"
+          }
+        }
+      },
+      "block_order": [
+        "30105a56-dff3-426b-ac7a-8efc4465a679",
+        "e85fecd8-f144-4547-bc37-31d4b41f80e2",
+        "09654edd-1b1b-4139-bb89-d3da98595843"
+      ],
+      "settings": {
+        "title": "Featured Awards",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f1a84202-c7e6-4223-84d4-f026095eac71",
+    "c3ecae6d-f9e9-422b-9fd6-a5c72d551fd0",
+    "0435fca5-c650-4779-a71d-a17e79808ab1"
+  ]
+}
