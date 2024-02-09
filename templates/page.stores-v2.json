@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "bc9f39f8-1efc-4ff0-ad95-771e81d6947b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Stores",
+            "heading_size": "h1"
+          }
+        },
+        "text_HctVwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each location is not just a store; it's a destination for those who appreciate the finer things in life. Our carefully curated collection showcases the exquisite craftsmanship and innovative designs of Nadine Aysoy, making each visit a unique experience.<\/p>"
+          }
+        },
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>United Kingdom<\/h2><p><strong>Nadine Aysoy Studio - London<\/strong><br\/>By appointment: <a href=\"mailto:info@aysoydesign.com\">info@aysoydesign.com<\/a><\/p><p><strong>Harrods<\/strong><br\/>87-135 Brompton Road, London<br\/><a href=\"http:\/\/www.harrods.com\">www.harrods.com<\/a><\/p><p><strong>Matches Fashion<\/strong><br\/><a href=\"http:\/\/www.matchesfashion.com\">www.matchesfashion.com<\/a><\/p><p><strong>Selfridges<\/strong><br\/><a href=\"http:\/\/www.selfridges.com\">www.selfridges.com<\/a><\/p><p><strong>La Maison Couture<\/strong><br\/><a href=\"http:\/\/www.lamaisoncouture.com\">www.lamaisoncouture.com<\/a><\/p><h2>France<\/h2><p><strong>Mad Lords<\/strong><br\/>316 Rue St Honoré, 75001 Paris, France<br\/><a href=\"http:\/\/www.madlords.com\">www.madlords.com<\/a><\/p><h2>Germany<\/h2><p><strong>Mytheresa<\/strong><br\/><a href=\"http:\/\/www.mytheresa.com\">www.mytheresa.com<\/a><\/p><h2>USA<\/h2><p><strong>The Webster Miramar<\/strong><br\/>1759 South Jameson Lane, Montecito, CA 93108 USA<\/p><p><strong>Elyse Walker<\/strong><br\/>4719 Commons Way Suite J, Calabasas, CA 91302, USA<br\/><a href=\"http:\/\/www.elysewalker.com\">www.elysewalker.com<\/a><\/p><p><strong>Market Highland Park<\/strong><br\/>26 Highland Park Village, Dallas, TX 75205, USA<\/p><p><strong>Lesley Ann Jewels<\/strong><br\/>4721 Westheimer Rd, Houston, TX 77027, USA<\/p><p><strong>Fivestory<\/strong><br\/>201 Royal Poinciana Way, Palm Beach, FL 33480 USA<br\/><a href=\"http:\/\/www.fivestoryny.com\">www.fivestoryny.com<\/a><\/p><h2>Middle East<\/h2><p><strong>The Overdressed<\/strong><br\/><a href=\"http:\/\/www.theoverdressed.co\">www.theoverdressed.co<\/a><\/p><p><strong>Printemps Doha @Pink Heater<\/strong><br\/>42, Al Khaleej Street, Doha Oasis, Doha, Qatar<\/p><p><strong>Al Ostoura<\/strong><br\/>Al Hamra Shopping Center, Ground Floor, Al Shuhada’a St. - Sharq, Kuwait City<\/p><h2>Online<\/h2><p><strong>Mytheresa<\/strong><br\/><a href=\"http:\/\/www.mytheresa.com\">www.mytheresa.com<\/a><\/p><p><strong>Matches Fashion<\/strong><br\/><a href=\"http:\/\/www.matchesfashion.com\">www.matchesfashion.com<\/a><\/p><p><strong>Selfridges<\/strong><br\/><a href=\"http:\/\/www.selfridges.com\">www.selfridges.com<\/a><\/p><p><strong>Curated Crowd<\/strong><br\/><a href=\"http:\/\/www.curated-crowd.com\">www.curated-crowd.com<\/a><\/p><p><strong>La Maison Couture<\/strong><br\/><a href=\"http:\/\/www.lamaisoncouture.com\">www.lamaisoncouture.com<\/a><\/p><p><strong>The Overdressed<\/strong><br\/><a href=\"http:\/\/www.theoverdressed.co\">www.theoverdressed.co<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1",
+        "text_HctVwg",
+        "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1"
+      ],
+      "custom_css": [
+        ".rich-text {padding: var(--spacing-sections-horizontal-mobile); padding-top: 0 !important; padding-bottom: 0 !important;}",
+        "@media screen and (min-width: 750px) {.rich-text {padding: var(--spacing-sections-horizontal-desktop) !important; padding-top: 0 !important; padding-bottom: 0 !important; }}",
+        "h2 {font-family: \"GrifinitoL\"; font-weight: 300; font-style: italic; color: #a60632; line-height: 0.8;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bc9f39f8-1efc-4ff0-ad95-771e81d6947b"
+  ]
+}

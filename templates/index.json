@@ -6,7 +6,6 @@
         "117e9929-26a0-4e3e-999d-dff8ce0f44db": {
           "type": "image_picker",
           "settings": {
-            "inner_image": "shopify:\/\/shop_images\/hero_text.svg",
             "image_width": 0
           }
         }
@@ -15,8 +14,8 @@
         "117e9929-26a0-4e3e-999d-dff8ce0f44db"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
-        "image_overlay_opacity": 10,
+        "image": "shopify:\/\/shop_images\/F3CCAE0C-8435-4000-B7DC-B8E4CB308DEF.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "full",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -28,17 +27,122 @@
         "show_text_below": false
       }
     },
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
+        "product": "catena-diamond-illusion-charm-necklace",
+        "collection": "catena",
+        "special_title": "{{ section.settings.collection.title }}",
+        "title": "Collection",
+        "enable_quick_add": true,
+        "description": "<p>Catena is an alluring play on classic link chains reimagined into versatile, articulate and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-italic"
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
+        "center_image": "shopify:\/\/shop_images\/CatenaAutumn2.jpg",
+        "right_image": "shopify:\/\/shop_images\/Shopify_2.png",
+        "first_product": "catena-autumn-hoop-earrings",
+        "second_product": "catena-autumn-hoop-earrings",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
+      }
+    },
+    "featured_product_collection_79y6k8": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclepinksapphire_8bbdf1b0-b92a-4f57-9df9-9c98ceae351d.jpg",
+        "product": "le-cercle-ombre-pink-sapphire-ring",
+        "collection": "le-cercle",
+        "special_title": "LE CERCLE",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "custom_image_banner_HGCNXm": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "heading_LdMLgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_QmiDpV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LdMLgk",
+        "text_QmiDpV"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_special": "Special",
+        "description": "",
+        "heading_font_style": "font-grifinito-regular",
+        "heading_special_font_style": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
-        "title_special": "Our Favourites",
+        "title": "Latest",
+        "title_special": "Additions",
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular",
         "link_font_style": "font-grifinito-light-italic",
         "heading_size": "h0",
-        "description": "<p>Discover elegance with our signature collection. Each piece, from sapphire-adorned earrings to our luxurious ruby hoops, is crafted to accentuate your style with sophistication. Embrace the allure of these gems and find your favorite. View the complete array for more exquisite designs.<\/p>",
+        "description": "<p>Playful and perfect for daily wear, the latest additions to Le Cercle celebrate individuality. From pink sapphires to diamonds and vibrant green emeralds you'll find a colour and stone to fit every mood.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "le-cercle",
@@ -61,25 +165,6 @@
         "padding_bottom": 0
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_special": "Special",
-        "description": "",
-        "heading_font_style": "font-grifinito-regular",
-        "heading_special_font_style": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
-        "cover_image": "shopify:\/\/shop_images\/pink-tennis-necklace.jpg",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
-      }
-    },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
       "type": "featured-categories",
       "blocks": {
@@ -88,8 +173,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Catena",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
-            "link": "shopify:\/\/collections\/catena-collection"
+            "link": "shopify:\/\/collections\/catena"
           }
         },
         "b160d25d-85fa-435b-9707-c4fe8a4c984e": {
@@ -97,7 +181,6 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Le Cercle",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-multicoloured-gemstone-catena-rainbow-earrings_20848617_45959186_1000_1.png",
             "link": "shopify:\/\/collections\/le-cercle"
           }
         },
@@ -105,44 +188,39 @@
           "type": "category",
           "settings": {
             "top_bottom": "top",
-            "category_name": "Petit Tsarina",
-            "category_image": "shopify:\/\/shop_images\/petit_tsarina.png",
-            "link": ""
+            "category_name": "Earrings",
+            "link": "shopify:\/\/collections\/earrings"
           }
         },
         "3c2fb2b7-ad83-42bb-a2ec-832411458379": {
           "type": "category",
           "settings": {
             "top_bottom": "top",
-            "category_name": "Earrings",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-emerald-and-sapphire-catena-earrings_19369482_42560459_1000_1.png",
-            "link": ""
+            "category_name": "Rings",
+            "link": "shopify:\/\/collections\/rings"
           }
         },
         "853f1f42-fb70-4eb1-b312-ea356136b9fd": {
           "type": "category",
           "settings": {
             "top_bottom": "bottom",
-            "category_name": "Rings",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-emerald-cabochon-catena-ring_19370217_42556928_800_1.png",
-            "link": ""
-          }
-        },
-        "cf5fd00b-cf7c-4598-8068-b24e733b2f93": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Bracelets",
-            "category_image": "shopify:\/\/shop_images\/atum_bangle.png",
-            "link": ""
+            "category_name": "Necklaces",
+            "link": "shopify:\/\/collections\/necklaces"
           }
         },
         "f931a47d-bcae-43e2-8357-a77b7059b49d": {
           "type": "category",
           "settings": {
             "top_bottom": "bottom",
-            "category_name": "Pendants",
-            "category_image": "shopify:\/\/shop_images\/nadine-aysoy-yellow-gold-and-diamond-catena-illusion-necklace_20848618_46040133_600.png",
+            "category_name": "Bracelets",
+            "link": "shopify:\/\/collections\/bracelets"
+          }
+        },
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Bespoke",
             "link": ""
           }
         }
@@ -153,14 +231,13 @@
         "772f448d-4dbc-40c3-a06b-840ccf71dc61",
         "3c2fb2b7-ad83-42bb-a2ec-832411458379",
         "853f1f42-fb70-4eb1-b312-ea356136b9fd",
-        "cf5fd00b-cf7c-4598-8068-b24e733b2f93",
-        "f931a47d-bcae-43e2-8357-a77b7059b49d"
+        "f931a47d-bcae-43e2-8357-a77b7059b49d",
+        "cf5fd00b-cf7c-4598-8068-b24e733b2f93"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/atum_bangle.png",
         "product": "catena-autumn-bangle",
-        "title_normal": "Explore Our",
-        "title_red": "Collections",
+        "title_normal": "Explore All",
+        "title_red": "Jewellery",
         "color_scheme": "background-2",
         "heading_font_style_one": "font-grifinito-light",
         "heading_font_style_two": "font-grifinito-light-italic",
@@ -168,55 +245,25 @@
         "link_font_style": "font-grifinito-light-italic"
       }
     },
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
-      "type": "featured-product-collection",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/cercle_main.jpg",
-        "product": "catena-autum-eternity-ring",
-        "collection": "le-cercle",
-        "special_title": "{{ section.settings.collection.title }}",
-        "title": "Jewellery Collection",
-        "enable_quick_add": true,
-        "description": "<p>Celebrate color and craftsmanship with the Le Cercle Collection. Adorn your moments with our vibrant selection, from the rainbow hues of our hoop earrings to the richly jeweled Catena Autumn Eternity Ring. Each piece promises to add a splash of brilliance to your ensemble. Explore the collection and find the perfect jewel to brighten your day.<\/p><p><\/p>",
-        "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-light-italic",
-        "heading_font_style_two": "font-grifinito-light",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-italic"
-      }
-    },
     "ec606534-e764-4070-8311-b7bdff2193da": {
       "type": "hero-special",
+      "disabled": true,
       "settings": {
         "collection": "catena-collection",
         "link_font_style": "font-grifinito-italic",
-        "heading": "Welcome to the extraordinary world of",
-        "highlight_one": "Nadine Aysoy,",
-        "subtext": "where unique jewellery designs emanate",
-        "highlight_two": "luxury",
-        "highlight_three": "elegance.",
-        "closing_text": "Explore masterpieces that marry tradition with innovation within the",
-        "highlight_four": "Catena Jewellery Collection,",
-        "final_statement": "crafting a legacy of beauty and refinement."
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify:\/\/shop_images\/catena_illusion_ring.jpg",
-        "center_image": "shopify:\/\/shop_images\/main_catena_collection.jpg",
-        "right_image": "shopify:\/\/shop_images\/catena_ring.jpg",
-        "first_product": "catena-autum-eternity-ring",
-        "second_product": "catena-autumn-hoop-earrings",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
+        "heading": "Welcome to the world of",
+        "highlight_one": "Nadine Aysoy Jewellery,",
+        "subtext": "where each masterpiece is exquisite, intriguing",
+        "highlight_two": "",
+        "highlight_three": "timeless.",
+        "closing_text": "",
+        "highlight_four": "",
+        "final_statement": ""
       }
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "title_special": "Bracelets",
@@ -255,7 +302,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         },
@@ -263,7 +309,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         },
@@ -271,7 +316,6 @@
           "type": "press",
           "settings": {
             "press_text": "VOGUE MEXICO JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/DSC5509_1.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         }
@@ -286,34 +330,19 @@
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, our creations have captured the imagination of fashion's finest. Featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.<\/p>"
       }
-    },
-    "ea12c5f8-b8ec-4f4a-af82-8df8c14b9ea8": {
-      "type": "featured-product-collection",
-      "settings": {
-        "product": "",
-        "collection": "",
-        "special_title": "",
-        "title": "Product Collection",
-        "enable_quick_add": false,
-        "description": "<p>Lorem ipsum dolor sit amet. Ea porro voluptates est minus porro eos illo saepe aut explicabo ratione qui placeat quod? Ut perspiciatis quibusdam id reprehenderit corporis qui iste reiciendis sed soluta adipisci.<p>",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
-      }
     }
   },
   "order": [
     "image_banner",
-    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "ec606534-e764-4070-8311-b7bdff2193da",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
+    "featured_product_collection_79y6k8",
+    "custom_image_banner_HGCNXm",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "42d9445b-f805-4cb0-9514-c39973ea424c",
+    "ec606534-e764-4070-8311-b7bdff2193da",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
-    "d810a605-312e-4cd8-bedc-9fccf02f9070",
-    "ea12c5f8-b8ec-4f4a-af82-8df8c14b9ea8"
+    "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }

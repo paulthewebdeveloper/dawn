@@ -103,6 +103,13 @@
               </svg>
             </div>
           </button>
+          <a
+            type="button"
+            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            href="/pages/contact"
+          >
+            Bespoke
+          </a>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}

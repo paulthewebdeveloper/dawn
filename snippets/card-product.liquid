@@ -258,8 +258,8 @@
       <div class="card__content">
         <div class="flex-row justify-space-between mt-6 card__information card__information__flex-box">
           <h3
-            class="{{ section.settings.body_font_style }} card__heading m-0 uppercase {% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
-            style="font-size:1.25rem;"
+            class="{{ section.settings.link_font_style }} card__heading m-0 uppercase {% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+            style="font-size:2rem;"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -318,7 +318,11 @@
               </p>
             {%- endif -%}
 
-            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            {% render 'price',
+              product: card_product,
+              price_class: section.settings.link_font_style,
+              show_compare_at_price: true
+            %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>

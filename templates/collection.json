@@ -14,7 +14,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf": {
           "type": "text",
           "settings": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.",
+            "text": "Catena Collection, inspired by the Italian word for chain, draws on the theme of connection with golden links that are entirely flexible and adaptable to the wearer. This movement is exemplified in the Catena rings, which are supple like chains and perfectly tactile for everyday wear. All pieces are crafted in 18k yellow gold with diamonds and coloured precious and semi-precious stones, including sapphire, emerald, cabochons and pearls.",
             "text_style": "body"
           }
         }
@@ -24,7 +24,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
+        "image": "shopify:\/\/shop_images\/Le_Cercle_Emerald_Petite_Ring_and_Huggies.heic",
         "image_overlay_opacity": 10,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
@@ -52,7 +52,6 @@
         "f2d8d35e-4ec0-4738-92a2-30b8e51dc394": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/catena_collection_banner.png",
             "collection": "catena-collection",
             "description": "EXPLORE MORE",
             "heading_font_style": "font-grifinito-light-italic",
@@ -62,7 +61,6 @@
         "b4f1a694-303d-4526-a601-bacc735a544f": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/catena_multi_stone.png",
             "collection": "le-cercle",
             "description": "Discover More",
             "heading_font_style": "font-grifinito-light-italic",

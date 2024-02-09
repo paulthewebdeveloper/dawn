@@ -16,6 +16,26 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  for block in section.blocks
+    if block.type == '@app'
+      assign has_app_block = true
+    endif
+  endfor
+-%}
+
+{%- if section.settings.use_secondary_logo -%}
+  {%- assign current_logo = settings.secondary_logo -%}
+{%- else -%}
+  {%- assign current_logo = settings.logo -%}
+{%- endif -%}
+
+{%- if settings.use_secondary_logo -%}
+  {%- assign logo_width = settings.secondary_logo_width -%}
+{%- else -%}
+  {%- assign logo_width = settings.logo_width -%}
+{%- endif -%}
+
 <nav class="jd-navbar {%if section.settings.absolute_header_type != "no"%}position-absolute{% endif %} padding">
   <div class="jd-search-container">
     {% render 'header-search', input_id: 'Search-In-Modal' %}
@@ -35,8 +55,10 @@
   <div
     class="jd-navbar-content w-full color-{{ section.settings.menu_color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} {%if section.settings.absolute_header_type != "no" %}jd-transparent-header{% endif %}"
   >
-    <a class="full-unstyled-link" href="{{ routes.root_url }}">
-      <div class="jd-navbar-logo mobile-invisible">NADINE AYSOY</div>
+    <a class="full-unstyled-link flex-row justify-center" href="{{ routes.root_url }}">
+      <div class="jd-navbar-logo mobile-invisible" style="width: {{ logo_width }}px!important">
+        {{ current_logo | image_url: width: 100 | image_tag }}
+      </div>
     </a>
     <div class="jd-navbar-container custom-section pb-0 pt-0">
       <div class="flex-row gap-24 align-items-center">

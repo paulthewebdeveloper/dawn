@@ -14,7 +14,6 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_description": "<p>Immerse yourself in the world of glamour and style with Nadine Aysoy's jewelry collection, featured on Vogue Mexico. Unleash your inner fashionista with our exquisite designs.<\/p>",
             "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
           }
         },
@@ -23,7 +22,6 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_description": "<p>Immerse yourself in the world of glamour and style with Nadine Aysoy's jewelry collection, featured on Vogue Mexico. Unleash your inner fashionista with our exquisite designs.<\/p>",
             "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
           }
         },
@@ -32,7 +30,6 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_description": "<p>Immerse yourself in the world of glamour and style with Nadine Aysoy's jewelry collection, featured on Vogue Mexico. Unleash your inner fashionista with our exquisite designs.<\/p>",
             "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
           }
         }
@@ -43,10 +40,7 @@
         "c43299cd-db73-41f0-ad65-62a78fe409a7"
       ],
       "settings": {
-        "heading_font_style": "font-grifinito-regular",
-        "section_title": "Featured Press",
-        "description": "<p>Discover the Latest Press Coverage on Our Featured Products Stay up to date with the most recent press coverage of our featured products<\/p>",
-        "body_font_style": "font-grifinito-regular"
+        "heading_font_style": "font-grifinito-regular"
       }
     }
   },
