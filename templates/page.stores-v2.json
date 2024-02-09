@@ -12,8 +12,14 @@
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Contact Us",
+            "heading": "Our Stores",
             "heading_size": "h1"
+          }
+        },
+        "text_HctVwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each location is not just a store; it's a destination for those who appreciate the finer things in life. Our carefully curated collection showcases the exquisite craftsmanship and innovative designs of Nadine Aysoy, making each visit a unique experience.<\/p>"
           }
         },
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1": {
@@ -25,6 +31,7 @@
       },
       "block_order": [
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-heading-1",
+        "text_HctVwg",
         "template--16914526273777__bc9f39f8-1efc-4ff0-ad95-771e81d6947b-text-1"
       ],
       "custom_css": [
