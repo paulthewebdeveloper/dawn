@@ -41,7 +41,7 @@
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-italic"
+        "link_font_style": "font-grifinito-light"
       }
     },
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
@@ -91,6 +91,7 @@
           "type": "text",
           "settings": {
             "text": "",
+            "show_description": false,
             "text_style": "body"
           }
         }
@@ -140,7 +141,7 @@
         "heading_font_style_one": "font-grifinito-light-italic",
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-regular",
-        "link_font_style": "font-grifinito-light-italic",
+        "link_font_style": "font-grifinito-light",
         "heading_size": "h0",
         "description": "<p>Playful and perfect for daily wear, the latest additions to Le Cercle celebrate individuality. From pink sapphires to diamonds and vibrant green emeralds you'll find a colour and stone to fit every mood.<\/p>",
         "show_description": false,

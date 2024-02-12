@@ -15,6 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Catena Collection, inspired by the Italian word for chain, draws on the theme of connection with golden links that are entirely flexible and adaptable to the wearer. This movement is exemplified in the Catena rings, which are supple like chains and perfectly tactile for everyday wear. All pieces are crafted in 18k yellow gold with diamonds and coloured precious and semi-precious stones, including sapphire, emerald, cabochons and pearls.",
+            "show_description": true,
             "text_style": "body"
           }
         }
@@ -24,7 +25,6 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
         "image_overlay_opacity": 10,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
@@ -75,6 +75,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "link_font_style": "font-grifinito-light",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
