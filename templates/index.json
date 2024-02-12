@@ -6,6 +6,7 @@
         "117e9929-26a0-4e3e-999d-dff8ce0f44db": {
           "type": "image_picker",
           "settings": {
+            "inner_image": "shopify:\/\/shop_images\/disovertheworld.svg",
             "image_width": 0
           }
         }
