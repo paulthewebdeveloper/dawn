@@ -59,10 +59,21 @@
             "heading_font_style": "font-grifinito-light-italic",
             "body_font_style": "font-grifinito-light"
           }
+        },
+        "banner_VNpna8": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shopify_2.png",
+            "collection": "",
+            "description": "",
+            "heading_font_style": "font-grifinito-regular",
+            "body_font_style": "font-grifinito-regular"
+          }
         }
       },
       "block_order": [
-        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394"
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394",
+        "banner_VNpna8"
       ],
       "settings": {
         "products_per_page": 16,
