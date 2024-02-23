@@ -28,7 +28,7 @@
         "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with the Rainbow bangle spotlighting yellow, orange and pink sapphires – among other gems – set in an 18-karat yellow gold band.<\/p>",
+            "text": "<p>Though Nadine Aysoy is following in the footsteps of her grandfather P.N. Ferstenberg, who was awarded the title ‘The Dean of the Diamond Industry’ by the Belgian government, the jeweller’s approach to design is anything but traditional. Playful use of colour abounds throughout her eponymous label’s designs, with fine jewellery ranges available online from such eminent retailers as Harrods, Matches Fashion, Selfridges and more.<\/p>",
             "text_style": "body",
             "body_font_style": "font-helvetica-now-micro-regular"
           }
@@ -40,7 +40,7 @@
         "template--16914105762033__f1a84202-c7e6-4223-84d4-f026095eac71-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/nadine_aysoy_portrait.jpg",
+        "image": "shopify:\/\/shop_images\/PHK_4598_1600x_ecc34aba-b3fd-45e7-b9b1-d853a946d500.webp",
         "first_section_padding": "yes",
         "height": "large",
         "desktop_image_width": "medium",
@@ -56,6 +56,7 @@
     },
     "c3ecae6d-f9e9-422b-9fd6-a5c72d551fd0": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "DISCOVER THE WORLD OF",
         "heading_special": "NADINE AYSOY",
@@ -66,7 +67,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
-        "cover_image": "shopify:\/\/shop_images\/jacek-dylag-agsdDgRW2Ps-unsplash_1_1.jpg",
         "alt_text": "",
         "full_width": false,
         "color_scheme": ""
@@ -75,6 +75,13 @@
     "0435fca5-c650-4779-a71d-a17e79808ab1": {
       "type": "featured-awards",
       "blocks": {
+        "09654edd-1b1b-4139-bb89-d3da98595843": {
+          "type": "award",
+          "settings": {
+            "award_name": "UK NEW DESIGNER OF THE YEAR",
+            "award_year": "2018"
+          }
+        },
         "30105a56-dff3-426b-ac7a-8efc4465a679": {
           "type": "award",
           "settings": {
@@ -88,22 +95,16 @@
             "award_name": "IJL Editors Choice",
             "award_year": "2017"
           }
-        },
-        "09654edd-1b1b-4139-bb89-d3da98595843": {
-          "type": "award",
-          "settings": {
-            "award_name": "UK NEW DESIGNER OF THE YEAR",
-            "award_year": "2018"
-          }
         }
       },
       "block_order": [
+        "09654edd-1b1b-4139-bb89-d3da98595843",
         "30105a56-dff3-426b-ac7a-8efc4465a679",
-        "e85fecd8-f144-4547-bc37-31d4b41f80e2",
-        "09654edd-1b1b-4139-bb89-d3da98595843"
+        "e85fecd8-f144-4547-bc37-31d4b41f80e2"
       ],
       "settings": {
         "title": "Featured Awards",
+        "description": "<p>Nadine Aysoy was named the winner of the IJL Editors' Choice Award, 2017 in the Show Stopper category. The brand has also gone on to be named UK Retail Jeweller “Best New Designer” of the Year 2018 and is a Member of the National Association of Jewellers.<\/p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-regular",
         "heading_font_style_two": "font-grifinito-regular",
