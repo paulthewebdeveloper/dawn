@@ -14,7 +14,15 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
+            "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>"
+          }
+        },
+        "press_KQ9DFB": {
+          "type": "press",
+          "settings": {
+            "press_title": "VOGUE MEXICO",
+            "press_year": "JANUARY 2018",
+            "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>"
           }
         },
         "2234c44e-2bdc-4052-88aa-7d0bc4673248": {
@@ -22,7 +30,7 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
+            "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>"
           }
         },
         "c43299cd-db73-41f0-ad65-62a78fe409a7": {
@@ -30,17 +38,21 @@
           "settings": {
             "press_title": "VOGUE MEXICO",
             "press_year": "JANUARY 2018",
-            "press_image": "shopify:\/\/shop_images\/nadine_aysoy_vouge_mexico.jpg"
+            "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>"
           }
         }
       },
       "block_order": [
         "0fb36448-9a15-4dd7-8ff0-86ec11abc968",
+        "press_KQ9DFB",
         "2234c44e-2bdc-4052-88aa-7d0bc4673248",
         "c43299cd-db73-41f0-ad65-62a78fe409a7"
       ],
       "settings": {
-        "heading_font_style": "font-grifinito-regular"
+        "heading_font_style": "font-grifinito-regular",
+        "section_title": "Featured Press",
+        "description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>",
+        "body_font_style": "font-grifinito-regular"
       }
     }
   },
