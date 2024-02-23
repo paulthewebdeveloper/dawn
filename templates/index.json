@@ -303,29 +303,32 @@
         "2223899d-77dc-4744-890d-ab8041d195a5": {
           "type": "press",
           "settings": {
-            "press_text": "VOGUE MEXICO JANUARY 2018",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
-          "type": "press",
-          "settings": {
-            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_text": "EMILY IN PARIS | SEASON 3",
+            "press_image": "shopify:\/\/shop_images\/2113a5112360-emily-cooper-purple-dress_jpg.webp",
             "heading_font_style": "font-grifinito-regular"
           }
         },
         "29f2ce6a-bca2-4569-9272-011f4507d42f": {
           "type": "press",
           "settings": {
-            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_text": "RACHEL ZEGLER, PEOPLE'S CHOICE AWARDS | FEBRUARY 2024",
+            "press_image": "shopify:\/\/shop_images\/Screenshot_2024-02-23_at_14.38.11.png",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
+          "type": "press",
+          "settings": {
+            "press_text": "SABRINA CLAUDIO, FAULT MAGAZINE | OCTOBER 2020",
+            "press_image": "shopify:\/\/shop_images\/215d01d3e5610127f9ace5156b10ff61.jpg",
             "heading_font_style": "font-grifinito-regular"
           }
         }
       },
       "block_order": [
         "2223899d-77dc-4744-890d-ab8041d195a5",
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760",
-        "29f2ce6a-bca2-4569-9272-011f4507d42f"
+        "29f2ce6a-bca2-4569-9272-011f4507d42f",
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760"
       ],
       "settings": {
         "title": "As Seen On",
