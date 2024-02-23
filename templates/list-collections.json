@@ -15,6 +15,7 @@
           "type": "text",
           "settings": {
             "text": "Exquisite, intriguing and timeless. Inspired by the beauty of nature, various forms of art, fashion and precious stones, classic pieces are transformed into something extravagant and chic.",
+            "show_description": false,
             "text_style": "body"
           }
         }
@@ -25,7 +26,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Le_Cercle_pink_heart_banner.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 10,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
         "show_text_box": true,

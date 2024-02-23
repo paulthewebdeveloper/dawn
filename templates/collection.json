@@ -25,7 +25,8 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image_overlay_opacity": 10,
+        "image": "shopify:\/\/shop_images\/Le_Cercle_Emerald_Petite_Ring_and_Huggies.heic",
+        "image_overlay_opacity": 0,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
