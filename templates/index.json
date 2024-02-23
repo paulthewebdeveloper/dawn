@@ -324,26 +324,12 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
-          "type": "press",
-          "settings": {
-            "press_text": "SABRINA CLAUDIO, FAULT MAGAZINE | OCT 2020",
-            "press_image": "shopify:\/\/shop_images\/Sabrina_Claudio_-_Nadine_Aysoy_Jewellery.png",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
         "press_AWiF6W": {
           "type": "press",
+          "disabled": true,
           "settings": {
             "press_text": "ELLE MAGAZINE |",
             "press_image": "shopify:\/\/shop_images\/PHOTO-2022-07-28-07-19-19.jpg",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "press_eCQCfz": {
-          "type": "press",
-          "settings": {
-            "press_text": "TARAJI P HENSON, BET AWARDS | JUN 2021",
             "heading_font_style": "font-grifinito-regular"
           }
         },
@@ -355,10 +341,27 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
-        "press_e6UBib": {
+        "press_eCQCfz": {
           "type": "press",
           "settings": {
-            "press_text": "VOGUE MEXICO JANUARY 2018",
+            "press_text": "TARAJI P HENSON, BET AWARDS | JUN 2021",
+            "press_image": "shopify:\/\/shop_images\/Taraj_P_Henson_GettyImages-1325803660_1280.webp",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760": {
+          "type": "press",
+          "settings": {
+            "press_text": "SABRINA CLAUDIO, FAULT MAGAZINE | OCT 2020",
+            "press_image": "shopify:\/\/shop_images\/Sabrina_Claudio_-_Nadine_Aysoy_Jewellery.png",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "press_9qp8GP": {
+          "type": "press",
+          "settings": {
+            "press_text": "ELLE MAGAZINE | SEP 2022",
+            "press_image": "shopify:\/\/shop_images\/1_4299b5bf-9fa9-4e57-a3ad-67aec3b973c2.png",
             "heading_font_style": "font-grifinito-regular"
           }
         }
@@ -367,11 +370,11 @@
         "2223899d-77dc-4744-890d-ab8041d195a5",
         "29f2ce6a-bca2-4569-9272-011f4507d42f",
         "press_mR7W4F",
-        "293a314b-5a67-4faa-badd-2ecbf3bc5760",
         "press_AWiF6W",
-        "press_eCQCfz",
         "press_KK3Tyk",
-        "press_e6UBib"
+        "press_eCQCfz",
+        "293a314b-5a67-4faa-badd-2ecbf3bc5760",
+        "press_9qp8GP"
       ],
       "settings": {
         "title": "As Seen On",
