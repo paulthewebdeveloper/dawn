@@ -316,6 +316,14 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
+        "press_9qp8GP": {
+          "type": "press",
+          "settings": {
+            "press_text": "ELLE MAGAZINE | SEP 2022",
+            "press_image": "shopify:\/\/shop_images\/1_4299b5bf-9fa9-4e57-a3ad-67aec3b973c2.png",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
         "press_mR7W4F": {
           "type": "press",
           "settings": {
@@ -357,11 +365,11 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
-        "press_9qp8GP": {
+        "press_UGK8mY": {
           "type": "press",
           "settings": {
-            "press_text": "ELLE MAGAZINE | SEP 2022",
-            "press_image": "shopify:\/\/shop_images\/1_4299b5bf-9fa9-4e57-a3ad-67aec3b973c2.png",
+            "press_text": "HARPER'S BAZAAR MALAYSIA | 2023",
+            "press_image": "shopify:\/\/shop_images\/2_5043a756-80ce-4c6e-8b27-0aeafef26a14.png",
             "heading_font_style": "font-grifinito-regular"
           }
         }
@@ -369,12 +377,13 @@
       "block_order": [
         "2223899d-77dc-4744-890d-ab8041d195a5",
         "29f2ce6a-bca2-4569-9272-011f4507d42f",
+        "press_9qp8GP",
         "press_mR7W4F",
         "press_AWiF6W",
         "press_KK3Tyk",
         "press_eCQCfz",
         "293a314b-5a67-4faa-badd-2ecbf3bc5760",
-        "press_9qp8GP"
+        "press_UGK8mY"
       ],
       "settings": {
         "title": "As Seen On",
