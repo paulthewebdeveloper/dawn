@@ -25,7 +25,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/CatenaCharmDiamond.jpg",
+        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclerings1_a60604ec-f133-42a4-975b-96fd5784fbc2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
@@ -53,25 +53,16 @@
         "f2d8d35e-4ec0-4738-92a2-30b8e51dc394": {
           "type": "banner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_5612_e2e60d09-fe8f-40d5-8dce-d821aae45f3a.jpg",
             "collection": "catena-collection",
             "description": "EXPLORE MORE",
-            "heading_font_style": "font-grifinito-light-italic",
-            "body_font_style": "font-grifinito-light"
-          }
-        },
-        "b4f1a694-303d-4526-a601-bacc735a544f": {
-          "type": "banner",
-          "settings": {
-            "collection": "le-cercle",
-            "description": "Discover More",
             "heading_font_style": "font-grifinito-light-italic",
             "body_font_style": "font-grifinito-light"
           }
         }
       },
       "block_order": [
-        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394",
-        "b4f1a694-303d-4526-a601-bacc735a544f"
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394"
       ],
       "settings": {
         "products_per_page": 16,
