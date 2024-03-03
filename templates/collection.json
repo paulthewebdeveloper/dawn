@@ -64,8 +64,8 @@
           "type": "banner",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shopify_2.png",
-            "collection": "",
-            "description": "",
+            "collection": "enamel",
+            "description": "MORE JEWELLERY",
             "heading_font_style": "font-grifinito-regular",
             "body_font_style": "font-grifinito-regular"
           }
