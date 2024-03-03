@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "a98c27da-1594-46f2-974f-f0640fc09a00": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "41031322-825d-42b1-ad5f-df3f7867d6fb": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h0",
+            "heading_font_style": "font-grifinito-light-italic"
+          }
+        },
+        "decd134e-de70-4829-a00b-308ee83dfacf": {
+          "type": "text",
+          "settings": {
+            "text": "Catena Collection, inspired by the Italian word for chain, draws on the theme of connection with golden links that are entirely flexible and adaptable to the wearer. This movement is exemplified in the Catena rings, which are supple like chains and perfectly tactile for everyday wear. All pieces are crafted in 18k yellow gold with diamonds and coloured precious and semi-precious stones, including sapphire, emerald, cabochons and pearls.",
+            "show_description": true,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "41031322-825d-42b1-ad5f-df3f7867d6fb",
+        "decd134e-de70-4829-a00b-308ee83dfacf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclerings1_a60604ec-f133-42a4-975b-96fd5784fbc2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "full",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "custom-main-collection-product-grid",
+      "blocks": {
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_5612_e2e60d09-fe8f-40d5-8dce-d821aae45f3a.jpg",
+            "collection": "catena-explore-more",
+            "description": "EXPLORE MORE",
+            "heading_font_style": "font-grifinito-light-italic",
+            "body_font_style": "font-grifinito-light"
+          }
+        },
+        "banner_VNpna8": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC6281-Enhanced-NR-1.jpg",
+            "collection": "le-cercle-1",
+            "description": "MORE JEWELLERY",
+            "heading_font_style": "font-grifinito-regular",
+            "body_font_style": "font-grifinito-regular"
+          }
+        }
+      },
+      "block_order": [
+        "f2d8d35e-4ec0-4738-92a2-30b8e51dc394",
+        "banner_VNpna8"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "link_font_style": "font-grifinito-light",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "a98c27da-1594-46f2-974f-f0640fc09a00",
+    "banner",
+    "product-grid"
+  ]
+}
