@@ -318,6 +318,7 @@
         },
         "press_9qp8GP": {
           "type": "press",
+          "disabled": true,
           "settings": {
             "press_text": "ELLE MAGAZINE | SEP 2022",
             "press_image": "shopify:\/\/shop_images\/1_4299b5bf-9fa9-4e57-a3ad-67aec3b973c2.png",
