@@ -18,6 +18,15 @@
             "press_image": "shopify:\/\/shop_images\/Bridal_Guide_May_2024_Nadine_Aysoy.jpg"
           }
         },
+        "2234c44e-2bdc-4052-88aa-7d0bc4673248": {
+          "type": "press",
+          "settings": {
+            "press_title": "HARPER'S BAZAAR GERMANY",
+            "press_year": "JANUARY 2024",
+            "press_description": "",
+            "press_image": "shopify:\/\/shop_images\/Harper_s_Bazaar_Jan_2024_Nadine_Aysoy.jpg"
+          }
+        },
         "press_KQ9DFB": {
           "type": "press",
           "settings": {
@@ -25,6 +34,15 @@
             "press_year": "JANUARY 2024",
             "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>",
             "press_image": "shopify:\/\/shop_images\/Rapaport_2024_Nadine_Aysoy.jpg"
+          }
+        },
+        "press_MPBjwx": {
+          "type": "press",
+          "settings": {
+            "press_title": "HARPER'S BAZAAR GERMANY",
+            "press_year": "DECEMBER 2023",
+            "press_description": "",
+            "press_image": "shopify:\/\/shop_images\/Harpers_Bazaar_Nadine_Aysoy.jpg"
           }
         },
         "press_Wk4MJ7": {
@@ -45,14 +63,6 @@
             "press_image": "shopify:\/\/shop_images\/Vogue_Mexico_2018_Nadine_Aysoy.jpg"
           }
         },
-        "2234c44e-2bdc-4052-88aa-7d0bc4673248": {
-          "type": "press",
-          "settings": {
-            "press_title": "VOGUE MEXICO",
-            "press_year": "JANUARY 2018",
-            "press_description": "<p>Lorem ipsum dolor sit amet. Eos nisi provident sit ratione eius ex consequatur fuga et fugit pariatur non necessitatibus impedit eum necessitatibus placeat aut modi voluptatem. Est doloremque voluptatibus eos voluptatem rerum ea sequi consequuntur.<\/p>"
-          }
-        },
         "c43299cd-db73-41f0-ad65-62a78fe409a7": {
           "type": "press",
           "settings": {
@@ -64,10 +74,11 @@
       },
       "block_order": [
         "press_PMLJ6M",
+        "2234c44e-2bdc-4052-88aa-7d0bc4673248",
         "press_KQ9DFB",
+        "press_MPBjwx",
         "press_Wk4MJ7",
         "0fb36448-9a15-4dd7-8ff0-86ec11abc968",
-        "2234c44e-2bdc-4052-88aa-7d0bc4673248",
         "c43299cd-db73-41f0-ad65-62a78fe409a7"
       ],
       "settings": {
