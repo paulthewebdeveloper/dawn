@@ -71,8 +71,8 @@
         "enable_quick_add": false,
         "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
         "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-grifinito-regular",
         "link_font_style": "font-grifinito-regular"
       }
@@ -119,7 +119,7 @@
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "settings": {
-        "heading": "<em>Featured<\/em>",
+        "heading": "<em>FEATURED<\/em>",
         "heading_special": "Emily in Paris",
         "description": "",
         "heading_font_style": "font-grifinito-regular",
