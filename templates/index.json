@@ -28,6 +28,39 @@
         "show_text_below": false
       }
     },
+    "featured_collection_4EiGkh": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_special": "<em>Our Favourites<\/em>",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-italic",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ear-cuffs",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
+      }
+    },
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
       "type": "featured-product-collection",
       "settings": {
@@ -119,34 +152,19 @@
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "settings": {
-        "heading": "<em>FEATURED<\/em>",
+        "heading": "<em>Featured in<\/em>",
         "heading_special": "Emily in Paris",
-        "description": "",
+        "description": "<p>Lily Collins stars as an extremely fashionable aspiring marketing executive Emily Cooper. In Season 3, Episode 6 \"Ex-en-Provence\", Emily dazzles us with a purple ensemble, perfectly paired with our <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\">Petite Tsarina Huggie Earrings<\/a> and <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\">Double Choker<\/a>.<\/p>",
         "heading_font_style": "font-grifinito-regular",
         "heading_special_font_style": "font-grifinito-regular",
         "body_font_style": "font-grifinito-regular",
         "heading_size": "h1",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify:\/\/files\/videos\/Nadine Aysoy x Emily in Paris.MOV",
         "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
         "alt_text": "",
         "full_width": true,
         "color_scheme": ""
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
-        "center_image": "shopify:\/\/shop_images\/Autumn_necklace.png",
-        "right_image": "shopify:\/\/shop_images\/Shopify_2.png",
-        "first_product": "catena-triple-stone-earrings",
-        "second_product": "catena-blue-topaz",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
       }
     },
     "featured_product_collection_79y6k8": {
@@ -203,6 +221,21 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
+        "center_image": "shopify:\/\/shop_images\/Shopify_2.png",
+        "right_image": "shopify:\/\/shop_images\/Autumn_necklace.png",
+        "first_product": "catena-triple-stone-earrings",
+        "second_product": "catena-blue-topaz",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
       }
     },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
@@ -387,12 +420,13 @@
   },
   "order": [
     "image_banner",
+    "featured_collection_4EiGkh",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "featured_product_collection_79y6k8",
     "custom_image_banner_HGCNXm",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
