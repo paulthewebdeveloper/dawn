@@ -61,21 +61,42 @@
         "padding_bottom": 0
       }
     },
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
-      "type": "featured-product-collection",
+    "custom_image_banner_HGCNXm": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "heading_LdMLgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_QmiDpV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "show_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LdMLgk",
+        "text_QmiDpV"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
-        "product": "catena-diamond-illusion-charm-necklace",
-        "collection": "catena",
-        "special_title": "{{ section.settings.collection.title }}",
-        "title": "Collection",
-        "enable_quick_add": true,
-        "description": "<p>Catena is an alluring play on classic link chains reimagined into versatile, articulate and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
-        "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-light-italic",
-        "heading_font_style_two": "font-grifinito-light",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-light"
+        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
@@ -149,22 +170,51 @@
         "link_font_style": "font-grifinito-light-italic"
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
+      "type": "featured-product-collection",
       "settings": {
-        "heading": "<em>Featured in<\/em>",
-        "heading_special": "Emily in Paris",
-        "description": "<p>Lily Collins stars as an extremely fashionable aspiring marketing executive Emily Cooper. In Season 3, Episode 6 \"Ex-en-Provence\", Emily dazzles us with a purple ensemble, perfectly paired with our <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\">Petite Tsarina Huggie Earrings<\/a> and <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\">Double Choker<\/a>.<\/p>",
-        "heading_font_style": "font-grifinito-regular",
-        "heading_special_font_style": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/Nadine Aysoy x Emily in Paris.MOV",
-        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
+        "image": "shopify:\/\/shop_images\/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
+        "product": "catena-diamond-illusion-charm-necklace",
+        "collection": "catena",
+        "special_title": "{{ section.settings.collection.title }}",
+        "title": "Collection",
+        "enable_quick_add": true,
+        "description": "<p>Catena is an alluring play on classic link chains reimagined into versatile, articulate and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_two": "font-grifinito-light",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light"
+      }
+    },
+    "ec606534-e764-4070-8311-b7bdff2193da": {
+      "type": "hero-special",
+      "settings": {
+        "collection": "catena-collection",
+        "link_font_style": "font-grifinito-italic",
+        "heading": "Welcome to the world of",
+        "highlight_one": "Nadine Aysoy Jewellery,",
+        "subtext": "where each masterpiece is exquisite, intriguing",
+        "highlight_two": "",
+        "highlight_three": "timeless.",
+        "closing_text": "",
+        "highlight_four": "",
+        "final_statement": ""
+      }
+    },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
+        "center_image": "shopify:\/\/shop_images\/Shopify_2.png",
+        "right_image": "shopify:\/\/shop_images\/Autumn_necklace.png",
+        "first_product": "catena-triple-stone-earrings",
+        "second_product": "catena-blue-topaz",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
       }
     },
     "featured_product_collection_79y6k8": {
@@ -182,60 +232,6 @@
         "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-grifinito-regular",
         "link_font_style": "font-grifinito-regular"
-      }
-    },
-    "custom_image_banner_HGCNXm": {
-      "type": "custom-image-banner",
-      "blocks": {
-        "heading_LdMLgk": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "text_QmiDpV": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "show_description": false,
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LdMLgk",
-        "text_QmiDpV"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify:\/\/shop_images\/IMG_25573.jpg",
-        "center_image": "shopify:\/\/shop_images\/Shopify_2.png",
-        "right_image": "shopify:\/\/shop_images\/Autumn_necklace.png",
-        "first_product": "catena-triple-stone-earrings",
-        "second_product": "catena-blue-topaz",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
       }
     },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
@@ -271,20 +267,22 @@
         "padding_bottom": 0
       }
     },
-    "ec606534-e764-4070-8311-b7bdff2193da": {
-      "type": "hero-special",
-      "disabled": true,
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
       "settings": {
-        "collection": "catena-collection",
-        "link_font_style": "font-grifinito-italic",
-        "heading": "Welcome to the world of",
-        "highlight_one": "Nadine Aysoy Jewellery,",
-        "subtext": "where each masterpiece is exquisite, intriguing",
-        "highlight_two": "",
-        "highlight_three": "timeless.",
-        "closing_text": "",
-        "highlight_four": "",
-        "final_statement": ""
+        "heading": "<em>Featured in<\/em>",
+        "heading_special": "Emily in Paris",
+        "description": "<p>Lily Collins stars as an extremely fashionable aspiring marketing executive Emily Cooper. In Season 3, Episode 6 \"Ex-en-Provence\", Emily dazzles us with a purple ensemble, perfectly paired with our <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/petite-tsarina-rose-huggie-earrings\">Petite Tsarina Huggie Earrings<\/a> and <a href=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\" title=\"https:\/\/nadineaysoy.com\/en-gb\/collections\/petite-tsarina\/products\/choker-rg-wd\">Double Choker<\/a>.<\/p>",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/Nadine Aysoy x Emily in Paris.MOV",
+        "video_url": "https:\/\/youtu.be\/_iIiAKp2ng4",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
       }
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
@@ -326,6 +324,7 @@
       "blocks": {
         "2223899d-77dc-4744-890d-ab8041d195a5": {
           "type": "press",
+          "disabled": true,
           "settings": {
             "press_text": "EMILY IN PARIS | SEASON 3",
             "press_image": "shopify:\/\/shop_images\/2113a5112360-emily-cooper-purple-dress_jpg.webp",
@@ -421,14 +420,14 @@
   "order": [
     "image_banner",
     "featured_collection_4EiGkh",
-    "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "42d9445b-f805-4cb0-9514-c39973ea424c",
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "featured_product_collection_79y6k8",
     "custom_image_banner_HGCNXm",
-    "97d0e5da-5103-4271-b43d-5de8167552d0",
-    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "42d9445b-f805-4cb0-9514-c39973ea424c",
+    "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
+    "featured_product_collection_79y6k8",
+    "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
