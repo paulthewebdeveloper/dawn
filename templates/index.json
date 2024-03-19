@@ -181,7 +181,7 @@
         "enable_quick_add": true,
         "description": "<p>Catena is an alluring play on classic link chains reimagined into versatile, articulate and highly tactile jewels. The signature illusion setting enhances the perceived size of the diamond within a setting by using different shapes and sizes of diamonds and minimal gold work in between the stones. <\/p>",
         "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_one": "font-grifinito-italic",
         "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-helvetica-now-micro-light",
         "link_font_style": "font-grifinito-light"
@@ -228,7 +228,7 @@
         "enable_quick_add": false,
         "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.<\/p>",
         "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-light-italic",
+        "heading_font_style_one": "font-grifinito-italic",
         "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-grifinito-regular",
         "link_font_style": "font-grifinito-regular"
