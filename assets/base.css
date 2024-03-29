@@ -77,6 +77,10 @@ a {
   color: #a60632;
 }
 
+.locale-selectors__container {
+    display: none !important;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
