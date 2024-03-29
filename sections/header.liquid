@@ -119,7 +119,7 @@
         </ul>
       </div>
       <a class="full-unstyled-link mobile-visible" href="{{ routes.root_url }}">
-        <div class="jd-navbar-logo">NADINE AYSOY</div>
+        <div class="jd-navbar-logo">{{ current_logo | image_url: width: 100 | image_tag }}</div>
       </a>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
