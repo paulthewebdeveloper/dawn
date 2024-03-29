@@ -375,5 +375,11 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".rich-text {padding: var(--spacing-sections-horizontal-mobile); padding-top: 0 !important; padding-bottom: 0 !important;}",
+      "@media screen and (min-width: 750px) {.rich-text {padding: var(--spacing-sections-horizontal-desktop) !important; padding-top: 0 !important; padding-bottom: 0 !important; }}"
+    ]
   }
 }

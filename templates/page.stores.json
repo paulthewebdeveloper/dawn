@@ -5,9 +5,19 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "custom_liquid_CcHkBH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"rich-text\">\n    <h2>United Kingdom<\/h2>\n    <p><strong>Nadine Aysoy Studio - London<\/strong><br>By appointment: <a href=\"mailto:info@aysoydesign.com\">info@aysoydesign.com<\/a><\/p>\n    <p><strong>Harrods<\/strong><br>87-135 Brompton Road, London<br><a href=\"http:\/\/www.harrods.com\">www.harrods.com<\/a><\/p>\n    <p><strong>Matches Fashion<\/strong><br><a href=\"http:\/\/www.matchesfashion.com\">www.matchesfashion.com<\/a><\/p>\n    <p><strong>Selfridges<\/strong><br><a href=\"http:\/\/www.selfridges.com\">www.selfridges.com<\/a><\/p>\n    <p><strong>La Maison Couture<\/strong><br><a href=\"http:\/\/www.lamaisoncouture.com\">www.lamaisoncouture.com<\/a><\/p>\n\n    <h2>France<\/h2>\n    <p><strong>Mad Lords<\/strong><br>316 Rue St Honoré, 75001 Paris, France<br><a href=\"http:\/\/www.madlords.com\">www.madlords.com<\/a><\/p>\n\n    <h2>Germany<\/h2>\n    <p><strong>Mytheresa<\/strong><br><a href=\"http:\/\/www.mytheresa.com\">www.mytheresa.com<\/a><\/p>\n\n    <h2>USA<\/h2>\n    <p><strong>The Webster Miramar<\/strong><br>1759 South Jameson Lane, Montecito, CA 93108 USA<\/p>\n    <p><strong>Elyse Walker<\/strong><br>4719 Commons Way Suite J, Calabasas, CA 91302, USA<br><a href=\"http:\/\/www.elysewalker.com\">www.elysewalker.com<\/a><\/p>\n    <p><strong>Market Highland Park<\/strong><br>26 Highland Park Village, Dallas, TX 75205, USA<\/p>\n    <p><strong>Lesley Ann Jewels<\/strong><br>4721 Westheimer Rd, Houston, TX 77027, USA<\/p>\n    <p><strong>Fivestory<\/strong><br>201 Royal Poinciana Way, Palm Beach, FL 33480 USA<br><a href=\"http:\/\/www.fivestoryny.com\">www.fivestoryny.com<\/a><\/p>\n\n    <h2>Middle East<\/h2>\n    <p><strong>The Overdressed<\/strong><br><a href=\"http:\/\/www.theoverdressed.co\">www.theoverdressed.co<\/a><\/p>\n    <p><strong>Printemps Doha @Pink Heater<\/strong><br>42, Al Khaleej Street, Doha Oasis, Doha, Qatar<\/p>\n    <p><strong>Al Ostoura<\/strong><br>Al Hamra Shopping Center, Ground Floor, Al Shuhada’a St. - Sharq, Kuwait City<\/p>\n\n    <h2>Online<\/h2>\n    <p><strong>Mytheresa<\/strong><br><a href=\"http:\/\/www.mytheresa.com\">www.mytheresa.com<\/a><\/p>\n    <p><strong>Matches Fashion<\/strong><br><a href=\"http:\/\/www.matchesfashion.com\">www.matchesfashion.com<\/a><\/p>\n    <p><strong>Selfridges<\/strong><br><a href=\"http:\/\/www.selfridges.com\">www.selfridges.com<\/a><\/p>\n    <p><strong>Curated Crowd<\/strong><br><a href=\"http:\/\/www.curated-crowd.com\">www.curated-crowd.com<\/a><\/p>\n    <p><strong>La Maison Couture<\/strong><br><a href=\"http:\/\/www.lamaisoncouture.com\">www.lamaisoncouture.com<\/a><\/p>\n    <p><strong>The Overdressed<\/strong><br><a href=\"http:\/\/www.theoverdressed.co\">www.theoverdressed.co<\/a><\/p>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_CcHkBH"
   ]
 }
