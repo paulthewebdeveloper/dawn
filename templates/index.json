@@ -107,6 +107,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Catena",
+            "category_image": "shopify:\/\/shop_images\/CA146_Catena_Double_Illusion_Diamond_Ring.png",
             "link": "shopify:\/\/collections\/catena"
           }
         },
@@ -115,6 +116,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Le Cercle",
+            "category_image": "shopify:\/\/shop_images\/LC016LeCercleOmbrePinkSapphireRing.png",
             "link": "shopify:\/\/collections\/le-cercle"
           }
         },
@@ -123,6 +125,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Earrings",
+            "category_image": "shopify:\/\/shop_images\/CA5059CatenaAutumnFlowerandLeafMismatchEarrings.png",
             "link": "shopify:\/\/collections\/earrings"
           }
         },
@@ -131,6 +134,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Rings",
+            "category_image": "shopify:\/\/shop_images\/Nadine-Aysoy-Ring-1.png",
             "link": "shopify:\/\/collections\/rings"
           }
         },
@@ -139,6 +143,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Necklaces",
+            "category_image": "shopify:\/\/shop_images\/CA410CatenaDiamondCatenaIllusionCharmNecklace.png",
             "link": "shopify:\/\/collections\/necklaces"
           }
         },
@@ -147,6 +152,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Bracelets",
+            "category_image": "shopify:\/\/shop_images\/NadineAysoyCatenaMultiStonepastelRainbowBracelet.png",
             "link": "shopify:\/\/collections\/bracelets"
           }
         }
