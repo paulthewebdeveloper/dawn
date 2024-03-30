@@ -25,7 +25,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/NadineAysoy-NEWLeCerclerings1_a60604ec-f133-42a4-975b-96fd5784fbc2.jpg",
+        "image": "{{ collection.image }}",
         "image_overlay_opacity": 40,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
