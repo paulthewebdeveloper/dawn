@@ -79,6 +79,7 @@
         "heading_size": "h1",
         "products_to_show": 3,
         "columns_desktop": 3,
+        "enable_quick_add": false,
         "color_scheme": "background-1",
         "image_ratio": "square",
         "image_shape": "default",
@@ -94,7 +95,6 @@
         "441bfe0e-9bc7-4f48-ad72-e7ceec9f5440": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
             "title": "Lilly Collins - Emily In Paris",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
           }
@@ -102,7 +102,6 @@
         "7a995718-081d-4a18-a01a-dd97ae2b691d": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sabrina_claudio_in_nadine_aysoy.jpg",
             "title": "Sabrina Claudio",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
           }
@@ -110,7 +109,6 @@
         "1b11cff4-c77d-436c-8437-ee3b34c2162e": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ahsley_park_in_nadine_aysoy.webp",
             "title": "Ashley Park - Emily In Paris",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
           }
@@ -118,7 +116,6 @@
         "ff904bca-7d77-4eb0-8040-65e374fe2d11": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/emily_in_paris.webp",
             "title": "Lilly Collins - Emily In Paris",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
           }
@@ -130,6 +127,7 @@
         "1b11cff4-c77d-436c-8437-ee3b34c2162e",
         "ff904bca-7d77-4eb0-8040-65e374fe2d11"
       ],
+      "disabled": true,
       "settings": {
         "title": "Featured",
         "title_special": "By",
