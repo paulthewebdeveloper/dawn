@@ -43,6 +43,21 @@
         "final_statement": ""
       }
     },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify:\/\/shop_images\/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
+        "center_image": "shopify:\/\/shop_images\/HeartTennisNecklace.jpg",
+        "right_image": "shopify:\/\/shop_images\/LargeLink_6c0eae54-890f-4799-9445-fca3ed050cb7.jpg",
+        "first_product": "le-cercle-heart-illusion-bombe-ring",
+        "second_product": "catena-autumn-necklace",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
+      }
+    },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
       "type": "featured-categories",
       "blocks": {
@@ -137,19 +152,42 @@
         "link_font_style": "font-grifinito-light"
       }
     },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
+    "custom_image_banner_HGCNXm": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "heading_LdMLgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_QmiDpV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "show_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LdMLgk",
+        "text_QmiDpV"
+      ],
       "settings": {
-        "left_image": "shopify:\/\/shop_images\/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
-        "center_image": "shopify:\/\/shop_images\/HeartTennisNecklace.jpg",
-        "right_image": "shopify:\/\/shop_images\/LargeLink_6c0eae54-890f-4799-9445-fca3ed050cb7.jpg",
-        "first_product": "le-cercle-heart-illusion-bombe-ring",
-        "second_product": "catena-autumn-necklace",
-        "title": "Multi Column Product",
+        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "featured_product_collection_79y6k8": {
@@ -200,44 +238,6 @@
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
-      }
-    },
-    "custom_image_banner_HGCNXm": {
-      "type": "custom-image-banner",
-      "blocks": {
-        "heading_LdMLgk": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "text_QmiDpV": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "show_description": false,
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LdMLgk",
-        "text_QmiDpV"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
@@ -426,12 +426,12 @@
   "order": [
     "image_banner",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "97d0e5da-5103-4271-b43d-5de8167552d0",
+    "custom_image_banner_HGCNXm",
     "featured_product_collection_79y6k8",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
-    "custom_image_banner_HGCNXm",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "featured_collection_4EiGkh",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
