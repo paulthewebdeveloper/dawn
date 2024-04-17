@@ -28,75 +28,19 @@
         "show_text_below": false
       }
     },
-    "featured_collection_4EiGkh": {
-      "type": "featured-collection",
+    "ec606534-e764-4070-8311-b7bdff2193da": {
+      "type": "hero-special",
       "settings": {
-        "title": "",
-        "title_special": "<em>Our Favourites<\/em>",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-helvetica-now-micro-regular",
+        "collection": "catena-explore-more",
         "link_font_style": "font-grifinito-italic",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "ear-cuffs",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 124,
-        "padding_bottom": 0
-      }
-    },
-    "custom_image_banner_HGCNXm": {
-      "type": "custom-image-banner",
-      "blocks": {
-        "heading_LdMLgk": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "text_QmiDpV": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "show_description": false,
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LdMLgk",
-        "text_QmiDpV"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "heading": "Welcome to the world of",
+        "highlight_one": "Nadine Aysoy,",
+        "subtext": "where each piece of fine jewellery is subtly",
+        "highlight_two": "luxurious yet versatile",
+        "highlight_three": "",
+        "closing_text": "designed to be layered together for an easy",
+        "highlight_four": "everyday look.",
+        "final_statement": ""
       }
     },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
@@ -193,27 +137,12 @@
         "link_font_style": "font-grifinito-light"
       }
     },
-    "ec606534-e764-4070-8311-b7bdff2193da": {
-      "type": "hero-special",
-      "settings": {
-        "collection": "catena-explore-more",
-        "link_font_style": "font-grifinito-italic",
-        "heading": "Welcome to the world of",
-        "highlight_one": "Nadine Aysoy Jewellery,",
-        "subtext": "where each masterpiece is exquisite, intriguing",
-        "highlight_two": "",
-        "highlight_three": "timeless.",
-        "closing_text": "",
-        "highlight_four": "",
-        "final_statement": ""
-      }
-    },
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
         "left_image": "shopify:\/\/shop_images\/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
-        "center_image": "shopify:\/\/shop_images\/Shopify_2.png",
-        "right_image": "shopify:\/\/shop_images\/Autumn_necklace.png",
+        "center_image": "shopify:\/\/shop_images\/HeartTennisNecklace.jpg",
+        "right_image": "shopify:\/\/shop_images\/LargeLink_6c0eae54-890f-4799-9445-fca3ed050cb7.jpg",
         "first_product": "le-cercle-heart-illusion-bombe-ring",
         "second_product": "catena-autumn-necklace",
         "title": "Multi Column Product",
@@ -273,6 +202,44 @@
         "padding_bottom": 0
       }
     },
+    "custom_image_banner_HGCNXm": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "heading_LdMLgk": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_QmiDpV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "show_description": false,
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LdMLgk",
+        "text_QmiDpV"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "settings": {
@@ -289,6 +256,39 @@
         "alt_text": "",
         "full_width": true,
         "color_scheme": ""
+      }
+    },
+    "featured_collection_4EiGkh": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_special": "<em>Our Favourites<\/em>",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-italic",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ear-cuffs",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
       }
     },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
@@ -425,15 +425,15 @@
   },
   "order": [
     "image_banner",
-    "featured_collection_4EiGkh",
-    "custom_image_banner_HGCNXm",
+    "ec606534-e764-4070-8311-b7bdff2193da",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "ec606534-e764-4070-8311-b7bdff2193da",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
     "featured_product_collection_79y6k8",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "custom_image_banner_HGCNXm",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "featured_collection_4EiGkh",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
