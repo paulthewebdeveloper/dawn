@@ -474,7 +474,7 @@
 .jd-product-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr; /* Default single column layout */
+  grid-template-columns: repeat(2, 1fr) !important; /* Two column layout */
 }
 
 /* Base styles for JD banners */
@@ -502,14 +502,14 @@
 /* Tablet Layout - utilizes two columns */
 @media (min-width: 768px) {
   .jd-product-grid {
-    grid-template-columns: repeat(2, 1fr)!important; /* Two column layout */
+    grid-template-columns: repeat(2, 1fr) !important; /* Two column layout */
   }
 }
 
 /* Desktop Layout - utilizes four columns */
 @media (min-width: 1024px) {
   .jd-product-grid {
-    grid-template-columns: repeat(4, 1fr)!important; /* Four column layout */
+    grid-template-columns: repeat(4, 1fr) !important; /* Four column layout */
   }
 
   /* Only JD large banners span two columns on desktop */
