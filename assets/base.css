@@ -73,6 +73,10 @@
 
 /* base */
 
+a {
+  color: #a60632;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
