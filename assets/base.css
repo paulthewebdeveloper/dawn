@@ -73,14 +73,6 @@
 
 /* base */
 
-a {
-  color: #a60632;
-}
-
-.locale-selectors__container {
-    display: none !important;
-}
-
 .no-js:not(html) {
   display: none !important;
 }
@@ -178,7 +170,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .custom-section {
-  padding: var(--spacing-sections-horizontal-mobile);
+  padding: var(--spacing-sections-horizontal-mobile) !important;
 }
 
 .footer-section {
