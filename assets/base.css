@@ -73,6 +73,10 @@
 
 /* base */
 
+.locale-selectors__container {
+  display:none;
+}
+
 a {
   color: #a60632;
 }
