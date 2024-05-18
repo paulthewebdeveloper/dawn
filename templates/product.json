@@ -171,12 +171,36 @@
         "padding_top": 124,
         "padding_bottom": 0
       }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
+    "shogun-above",
     "product-main",
     "related-products",
     "f25a05c4-5cd2-425d-b77c-cb2b8136249e",
-    "64bc0d2d-08f8-4887-9a9e-0cccb7a9962a"
+    "64bc0d2d-08f8-4887-9a9e-0cccb7a9962a",
+    "shogun-below",
+    "shogun-optimizer"
   ]
 }
