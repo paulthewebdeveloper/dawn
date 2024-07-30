@@ -293,6 +293,23 @@
         "padding_bottom": 0
       }
     },
+    "featured_product_collection_yrzfkC": {
+      "type": "featured-product-collection",
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "collection": "",
+        "special_title": "Heirloom",
+        "title": "Medallion",
+        "enable_quick_add": false,
+        "description": "<p>Lorem ipsum dolor sit amet. Ea porro voluptates est minus porro eos illo saepe aut explicabo ratione qui placeat quod? Ut perspiciatis quibusdam id reprehenderit corporis qui iste reiciendis sed soluta adipisci.<\/p><p><\/p>",
+        "color_scheme": "background-1",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "settings": {
@@ -453,6 +470,7 @@
     "custom_image_banner_HGCNXm",
     "featured_product_collection_79y6k8",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
+    "featured_product_collection_yrzfkC",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
