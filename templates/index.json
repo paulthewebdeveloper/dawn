@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -112,10 +121,19 @@
             "link": "shopify:\/\/collections\/le-cercle"
           }
         },
-        "772f448d-4dbc-40c3-a06b-840ccf71dc61": {
+        "category_h393X8": {
           "type": "category",
           "settings": {
             "top_bottom": "top",
+            "category_name": "Heirloom",
+            "category_image": "shopify:\/\/shop_images\/Nadine-Aysoy-Necklace-1_1.png",
+            "link": "shopify:\/\/products\/heirloom-medallion"
+          }
+        },
+        "772f448d-4dbc-40c3-a06b-840ccf71dc61": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "bottom",
             "category_name": "Earrings",
             "category_image": "shopify:\/\/shop_images\/CA5059CatenaAutumnFlowerandLeafMismatchEarrings.png",
             "link": "shopify:\/\/collections\/earrings"
@@ -124,7 +142,7 @@
         "3c2fb2b7-ad83-42bb-a2ec-832411458379": {
           "type": "category",
           "settings": {
-            "top_bottom": "top",
+            "top_bottom": "bottom",
             "category_name": "Rings",
             "category_image": "shopify:\/\/shop_images\/Nadine-Aysoy-Ring-1.png",
             "link": "shopify:\/\/collections\/rings"
@@ -152,6 +170,7 @@
       "block_order": [
         "92864d79-097d-4a2c-a590-7414de8972fc",
         "b160d25d-85fa-435b-9707-c4fe8a4c984e",
+        "category_h393X8",
         "772f448d-4dbc-40c3-a06b-840ccf71dc61",
         "3c2fb2b7-ad83-42bb-a2ec-832411458379",
         "853f1f42-fb70-4eb1-b312-ea356136b9fd",
