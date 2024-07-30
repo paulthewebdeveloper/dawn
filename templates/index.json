@@ -310,6 +310,23 @@
         "link_font_style": "font-grifinito-regular"
       }
     },
+    "featured_product_collection_gtkJV3": {
+      "type": "featured-product-collection",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/00f4b50c-971b-4016-9572-71567383786e.jpg",
+        "product": "heirloom-medallion",
+        "collection": "",
+        "special_title": "Heirloom",
+        "title": "Medallion",
+        "enable_quick_add": false,
+        "description": "<p>The Heirloom Medallion crafted in 18k yellow gold is customisable with a diamond initial and\/or horoscope or symbol on either malachite, jade, turquoise, lapiz lazuli, pink mother of pearl, white mother or pearl or onyx.<\/p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-italic",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
       "type": "video",
       "settings": {
@@ -471,6 +488,7 @@
     "featured_product_collection_79y6k8",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
+    "featured_product_collection_gtkJV3",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
