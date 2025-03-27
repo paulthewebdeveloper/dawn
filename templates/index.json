@@ -165,6 +165,15 @@
             "category_image": "shopify://shop_images/NadineAysoyCatenaMultiStonepastelRainbowBracelet.png",
             "link": "shopify://collections/bracelets"
           }
+        },
+        "category_d4q96z": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Cobra",
+            "category_image": "shopify://shop_images/Cobra_Large_Curved_Earrings.png",
+            "link": "shopify://collections/cobra"
+          }
         }
       },
       "block_order": [
@@ -174,7 +183,8 @@
         "772f448d-4dbc-40c3-a06b-840ccf71dc61",
         "3c2fb2b7-ad83-42bb-a2ec-832411458379",
         "853f1f42-fb70-4eb1-b312-ea356136b9fd",
-        "f931a47d-bcae-43e2-8357-a77b7059b49d"
+        "f931a47d-bcae-43e2-8357-a77b7059b49d",
+        "category_d4q96z"
       ],
       "settings": {
         "product": "catena-autumn-bangle",
