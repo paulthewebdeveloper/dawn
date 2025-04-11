@@ -34,7 +34,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image_2": "shopify://shop_images/Nadine_Aysoy_-_Cobra.heic",
+        "image": "{{ collection.image }}",
         "image_overlay_opacity": 20,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
