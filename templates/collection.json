@@ -34,7 +34,7 @@
         "decd134e-de70-4829-a00b-308ee83dfacf"
       ],
       "settings": {
-        "image": "shopify://shop_images/Cobra_Catena_Charm.heic",
+        "image": "{{ collection.image }}",
         "image_overlay_opacity": 20,
         "image_height": "full",
         "desktop_content_position": "bottom-center",
