@@ -73,8 +73,8 @@
           "type": "banner",
           "settings": {
             "image": "shopify://shop_images/Earrings.jpg",
-            "collection": "le-cercle-1",
-            "description": "MORE JEWELLERY",
+            "collection": "le-cercle",
+            "description": "DISCOVER THE COLLECTION",
             "heading_font_style": "font-grifinito-regular",
             "body_font_style": "font-grifinito-regular"
           }
