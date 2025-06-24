@@ -411,6 +411,14 @@
             "heading_font_style": "font-grifinito-regular"
           }
         },
+        "press_LPij4D": {
+          "type": "press",
+          "settings": {
+            "press_text": "SCARLETT JOHANSSON | JUN 2025",
+            "press_image": "shopify://shop_images/GettyImages-2220413024_2.jpg",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
         "29f2ce6a-bca2-4569-9272-011f4507d42f": {
           "type": "press",
           "settings": {
@@ -481,6 +489,7 @@
       },
       "block_order": [
         "2223899d-77dc-4744-890d-ab8041d195a5",
+        "press_LPij4D",
         "29f2ce6a-bca2-4569-9272-011f4507d42f",
         "press_9qp8GP",
         "press_mR7W4F",
@@ -493,7 +502,7 @@
       "settings": {
         "title": "As Seen On",
         "heading_font_style": "font-grifinito-light-italic",
-        "description": "<p>Spotlighted by the press, our creations have captured the imagination of fashion's finest. Featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.</p>"
+        "description": "<p>Spotlighted by the press, NADINE AYSOY has featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.</p>"
       }
     }
   },
