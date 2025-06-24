@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/nadineaysoy.svg",
+    "logo": "shopify://shop_images/nadineaysoy.svg",
     "logo_width": 180,
-    "secondary_logo": "shopify:\/\/shop_images\/nadineaysoy-gray.svg",
+    "secondary_logo": "shopify://shop_images/nadineaysoy-gray.svg",
     "type_header_font": "assistant_n4",
     "heading_scale": 150,
     "type_body_font": "assistant_n4",
@@ -12,6 +21,7 @@
     "spacing_sections_horizontal": 124,
     "spacing_grid_horizontal": 24,
     "spacing_grid_vertical": 24,
+    "animations_reveal_on_scroll": true,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -97,8 +107,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_facebook_link": "https:\/\/www.facebook.com\/nadineaysoyjewellery",
-    "social_instagram_link": "https:\/\/www.instagram.com\/nadineaysoyjewellery\/",
+    "social_facebook_link": "https://www.facebook.com/nadineaysoyjewellery",
+    "social_instagram_link": "https://www.instagram.com/nadineaysoyjewellery/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -128,9 +138,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -377,8 +385,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }

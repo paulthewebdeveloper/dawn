@@ -88,11 +88,11 @@
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
-        "left_image": "shopify://shop_images/HeartBombe_714e5743-8dea-46a7-8fb5-37df28281856.jpg",
-        "center_image": "shopify://shop_images/HeartTennisNecklace.jpg",
-        "right_image": "shopify://shop_images/LargeLink_6c0eae54-890f-4799-9445-fca3ed050cb7.jpg",
-        "first_product": "le-cercle-heart-illusion-bombe-ring",
-        "second_product": "catena-autumn-necklace",
+        "left_image": "shopify://shop_images/BlueGreenPinkyRings.jpg",
+        "center_image": "shopify://shop_images/IMG_4377_0a3e8a30-5345-4550-874b-f217e3e3af96.jpg",
+        "right_image": "shopify://shop_images/LeCercleDropEarrings.heic",
+        "first_product": "eclipse-aquamarine-pinky-ring",
+        "second_product": "le-cercle-illusion-diamond-drop-earrings",
         "title": "Multi Column Product",
         "color_scheme": "",
         "padding_top": 124,
@@ -103,6 +103,15 @@
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
       "type": "featured-categories",
       "blocks": {
+        "category_YjR7pP": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Eclipse",
+            "category_image": "shopify://shop_images/EC401EclipseAquamarineBeadNecklace.png",
+            "link": "shopify://collections/eclipse"
+          }
+        },
         "category_d4q96z": {
           "type": "category",
           "settings": {
@@ -177,6 +186,7 @@
         }
       },
       "block_order": [
+        "category_YjR7pP",
         "category_d4q96z",
         "92864d79-097d-4a2c-a590-7414de8972fc",
         "b160d25d-85fa-435b-9707-c4fe8a4c984e",
