@@ -88,6 +88,21 @@
         "padding_bottom": 124
       }
     },
+    "ec606534-e764-4070-8311-b7bdff2193da": {
+      "type": "hero-special",
+      "settings": {
+        "collection": "catena-explore-more",
+        "link_font_style": "font-grifinito-italic",
+        "heading": "Welcome to the world of",
+        "highlight_one": "Nadine Aysoy,",
+        "subtext": "where each piece of fine jewellery is subtly",
+        "highlight_two": "luxurious yet versatile",
+        "highlight_three": "",
+        "closing_text": "designed to be layered together for an easy",
+        "highlight_four": "everyday look.",
+        "final_statement": ""
+      }
+    },
     "featured_collection_4EiGkh": {
       "type": "featured-collection",
       "settings": {
@@ -119,21 +134,6 @@
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 0
-      }
-    },
-    "ec606534-e764-4070-8311-b7bdff2193da": {
-      "type": "hero-special",
-      "settings": {
-        "collection": "catena-explore-more",
-        "link_font_style": "font-grifinito-italic",
-        "heading": "Welcome to the world of",
-        "highlight_one": "Nadine Aysoy,",
-        "subtext": "where each piece of fine jewellery is subtly",
-        "highlight_two": "luxurious yet versatile",
-        "highlight_three": "",
-        "closing_text": "designed to be layered together for an easy",
-        "highlight_four": "everyday look.",
-        "final_statement": ""
       }
     },
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
@@ -509,8 +509,8 @@
     "image_banner",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
-    "featured_collection_4EiGkh",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "featured_collection_4EiGkh",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
