@@ -37,11 +37,29 @@
         "show_text_below": false
       }
     },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "<em>As Seen on Netflix:</em>",
+        "heading_special": "Emily In Paris",
+        "description": "<p>Spotted on screen and styled with intention by Marylin Fitoussi and her team, Nadine Aysoy jewellery features in Netflix series, Season 3-5 and counting! Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. Discover the exact pieces that made the edit.</p>",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-italic",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
+        "video_url": "",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
       "type": "featured-collection",
       "settings": {
         "title": "",
-        "title_special": "",
+        "title_special": "Shop the Edit",
         "heading_font_style_one": "font-grifinito-regular",
         "heading_font_style_two": "font-grifinito-light-italic",
         "body_font_style": "font-helvetica-now-micro-light",
@@ -68,24 +86,6 @@
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 124
-      }
-    },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "settings": {
-        "heading": "<em>As Seen on Netflix:</em>",
-        "heading_special": "Emily In Paris",
-        "description": "<p>Spotted on screen and styled with intention by Marylin Fitoussi and her team, Nadine Aysoy jewellery features in Netflix series, Season 3-5 and counting! Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. Discover the exact pieces that made the edit.</p>",
-        "heading_font_style": "font-grifinito-light-italic",
-        "heading_special_font_style": "font-grifinito-italic",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
-        "video_url": "",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
       }
     },
     "featured_collection_4EiGkh": {
@@ -507,8 +507,8 @@
   },
   "order": [
     "image_banner",
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "featured_collection_4EiGkh",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
