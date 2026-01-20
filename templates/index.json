@@ -37,6 +37,57 @@
         "show_text_below": false
       }
     },
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_special": "",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light-italic",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "as-seen-on-emily-in-paris",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 124
+      }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "<em>As Seen on Netflix:</em>",
+        "heading_special": "Emily In Paris",
+        "description": "<p>Spotted on screen and styled with intention by Marylin Fitoussi and her team, Nadine Aysoy jewellery features in Netflix series, Season 3-5 and counting! Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. Discover the exact pieces that made the edit.</p>",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-italic",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
+        "video_url": "",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
     "featured_collection_4EiGkh": {
       "type": "featured-collection",
       "settings": {
@@ -347,57 +398,6 @@
         "link_font_style": "font-grifinito-regular"
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "settings": {
-        "heading": "<em>Featured on</em>",
-        "heading_special": "Netflix",
-        "description": "<p>Lily Collins stars as an extremely fashionable aspiring marketing executive in Emily in Paris. In Season 3, Episode 6 \"Ex-en-Provence\", Emily dazzles us with a purple ensemble, perfectly paired with our <a href=\"https://nadineaysoy.com/en-gb/collections/petite-tsarina/products/petite-tsarina-rose-huggie-earrings\" title=\"https://nadineaysoy.com/en-gb/collections/petite-tsarina/products/petite-tsarina-rose-huggie-earrings\">Petite Tsarina Huggie Earrings</a> and <a href=\"https://nadineaysoy.com/en-gb/collections/petite-tsarina/products/choker-rg-wd\" title=\"https://nadineaysoy.com/en-gb/collections/petite-tsarina/products/choker-rg-wd\">Double Choker</a>. Emily's friend Mindy wears the Catena collection in Season 3, Episode 2.</p>",
-        "heading_font_style": "font-grifinito-light-italic",
-        "heading_special_font_style": "font-grifinito-italic",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
-        "video_url": "",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
-      }
-    },
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "title_special": "Emily In Paris",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-light-italic",
-        "heading_size": "h0",
-        "description": "<p>Spotted on screen and styled with intention by Marylin Fitoussi and her team, Nadine Aysoy jewellery features in Netflix’s <em>Emily in Paris. </em>Worn by Lily Collins as Emily Cooper, Ashley Parks as Mindy Chen, and more of the cast in Season 3, 4 and 5. Discover the exact pieces that made the edit.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "as-seen-on-emily-in-paris",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-2",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 124,
-        "padding_bottom": 124
-      }
-    },
     "d810a605-312e-4cd8-bedc-9fccf02f9070": {
       "type": "special-press",
       "blocks": {
@@ -507,6 +507,8 @@
   },
   "order": [
     "image_banner",
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "featured_collection_4EiGkh",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
@@ -517,8 +519,6 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }
