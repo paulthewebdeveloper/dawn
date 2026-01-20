@@ -37,28 +37,10 @@
         "show_text_below": false
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "settings": {
-        "heading": "Nadine Aysoy on",
-        "heading_special": "Emily In Paris",
-        "description": "",
-        "heading_font_style": "font-grifinito-light-italic",
-        "heading_special_font_style": "font-grifinito-italic",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
-        "video_url": "",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
-      }
-    },
     "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
+        "title": "Emily in Paris",
         "title_special": "Shop the Edit",
         "heading_font_style_one": "font-grifinito-regular",
         "heading_font_style_two": "font-grifinito-light-italic",
@@ -86,6 +68,24 @@
         "swipe_on_mobile": false,
         "padding_top": 124,
         "padding_bottom": 124
+      }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_special": "",
+        "description": "",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-italic",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
+        "video_url": "",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
       }
     },
     "ec606534-e764-4070-8311-b7bdff2193da": {
@@ -507,8 +507,8 @@
   },
   "order": [
     "image_banner",
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
