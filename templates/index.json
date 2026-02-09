@@ -326,7 +326,7 @@
         "description": "<p>Eclipse is a luminous new collection that introduces a refined palette of light, ethereal tones. Soft shades of mother of pearl, aquamarine, and aventurine are combined in harmonious compositions or showcased individually, evoking the quiet elegance of shifting skies. </p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-italic",
-        "heading_font_style_two": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-grifinito-regular",
         "link_font_style": "font-grifinito-regular"
       }
