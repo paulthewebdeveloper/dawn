@@ -52,55 +52,72 @@
         "final_statement": ""
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_special": "",
-        "description": "",
-        "heading_font_style": "font-grifinito-light-italic",
-        "heading_special_font_style": "font-grifinito-italic",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
-        "video_url": "",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
-      }
-    },
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
+    "featured_collection_4EiGkh": {
       "type": "featured-collection",
+      "name": "New In",
       "settings": {
-        "title": "Emily in Paris",
-        "title_special": "Shop the Edit",
+        "title": "",
+        "title_special": "<em>New In</em>",
         "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-light-italic",
-        "heading_size": "h2",
-        "description": "<p>Nadine Aysoy jewellery features in the Netflix series <em>Emily In Paris.</em> Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. </p>",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-italic",
+        "heading_size": "h1",
+        "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "as-seen-on-emily-in-paris",
+        "collection": "new-in",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "outline",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
         "enable_desktop_slider": false,
-        "color_scheme": "background-2",
+        "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_VKBCQj": {
+      "type": "featured-collection",
+      "name": "Archive Sale",
+      "settings": {
+        "title": "Archive",
+        "title_special": "<em>Sale</em>",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-helvetica-now-micro-regular",
+        "link_font_style": "font-grifinito-italic",
+        "heading_size": "h1",
+        "description": "<p>The last pieces I will ever create from this collection — a rare moment to make one yours.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "the-archive-sale",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 124,
-        "padding_bottom": 124
+        "padding_bottom": 0
       }
     },
     "42d9445b-f805-4cb0-9514-c39973ea424c": {
@@ -117,6 +134,7 @@
         },
         "category_d4q96z": {
           "type": "category",
+          "disabled": true,
           "settings": {
             "top_bottom": "top",
             "category_name": "Cobra",
@@ -210,6 +228,58 @@
         "link_font_style": "font-grifinito-light-italic"
       }
     },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_special": "",
+        "description": "",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-italic",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
+        "video_url": "",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
+      "type": "featured-collection",
+      "name": "Emily in Paris",
+      "settings": {
+        "title": "Emily in Paris",
+        "title_special": "Shop the Edit",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light-italic",
+        "heading_size": "h2",
+        "description": "<p>Nadine Aysoy jewellery features in the Netflix series <em>Emily In Paris.</em> Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. </p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "as-seen-on-emily-in-paris",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 124
+      }
+    },
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
@@ -225,41 +295,9 @@
         "link_font_style": "font-grifinito-light"
       }
     },
-    "featured_collection_4EiGkh": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "title_special": "<em>New In</em>",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-helvetica-now-micro-regular",
-        "link_font_style": "font-grifinito-italic",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-in",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 124,
-        "padding_bottom": 0
-      }
-    },
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
       "type": "featured-product-collection",
+      "name": "Catena",
       "settings": {
         "image": "shopify://shop_images/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
         "product": "catena-diamond-illusion-charm-necklace",
@@ -315,6 +353,7 @@
     },
     "featured_product_collection_79y6k8": {
       "type": "featured-product-collection",
+      "name": "Le Cercle",
       "settings": {
         "image": "shopify://shop_images/NadineAysoy-NEWLeCerclepinksapphire_8bbdf1b0-b92a-4f57-9df9-9c98ceae351d.jpg",
         "product": "le-cercle-ombre-pink-sapphire-ring",
@@ -383,6 +422,7 @@
     },
     "featured_product_collection_gtkJV3": {
       "type": "featured-product-collection",
+      "name": "Heirloom ",
       "settings": {
         "image": "shopify://shop_images/00f4b50c-971b-4016-9572-71567383786e.jpg",
         "product": "heirloom-medallion",
@@ -391,6 +431,24 @@
         "title": "Medallion",
         "enable_quick_add": false,
         "description": "<p>The Heirloom Medallion crafted in 18k yellow gold is customisable with a diamond initial and/or horoscope or symbol on either malachite, jade, turquoise, lapiz lazuli, pink mother of pearl, white mother or pearl or onyx.</p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-italic",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "featured_product_collection_iqxjFT": {
+      "type": "featured-product-collection",
+      "name": "Eclipse",
+      "settings": {
+        "image": "shopify://shop_images/00f4b50c-971b-4016-9572-71567383786e.jpg",
+        "product": "heirloom-medallion",
+        "collection": "eclipse",
+        "special_title": "Eclipse",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Eclipse is a luminous new collection that introduces a refined palette of light, ethereal tones. Soft shades of mother of pearl, aquamarine, and aventurine are combined in harmonious compositions or showcased individually, evoking the quiet elegance of shifting skies. </p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-italic",
         "heading_font_style_two": "font-grifinito-regular",
@@ -508,17 +566,19 @@
   "order": [
     "image_banner",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "featured_collection_4EiGkh",
+    "featured_collection_VKBCQj",
+    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
-    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
-    "featured_collection_4EiGkh",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "custom_image_banner_HGCNXm",
     "featured_product_collection_79y6k8",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
+    "featured_product_collection_iqxjFT",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }
