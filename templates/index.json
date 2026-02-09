@@ -313,6 +313,42 @@
         "link_font_style": "font-grifinito-light"
       }
     },
+    "featured_product_collection_iqxjFT": {
+      "type": "featured-product-collection",
+      "name": "Eclipse",
+      "settings": {
+        "image": "shopify://shop_images/RoseQuartzPinkyRing.jpg",
+        "product": "eclipse-aventurine-bead-necklace",
+        "collection": "eclipse",
+        "special_title": "Eclipse",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Eclipse is a luminous new collection that introduces a refined palette of light, ethereal tones. Soft shades of mother of pearl, aquamarine, and aventurine are combined in harmonious compositions or showcased individually, evoking the quiet elegance of shifting skies. </p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-italic",
+        "heading_font_style_two": "font-grifinito-regular",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
+    "featured_product_collection_79y6k8": {
+      "type": "featured-product-collection",
+      "name": "Le Cercle",
+      "settings": {
+        "image": "shopify://shop_images/LeCercleDropEarrings.heic",
+        "product": "le-cercle-illusion-diamond-drop-earrings",
+        "collection": "le-cercle",
+        "special_title": "{{ section.settings.collection.title }}",
+        "title": "Collection",
+        "enable_quick_add": false,
+        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.</p>",
+        "color_scheme": "",
+        "heading_font_style_one": "font-grifinito-italic",
+        "heading_font_style_two": "font-grifinito-light",
+        "body_font_style": "font-grifinito-regular",
+        "link_font_style": "font-grifinito-regular"
+      }
+    },
     "custom_image_banner_HGCNXm": {
       "type": "custom-image-banner",
       "blocks": {
@@ -349,24 +385,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "featured_product_collection_79y6k8": {
-      "type": "featured-product-collection",
-      "name": "Le Cercle",
-      "settings": {
-        "image": "shopify://shop_images/NadineAysoy-NEWLeCerclepinksapphire_8bbdf1b0-b92a-4f57-9df9-9c98ceae351d.jpg",
-        "product": "le-cercle-ombre-pink-sapphire-ring",
-        "collection": "le-cercle",
-        "special_title": "{{ section.settings.collection.title }}",
-        "title": "Collection",
-        "enable_quick_add": false,
-        "description": "<p>Le Cercle Collection is a return to the classic band borrowing style elements, stone cuts and silhouettes from the past and reimagining them for the contemporary wearer. The collection includes colourful pieces featuring our signature style of illusion diamonds as well as ombre patterns.</p>",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-italic",
-        "heading_font_style_two": "font-grifinito-light",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
       }
     },
     "62c41903-11d6-4eaf-84c3-77a5cd7db131": {
@@ -431,24 +449,6 @@
         "title": "Medallion",
         "enable_quick_add": false,
         "description": "<p>The Heirloom Medallion crafted in 18k yellow gold is customisable with a diamond initial and/or horoscope or symbol on either malachite, jade, turquoise, lapiz lazuli, pink mother of pearl, white mother or pearl or onyx.</p>",
-        "color_scheme": "",
-        "heading_font_style_one": "font-grifinito-italic",
-        "heading_font_style_two": "font-grifinito-regular",
-        "body_font_style": "font-grifinito-regular",
-        "link_font_style": "font-grifinito-regular"
-      }
-    },
-    "featured_product_collection_iqxjFT": {
-      "type": "featured-product-collection",
-      "name": "Eclipse",
-      "settings": {
-        "image": "shopify://shop_images/00f4b50c-971b-4016-9572-71567383786e.jpg",
-        "product": "heirloom-medallion",
-        "collection": "eclipse",
-        "special_title": "Eclipse",
-        "title": "Collection",
-        "enable_quick_add": false,
-        "description": "<p>Eclipse is a luminous new collection that introduces a refined palette of light, ethereal tones. Soft shades of mother of pearl, aquamarine, and aventurine are combined in harmonious compositions or showcased individually, evoking the quiet elegance of shifting skies. </p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-italic",
         "heading_font_style_two": "font-grifinito-regular",
@@ -573,12 +573,12 @@
     "98d81246-9f08-4150-8f09-2cbd94ed5b77",
     "97d0e5da-5103-4271-b43d-5de8167552d0",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
-    "custom_image_banner_HGCNXm",
+    "featured_product_collection_iqxjFT",
     "featured_product_collection_79y6k8",
+    "custom_image_banner_HGCNXm",
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
-    "featured_product_collection_iqxjFT",
     "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }
