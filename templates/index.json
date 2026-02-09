@@ -451,7 +451,7 @@
         "description": "<p>The Heirloom Medallion crafted in 18k yellow gold is customisable with a diamond initial and/or horoscope or symbol on either malachite, jade, turquoise, lapiz lazuli, pink mother of pearl, white mother or pearl or onyx.</p>",
         "color_scheme": "",
         "heading_font_style_one": "font-grifinito-italic",
-        "heading_font_style_two": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light",
         "body_font_style": "font-grifinito-regular",
         "link_font_style": "font-grifinito-regular"
       }
