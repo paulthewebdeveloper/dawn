@@ -128,7 +128,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Eclipse",
-            "category_image": "shopify://shop_images/EC401EclipseAquamarineBeadNecklace.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/eclipse"
           }
         },
@@ -147,6 +147,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Catena",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/catena"
           }
         },
@@ -155,7 +156,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Le Cercle",
-            "category_image": "shopify://shop_images/LC016LeCercleOmbrePinkSapphireRing.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/le-cercle"
           }
         },
@@ -164,7 +165,7 @@
           "settings": {
             "top_bottom": "top",
             "category_name": "Heirloom",
-            "category_image": "shopify://shop_images/Nadine-Aysoy-Necklace-1_1.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://products/heirloom-medallion"
           }
         },
@@ -173,7 +174,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Earrings",
-            "category_image": "shopify://shop_images/CA5059CatenaAutumnFlowerandLeafMismatchEarrings.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/earrings"
           }
         },
@@ -182,7 +183,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Rings",
-            "category_image": "shopify://shop_images/Nadine-Aysoy-Ring-1.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/rings"
           }
         },
@@ -191,7 +192,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Necklaces",
-            "category_image": "shopify://shop_images/CA410CatenaDiamondCatenaIllusionCharmNecklace.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/necklaces"
           }
         },
@@ -200,7 +201,7 @@
           "settings": {
             "top_bottom": "bottom",
             "category_name": "Bracelets",
-            "category_image": "shopify://shop_images/NadineAysoyCatenaMultiStonepastelRainbowBracelet.png",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/bracelets"
           }
         }
