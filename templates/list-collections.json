@@ -189,6 +189,55 @@
         "padding_top": 124,
         "padding_bottom": 0
       }
+    },
+    "image_with_text_qqC7Vb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eCDncF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivery & Returns",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_hr4Hk6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jewellery is made to order and therefore only available for exchange should you change your mind.</p><p></p><p>We ship worldwide. For core items, please allow 2-3 weeks for production and delivery. For Archive Sale please allow for 3-5 days for shipping. </p><p></p><p>If you would like expedited shipping, please send us an email.</p><p></p>",
+            "text_style": "body",
+            "body_font_style": "font-grifinito-regular"
+          }
+        },
+        "button_rLhekG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Email",
+            "button_link": "mailto:info@aysoydesign.com",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eCDncF",
+        "text_hr4Hk6",
+        "button_rLhekG"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
+        "first_section_padding": "no",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left"
+      }
     }
   },
   "order": [
@@ -197,6 +246,7 @@
     "f9a9baf5-dd70-4d68-8f8c-84a31078d2b5",
     "featured_collection_mwXNrc",
     "featured_collection_TGYdGG",
-    "32cb44a3-ede4-4c5c-a3c3-7c2dd4144133"
+    "32cb44a3-ede4-4c5c-a3c3-7c2dd4144133",
+    "image_with_text_qqC7Vb"
   ]
 }
