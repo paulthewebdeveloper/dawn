@@ -596,6 +596,55 @@
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, NADINE AYSOY has featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.</p>"
       }
+    },
+    "image_with_text_YCReym": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CLqi8d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_EBtXfY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jewellery is made to order and therefore only available for exchange should you change your mind.</p><p></p><p>We ship worldwide. For core items, please allow 2-3 weeks for production and delivery. For Archive Sale please allow for 3-5 days for shipping. </p><p></p><p>If you would like expedited shipping, please send us an email.</p><p></p>",
+            "text_style": "body",
+            "body_font_style": "font-grifinito-regular"
+          }
+        },
+        "button_P77xDH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Email",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CLqi8d",
+        "text_EBtXfY",
+        "button_P77xDH"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
+        "first_section_padding": "no",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left"
+      }
     }
   },
   "order": [
@@ -615,6 +664,7 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
-    "d810a605-312e-4cd8-bedc-9fccf02f9070"
+    "d810a605-312e-4cd8-bedc-9fccf02f9070",
+    "image_with_text_YCReym"
   ]
 }
