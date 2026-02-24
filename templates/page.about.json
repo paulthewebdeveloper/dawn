@@ -153,10 +153,9 @@
         "text_VpqBaY",
         "button_aVe8Mf"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/IMG_4536.jpg",
+        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
         "first_section_padding": "no",
         "height": "adapt",
         "desktop_image_width": "small",
