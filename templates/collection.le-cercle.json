@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "a98c27da-1594-46f2-974f-f0640fc09a00": {
@@ -53,7 +62,7 @@
         "f2d8d35e-4ec0-4738-92a2-30b8e51dc394": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_5612_e2e60d09-fe8f-40d5-8dce-d821aae45f3a.jpg",
+            "image": "shopify://shop_images/IMG_5612_e2e60d09-fe8f-40d5-8dce-d821aae45f3a.jpg",
             "collection": "catena-explore-more",
             "description": "EXPLORE MORE",
             "heading_font_style": "font-grifinito-light-italic",
@@ -63,7 +72,7 @@
         "banner_VNpna8": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC6281-Enhanced-NR-1.jpg",
+            "image": "shopify://shop_images/DSC6281-Enhanced-NR-1.jpg",
             "collection": "le-cercle-1",
             "description": "MORE JEWELLERY",
             "heading_font_style": "font-grifinito-regular",
@@ -76,7 +85,7 @@
         "banner_VNpna8"
       ],
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 8,
         "columns_desktop": 3,
         "link_font_style": "font-grifinito-light",
         "image_ratio": "adapt",
