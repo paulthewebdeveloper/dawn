@@ -68,6 +68,136 @@
         "final_statement": ""
       }
     },
+    "97d0e5da-5103-4271-b43d-5de8167552d0": {
+      "type": "multi-column-product",
+      "settings": {
+        "left_image": "shopify://shop_images/BlueGreenPinkyRings.jpg",
+        "center_image": "shopify://shop_images/Heirloom_and_Catena_Drop_Earring_-_Naomi_-_001.jpg",
+        "right_image": "shopify://shop_images/LeCercleDropEarrings.heic",
+        "first_product": "eclipse-aquamarine-pinky-ring",
+        "second_product": "le-cercle-illusion-diamond-drop-earrings",
+        "title": "Multi Column Product",
+        "color_scheme": "",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "link_font_style": "font-grifinito-light"
+      }
+    },
+    "42d9445b-f805-4cb0-9514-c39973ea424c": {
+      "type": "featured-categories",
+      "blocks": {
+        "category_YjR7pP": {
+          "type": "category",
+          "name": "Eclipse",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Eclipse",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/eclipse"
+          }
+        },
+        "category_d4q96z": {
+          "type": "category",
+          "name": "Catena",
+          "disabled": true,
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Cobra",
+            "category_image": "shopify://shop_images/Cobra_Large_Curved_Earrings.png",
+            "link": "shopify://collections/cobra"
+          }
+        },
+        "92864d79-097d-4a2c-a590-7414de8972fc": {
+          "type": "category",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Catena",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/catena"
+          }
+        },
+        "b160d25d-85fa-435b-9707-c4fe8a4c984e": {
+          "type": "category",
+          "name": "Le Cercle",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Le Cercle",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/le-cercle"
+          }
+        },
+        "category_h393X8": {
+          "type": "category",
+          "name": "Heirloom",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Heirloom",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://products/heirloom-medallion"
+          }
+        },
+        "category_CkWa3g": {
+          "type": "category",
+          "name": "Bracelets",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Bracelets",
+            "link": "shopify://collections/bracelets"
+          }
+        },
+        "772f448d-4dbc-40c3-a06b-840ccf71dc61": {
+          "type": "category",
+          "name": "Earrings",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Earrings",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/earrings"
+          }
+        },
+        "3c2fb2b7-ad83-42bb-a2ec-832411458379": {
+          "type": "category",
+          "name": "Rings",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Rings",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/rings"
+          }
+        },
+        "853f1f42-fb70-4eb1-b312-ea356136b9fd": {
+          "type": "category",
+          "name": "Necklaces",
+          "settings": {
+            "top_bottom": "bottom",
+            "category_name": "Necklaces",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/necklaces"
+          }
+        }
+      },
+      "block_order": [
+        "category_YjR7pP",
+        "category_d4q96z",
+        "92864d79-097d-4a2c-a590-7414de8972fc",
+        "b160d25d-85fa-435b-9707-c4fe8a4c984e",
+        "category_h393X8",
+        "category_CkWa3g",
+        "772f448d-4dbc-40c3-a06b-840ccf71dc61",
+        "3c2fb2b7-ad83-42bb-a2ec-832411458379",
+        "853f1f42-fb70-4eb1-b312-ea356136b9fd"
+      ],
+      "settings": {
+        "product": "catena-autumn-bangle",
+        "title_normal": "Explore All",
+        "title_red": "Jewellery",
+        "color_scheme": "background-2",
+        "heading_font_style_one": "font-grifinito-light",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-grifinito-light-italic",
+        "link_font_style": "font-grifinito-light-italic"
+      }
+    },
     "image_with_text_YCReym": {
       "type": "image-with-text",
       "blocks": {
@@ -120,6 +250,7 @@
     },
     "featured_collection_4EiGkh": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "New In",
       "settings": {
         "title": "",
@@ -154,6 +285,7 @@
     },
     "featured_collection_NMiERq": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Archive Sale",
       "settings": {
         "title": "Archive",
@@ -186,115 +318,9 @@
         "padding_bottom": 0
       }
     },
-    "42d9445b-f805-4cb0-9514-c39973ea424c": {
-      "type": "featured-categories",
-      "blocks": {
-        "category_YjR7pP": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Eclipse",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/eclipse"
-          }
-        },
-        "category_d4q96z": {
-          "type": "category",
-          "disabled": true,
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Cobra",
-            "category_image": "shopify://shop_images/Cobra_Large_Curved_Earrings.png",
-            "link": "shopify://collections/cobra"
-          }
-        },
-        "92864d79-097d-4a2c-a590-7414de8972fc": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Catena",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/catena"
-          }
-        },
-        "b160d25d-85fa-435b-9707-c4fe8a4c984e": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Le Cercle",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/le-cercle"
-          }
-        },
-        "category_h393X8": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Heirloom",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://products/heirloom-medallion"
-          }
-        },
-        "772f448d-4dbc-40c3-a06b-840ccf71dc61": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Earrings",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/earrings"
-          }
-        },
-        "3c2fb2b7-ad83-42bb-a2ec-832411458379": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Rings",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/rings"
-          }
-        },
-        "853f1f42-fb70-4eb1-b312-ea356136b9fd": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Necklaces",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/necklaces"
-          }
-        },
-        "category_CkWa3g": {
-          "type": "category",
-          "settings": {
-            "top_bottom": "top",
-            "category_name": "Bracelets",
-            "link": "shopify://collections/bracelets"
-          }
-        }
-      },
-      "block_order": [
-        "category_YjR7pP",
-        "category_d4q96z",
-        "92864d79-097d-4a2c-a590-7414de8972fc",
-        "b160d25d-85fa-435b-9707-c4fe8a4c984e",
-        "category_h393X8",
-        "772f448d-4dbc-40c3-a06b-840ccf71dc61",
-        "3c2fb2b7-ad83-42bb-a2ec-832411458379",
-        "853f1f42-fb70-4eb1-b312-ea356136b9fd",
-        "category_CkWa3g"
-      ],
-      "settings": {
-        "product": "catena-autumn-bangle",
-        "title_normal": "Explore All",
-        "title_red": "Jewellery",
-        "color_scheme": "background-2",
-        "heading_font_style_one": "font-grifinito-light",
-        "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-grifinito-light-italic",
-        "link_font_style": "font-grifinito-light-italic"
-      }
-    },
     "featured_collection_VKBCQj": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Love Edit",
       "settings": {
         "title": "The Love",
@@ -327,75 +353,9 @@
         "padding_bottom": 0
       }
     },
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_special": "",
-        "description": "",
-        "heading_font_style": "font-grifinito-light-italic",
-        "heading_special_font_style": "font-grifinito-italic",
-        "body_font_style": "font-grifinito-regular",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
-        "video_url": "",
-        "alt_text": "",
-        "full_width": true,
-        "color_scheme": ""
-      }
-    },
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
-      "type": "featured-collection",
-      "name": "Emily in Paris",
-      "settings": {
-        "title": "Emily in Paris",
-        "title_special": "Shop the Edit",
-        "heading_font_style_one": "font-grifinito-regular",
-        "heading_font_style_two": "font-grifinito-light-italic",
-        "body_font_style": "font-helvetica-now-micro-light",
-        "link_font_style": "font-grifinito-light-italic",
-        "heading_size": "h2",
-        "description": "<p>Nadine Aysoy jewellery features in the Netflix series <em>Emily In Paris.</em> Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. </p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "as-seen-on-emily-in-paris",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-2",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 124,
-        "padding_bottom": 124
-      }
-    },
-    "97d0e5da-5103-4271-b43d-5de8167552d0": {
-      "type": "multi-column-product",
-      "settings": {
-        "left_image": "shopify://shop_images/BlueGreenPinkyRings.jpg",
-        "center_image": "shopify://shop_images/Heirloom_and_Catena_Drop_Earring_-_Naomi_-_001.jpg",
-        "right_image": "shopify://shop_images/LeCercleDropEarrings.heic",
-        "first_product": "eclipse-aquamarine-pinky-ring",
-        "second_product": "le-cercle-illusion-diamond-drop-earrings",
-        "title": "Multi Column Product",
-        "color_scheme": "",
-        "padding_top": 124,
-        "padding_bottom": 124,
-        "link_font_style": "font-grifinito-light"
-      }
-    },
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c": {
       "type": "featured-product-collection",
+      "disabled": true,
       "name": "Catena",
       "settings": {
         "image": "shopify://shop_images/nadineillusionnecklace_f70d4292-bd51-46ed-8a21-33e535602f57.jpg",
@@ -414,6 +374,7 @@
     },
     "featured_product_collection_iqxjFT": {
       "type": "featured-product-collection",
+      "disabled": true,
       "name": "Eclipse",
       "settings": {
         "image": "shopify://shop_images/RoseQuartzPinkyRing.jpg",
@@ -432,6 +393,7 @@
     },
     "featured_product_collection_79y6k8": {
       "type": "featured-product-collection",
+      "disabled": true,
       "name": "Le Cercle",
       "settings": {
         "image": "shopify://shop_images/LeCercleDropEarrings.heic",
@@ -472,7 +434,6 @@
         "heading_LdMLgk",
         "text_QmiDpV"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
         "image_overlay_opacity": 0,
@@ -540,6 +501,7 @@
     },
     "featured_product_collection_gtkJV3": {
       "type": "featured-product-collection",
+      "disabled": true,
       "name": "Heirloom ",
       "settings": {
         "image": "shopify://shop_images/00f4b50c-971b-4016-9572-71567383786e.jpg",
@@ -661,20 +623,166 @@
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, NADINE AYSOY has featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.</p>"
       }
+    },
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_special": "",
+        "description": "",
+        "heading_font_style": "font-grifinito-light-italic",
+        "heading_special_font_style": "font-grifinito-italic",
+        "body_font_style": "font-grifinito-regular",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/Nadine Aysoy x Emily in Paris S3 E2 and E6.MOV",
+        "video_url": "",
+        "alt_text": "",
+        "full_width": true,
+        "color_scheme": ""
+      }
+    },
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Emily in Paris",
+      "settings": {
+        "title": "Emily in Paris",
+        "title_special": "Shop the Edit",
+        "heading_font_style_one": "font-grifinito-regular",
+        "heading_font_style_two": "font-grifinito-light-italic",
+        "body_font_style": "font-helvetica-now-micro-light",
+        "link_font_style": "font-grifinito-light-italic",
+        "heading_size": "h2",
+        "description": "<p>Nadine Aysoy jewellery features in the Netflix series <em>Emily In Paris.</em> Worn by Lily Collins as Emily Cooper, Ashley Park as Mindy Chen, and more of the cast. </p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "as-seen-on-emily-in-paris",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 124,
+        "padding_bottom": 124
+      }
+    },
+    "slideshow_brJWVn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_xiP3FB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Nadine-Aysoy-Bracelet-1b.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_3gyULm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Le_Cercle.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_XCkFgF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9985.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_bbnJFe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9985.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_xiP3FB",
+        "slide_3gyULm",
+        "slide_XCkFgF",
+        "slide_bbnJFe"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
     "image_banner",
     "ec606534-e764-4070-8311-b7bdff2193da",
     "hero_special_eqCxAU",
+    "97d0e5da-5103-4271-b43d-5de8167552d0",
+    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "image_with_text_YCReym",
     "featured_collection_4EiGkh",
     "featured_collection_NMiERq",
-    "42d9445b-f805-4cb0-9514-c39973ea424c",
     "featured_collection_VKBCQj",
-    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
-    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
-    "97d0e5da-5103-4271-b43d-5de8167552d0",
     "3e3e3813-5ee8-4b4a-9ecb-43643945798c",
     "featured_product_collection_iqxjFT",
     "featured_product_collection_79y6k8",
@@ -682,6 +790,9 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
-    "d810a605-312e-4cd8-bedc-9fccf02f9070"
+    "d810a605-312e-4cd8-bedc-9fccf02f9070",
+    "d00c9d05-c6c1-4012-9ff2-9785fe8f4369",
+    "98d81246-9f08-4150-8f09-2cbd94ed5b77",
+    "slideshow_brJWVn"
   ]
 }
