@@ -53,13 +53,28 @@
         "final_statement": ""
       }
     },
+    "hero_special_eqCxAU": {
+      "type": "hero-special",
+      "settings": {
+        "collection": "catena-explore-more",
+        "link_font_style": "font-grifinito-italic",
+        "heading": "NADINE AYSOY",
+        "highlight_one": "",
+        "subtext": "online store has closed. For those of you who would like",
+        "highlight_two": "bespoke",
+        "highlight_three": "archive pieces",
+        "closing_text": "please email me on info@aysoydesign.com",
+        "highlight_four": "",
+        "final_statement": ""
+      }
+    },
     "image_with_text_YCReym": {
       "type": "image-with-text",
       "blocks": {
         "heading_CLqi8d": {
           "type": "heading",
           "settings": {
-            "heading": "Delivery & Returns",
+            "heading": "The Catalogue",
             "heading_size": "h1",
             "heading_font_style": "font-grifinito-regular"
           }
@@ -67,7 +82,7 @@
         "text_EBtXfY": {
           "type": "text",
           "settings": {
-            "text": "<p>After many wonderful years, the time has come to close this chapter. I do so with immense gratitude and excitement for my next adventure - a change of scenery, a change of pace.</p><p>For those of you who still want bespoke pieces or something from my archive, email me at <a href=\"mailto:info@aysoydesign.com\">info@aysoydesign.com</a> or <a href=\"mailto:julie@aysoydesign.com\" title=\"mailto:julie@aysoydesign.com\">julie@aysoydesign.com.</a></p><p></p><p></p><p></p>",
+            "text": "<p>After many wonderful years, NADINE AYSOY online store has closed. </p><p>For those of you who still want bespoke pieces or something from my archive, email me at <a href=\"mailto:info@aysoydesign.com\">info@aysoydesign.com</a> or <a href=\"mailto:julie@aysoydesign.com\" title=\"mailto:julie@aysoydesign.com\">julie@aysoydesign.com.</a></p><p></p><p></p><p></p>",
             "text_style": "body",
             "body_font_style": "font-grifinito-regular"
           }
@@ -86,10 +101,11 @@
         "text_EBtXfY",
         "button_P77xDH"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
-        "first_section_padding": "no",
+        "image": "shopify://shop_images/Nadine_Aysoy_1080_x_1920.jpg",
+        "first_section_padding": "yes",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -100,21 +116,6 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left"
-      }
-    },
-    "hero_special_iRPK8A": {
-      "type": "hero-special",
-      "settings": {
-        "collection": "catena-explore-more",
-        "link_font_style": "font-grifinito-italic",
-        "heading": "Welcome to the world of",
-        "highlight_one": "Nadine Aysoy.",
-        "subtext": "You can browse the archive",
-        "highlight_two": "",
-        "highlight_three": "",
-        "closing_text": "",
-        "highlight_four": "",
-        "final_statement": ""
       }
     },
     "featured_collection_4EiGkh": {
@@ -382,7 +383,7 @@
       "type": "multi-column-product",
       "settings": {
         "left_image": "shopify://shop_images/BlueGreenPinkyRings.jpg",
-        "center_image": "shopify://shop_images/IMG_4377_0a3e8a30-5345-4550-874b-f217e3e3af96.jpg",
+        "center_image": "shopify://shop_images/Heirloom_and_Catena_Drop_Earring_-_Naomi_-_001.jpg",
         "right_image": "shopify://shop_images/LeCercleDropEarrings.heic",
         "first_product": "eclipse-aquamarine-pinky-ring",
         "second_product": "le-cercle-illusion-diamond-drop-earrings",
@@ -665,8 +666,8 @@
   "order": [
     "image_banner",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "hero_special_eqCxAU",
     "image_with_text_YCReym",
-    "hero_special_iRPK8A",
     "featured_collection_4EiGkh",
     "featured_collection_NMiERq",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
