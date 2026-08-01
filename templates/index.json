@@ -71,7 +71,7 @@
     "97d0e5da-5103-4271-b43d-5de8167552d0": {
       "type": "multi-column-product",
       "settings": {
-        "left_image": "shopify://shop_images/BlueGreenPinkyRings.jpg",
+        "left_image": "shopify://shop_images/RoseQuartzPinkyRing.jpg",
         "center_image": "shopify://shop_images/Heirloom_and_Catena_Drop_Earring_-_Naomi_-_001.jpg",
         "right_image": "shopify://shop_images/LeCercleDropEarrings.heic",
         "first_product": "eclipse-aquamarine-pinky-ring",
@@ -435,6 +435,7 @@
         "heading_LdMLgk",
         "text_QmiDpV"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Fist_Punch_Illusion_Cercle_and_Bombe.jpg",
         "image_overlay_opacity": 0,
