@@ -1,12 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
     "product-main": {
       "type": "main-product",
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -17,8 +33,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -28,11 +43,11 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -40,8 +55,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -74,6 +88,7 @@
       "settings": {
         "heading_font_style_one": "font-grifinito-light",
         "heading_font_style_two": "font-grifinito-light-italic",
+        "link_font_style": "font-grifinito-regular",
         "heading_primary": "Complete the",
         "heading_secondary": "Set",
         "heading_size": "h1",
@@ -96,28 +111,28 @@
           "type": "feature",
           "settings": {
             "title": "Lilly Collins - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.</p>"
           }
         },
         "7a995718-081d-4a18-a01a-dd97ae2b691d": {
           "type": "feature",
           "settings": {
             "title": "Sabrina Claudio",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.</p>"
           }
         },
         "1b11cff4-c77d-436c-8437-ee3b34c2162e": {
           "type": "feature",
           "settings": {
             "title": "Ashley Park - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.</p>"
           }
         },
         "ff904bca-7d77-4eb0-8040-65e374fe2d11": {
           "type": "feature",
           "settings": {
             "title": "Lilly Collins - Emily In Paris",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies nec ipsum id tincidunt. In hac habitasse platea dictumst. Donec at erat erat.</p>"
           }
         }
       },
@@ -172,25 +187,13 @@
         "padding_bottom": 0
       }
     },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
+      "settings": {}
     },
     "shogun-optimizer": {
       "type": "shogun-optimizer",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
