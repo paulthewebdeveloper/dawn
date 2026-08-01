@@ -39,6 +39,7 @@
     },
     "ec606534-e764-4070-8311-b7bdff2193da": {
       "type": "hero-special",
+      "disabled": true,
       "settings": {
         "collection": "catena-explore-more",
         "link_font_style": "font-grifinito-italic",
@@ -49,6 +50,70 @@
         "highlight_three": "",
         "closing_text": "designed to be layered together for an easy",
         "highlight_four": "everyday look.",
+        "final_statement": ""
+      }
+    },
+    "image_with_text_YCReym": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CLqi8d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivery & Returns",
+            "heading_size": "h1",
+            "heading_font_style": "font-grifinito-regular"
+          }
+        },
+        "text_EBtXfY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After many wonderful years, the time has come to close this chapter. I do so with immense gratitude and excitement for my next adventure - a change of scenery, a change of pace.</p><p>For those of you who still want bespoke pieces or something from my archive, email me at <a href=\"mailto:info@aysoydesign.com\">info@aysoydesign.com</a> or <a href=\"mailto:julie@aysoydesign.com\" title=\"mailto:julie@aysoydesign.com\">julie@aysoydesign.com.</a></p><p></p><p></p><p></p>",
+            "text_style": "body",
+            "body_font_style": "font-grifinito-regular"
+          }
+        },
+        "button_P77xDH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Email",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CLqi8d",
+        "text_EBtXfY",
+        "button_P77xDH"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
+        "first_section_padding": "no",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "hero_special_iRPK8A": {
+      "type": "hero-special",
+      "settings": {
+        "collection": "catena-explore-more",
+        "link_font_style": "font-grifinito-italic",
+        "heading": "Welcome to the world of",
+        "highlight_one": "Nadine Aysoy.",
+        "subtext": "You can browse the archive",
+        "highlight_two": "",
+        "highlight_three": "",
+        "closing_text": "",
+        "highlight_four": "",
         "final_statement": ""
       }
     },
@@ -595,60 +660,13 @@
         "heading_font_style": "font-grifinito-light-italic",
         "description": "<p>Spotlighted by the press, NADINE AYSOY has featured in prestigious publications, each mention is a testament to our dedication to artistry and design. Explore the stories that made headlines and discover the collections that charmed the world of haute couture.</p>"
       }
-    },
-    "image_with_text_YCReym": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_CLqi8d": {
-          "type": "heading",
-          "settings": {
-            "heading": "Delivery & Returns",
-            "heading_size": "h1",
-            "heading_font_style": "font-grifinito-regular"
-          }
-        },
-        "text_EBtXfY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Jewellery is made to order and therefore only available for exchange should you change your mind.</p><p></p><p>We ship worldwide. For core items, please allow 2-3 weeks for production and delivery. For Archive Sale please allow for 3-5 days for shipping. </p><p></p><p>If you would like expedited shipping, please send us an email.</p><p></p>",
-            "text_style": "body",
-            "body_font_style": "font-grifinito-regular"
-          }
-        },
-        "button_P77xDH": {
-          "type": "button",
-          "settings": {
-            "button_label": "Email",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_CLqi8d",
-        "text_EBtXfY",
-        "button_P77xDH"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/LeCercleFloatingIllusionDiamondNecklace.jpg",
-        "first_section_padding": "no",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left"
-      }
     }
   },
   "order": [
     "image_banner",
     "ec606534-e764-4070-8311-b7bdff2193da",
+    "image_with_text_YCReym",
+    "hero_special_iRPK8A",
     "featured_collection_4EiGkh",
     "featured_collection_NMiERq",
     "42d9445b-f805-4cb0-9514-c39973ea424c",
@@ -663,7 +681,6 @@
     "62c41903-11d6-4eaf-84c3-77a5cd7db131",
     "featured_product_collection_yrzfkC",
     "featured_product_collection_gtkJV3",
-    "d810a605-312e-4cd8-bedc-9fccf02f9070",
-    "image_with_text_YCReym"
+    "d810a605-312e-4cd8-bedc-9fccf02f9070"
   ]
 }
