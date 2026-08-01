@@ -136,12 +136,13 @@
             "link": "shopify://products/heirloom-medallion"
           }
         },
-        "category_CkWa3g": {
+        "category_UXNdWK": {
           "type": "category",
           "name": "Bracelets",
           "settings": {
             "top_bottom": "top",
             "category_name": "Bracelets",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/bracelets"
           }
         },
@@ -182,7 +183,7 @@
         "92864d79-097d-4a2c-a590-7414de8972fc",
         "b160d25d-85fa-435b-9707-c4fe8a4c984e",
         "category_h393X8",
-        "category_CkWa3g",
+        "category_UXNdWK",
         "772f448d-4dbc-40c3-a06b-840ccf71dc61",
         "3c2fb2b7-ad83-42bb-a2ec-832411458379",
         "853f1f42-fb70-4eb1-b312-ea356136b9fd"
