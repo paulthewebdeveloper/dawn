@@ -35,9 +35,10 @@
       ],
       "settings": {
         "image": "{{ collection.image }}",
+        "image_2": "shopify://shop_images/Catena.png",
         "image_overlay_opacity": 20,
         "image_height": "full",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "accent-1",
