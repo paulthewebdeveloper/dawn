@@ -99,6 +99,7 @@
         "category_ejffFc": {
           "type": "category",
           "name": "Cobra",
+          "disabled": true,
           "settings": {
             "top_bottom": "top",
             "category_name": "Cobra",
