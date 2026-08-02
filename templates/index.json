@@ -160,6 +160,16 @@
     "featured_categories_ULTWRC": {
       "type": "featured-categories",
       "blocks": {
+        "category_riqjKW": {
+          "type": "category",
+          "name": "Bracelets",
+          "settings": {
+            "top_bottom": "top",
+            "category_name": "Bracelets",
+            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
+            "link": "shopify://collections/bracelets"
+          }
+        },
         "category_3cGWKt": {
           "type": "category",
           "name": "Earrings",
@@ -168,16 +178,6 @@
             "category_name": "Earrings",
             "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
             "link": "shopify://collections/earrings"
-          }
-        },
-        "category_HyLLwR": {
-          "type": "category",
-          "name": "Rings",
-          "settings": {
-            "top_bottom": "bottom",
-            "category_name": "Rings",
-            "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/rings"
           }
         },
         "category_ByamfM": {
@@ -190,22 +190,22 @@
             "link": "shopify://collections/necklaces"
           }
         },
-        "category_riqjKW": {
+        "category_HyLLwR": {
           "type": "category",
-          "name": "Bracelets",
+          "name": "Rings",
           "settings": {
-            "top_bottom": "top",
-            "category_name": "Bracelets",
+            "top_bottom": "bottom",
+            "category_name": "Rings",
             "category_image": "shopify://shop_images/Nadine_Aysoy_-_Portrait.png",
-            "link": "shopify://collections/bracelets"
+            "link": "shopify://collections/rings"
           }
         }
       },
       "block_order": [
+        "category_riqjKW",
         "category_3cGWKt",
-        "category_HyLLwR",
         "category_ByamfM",
-        "category_riqjKW"
+        "category_HyLLwR"
       ],
       "name": "Explore by Jewellery",
       "settings": {
